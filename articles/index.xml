@@ -43,12 +43,5 @@
       <guid>https://server-x-101.github.io/articles/tarjans-algorithm/</guid>
       <description>A directed graph exhibits strong connectivity when every pair of vertices is connected by a path. A strongly connected component (SCC) within such a graph is a largest subgraph where every vertex is reachable from every other vertex. For instance, in the given graph, there are three SCCs.&#xA;Algorithm:&#xA;Tarjan&amp;rsquo;s algorithm utilizes DFS (Depth First Search) traversal. It maintains three arrays: disc[] to store discovery time of vertices, low[] to store the earliest visited vertex reachable from subtree rooted with current vertex, and stackMember[] to keep track of vertices present in the stack.</description>
     </item>
-    <item>
-      <title>First Article</title>
-      <link>https://server-x-101.github.io/articles/first-article/</link>
-      <pubDate>Fri, 02 Feb 2024 15:08:13 -0700</pubDate>
-      <guid>https://server-x-101.github.io/articles/first-article/</guid>
-      <description>Sample article here.</description>
-    </item>
   </channel>
 </rss>
