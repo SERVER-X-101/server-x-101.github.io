@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Flutter on SERVER-X-101</title>
+    <link>https://server-x-101.github.io/tags/flutter/</link>
+    <description>Recent content in Flutter on SERVER-X-101</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 19 Apr 2020 08:00:17 -0700</lastBuildDate>
+    <atom:link href="https://server-x-101.github.io/tags/flutter/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Using JavaScript with Flutter Web</title>
+      <link>https://server-x-101.github.io/snippets/using-javascript-with-flutter-web/</link>
+      <pubDate>Sun, 19 Apr 2020 08:00:17 -0700</pubDate>
+      <guid>https://server-x-101.github.io/snippets/using-javascript-with-flutter-web/</guid>
+      <description>Flutter Web enables the development of progressive web apps (PWAs) using Dart. However, to access browser APIs or integrate with existing JavaScript code, you&amp;rsquo;ll need to interoperate between Dart and JavaScript. Below, we explore how to achieve this in a Flutter web app.&#xA;Interoperating JavaScript with Dart Dart.js is a built-in library that facilitates communication between Dart and JavaScript.&#xA;Adding JavaScript Functions Create a JavaScript file (app.js) in the web directory.</description>
+    </item>
+    <item>
+      <title>Accessing Index in Dart List.map()</title>
+      <link>https://server-x-101.github.io/snippets/accessing-index-in-dart-list-map/</link>
+      <pubDate>Sat, 21 Dec 2019 07:55:05 -0700</pubDate>
+      <guid>https://server-x-101.github.io/snippets/accessing-index-in-dart-list-map/</guid>
+      <description>The following guide demonstrates how to access the index during iteration when utilizing List.map in Dart. This is frequently needed in Flutter when mapping a list of values to widgets.&#xA;Problem In Dart, unlike JavaScript, directly accessing the index of a list during a List.map operation is not straightforward.&#xA;file_type_dartlang main.dart List myList = [&amp;#39;a&amp;#39;, &amp;#39;b&amp;#39;, &amp;#39;c&amp;#39;]; myList.map((val, index) { // Index access does not work! // Which index am I on?</description>
+    </item>
+    <item>
+      <title>Managing Radial Pan Events in Flutter</title>
+      <link>https://server-x-101.github.io/snippets/managing-radial-pan-events-in-flutter/</link>
+      <pubDate>Mon, 02 Dec 2019 09:19:58 -0700</pubDate>
+      <guid>https://server-x-101.github.io/snippets/managing-radial-pan-events-in-flutter/</guid>
+      <description>One UI element not natively supported in Flutter is a click wheel, rotary control, or radial knob. The following snippet demonstrates how to create a circular container and detect the direction (clockwise or counterclockwise) and velocity of user rotation.&#xA;Access the complete source code for the wheel demo.&#xA;Flutter Circular Pan Wheel Detecting Pan Gestures Utilize a GestureDetector to encompass a circular container with a BoxShape.circle. Each pan event on the circle will generate data containing movement information.</description>
+    </item>
+    <item>
+      <title>Flutter Skeleton Text with Shimmer Animation</title>
+      <link>https://server-x-101.github.io/snippets/flutter-skeleton-text/</link>
+      <pubDate>Tue, 19 Mar 2019 09:35:09 -0700</pubDate>
+      <guid>https://server-x-101.github.io/snippets/flutter-skeleton-text/</guid>
+      <description>Skeleton text is a strategy that improves the perceived load time of content by rendering a blank placeholder that roughly matches the size of the expected content. This method was originally made popular by Facebook, but is now used on many popular apps and websites.&#xA;Use this skeleton text widget as a placeholder when loading data from an external source.&#xA;Flutter Skeleton Text Widget The skeleton text effect can be created in Flutter with an animated loop over a color gradient.</description>
+    </item>
+    <item>
+      <title>Flutter Google Maps Setup</title>
+      <link>https://server-x-101.github.io/snippets/setup-google-maps-flutter/</link>
+      <pubDate>Sat, 12 Jan 2019 10:13:59 -0700</pubDate>
+      <guid>https://server-x-101.github.io/snippets/setup-google-maps-flutter/</guid>
+      <description>The following guide is designed to get you up and running with Google Maps in Flutter for iOS and Android, as well as device GPS tracking.&#xA;Also refer to the official Flutter Google Maps Plugin setup docs as needed.&#xA;Google Maps for Flutter Get your Google Maps API Key First, obtain an API key for Google Maps within the context of a Google Cloud Platform project.&#xA;iOS Setup file_type_config ios/Runner/AppDelegate.m #include &amp;#34;AppDelegate.</description>
+    </item>
+  </channel>
+</rss>

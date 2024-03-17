@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="server-x-101: community for programmers and developers">
+  <title>Flutter Google Maps Setup</title>
+  <link rel="canonical" href="https://server-x-101.github.io/"/>
+  
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="/svelte/index.2db76941.css" />
+  <script type="module" defer src="/svelte/index.99cc39e2.js" />
+  </script>
+
+  
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+  <link rel="mask-icon" href="/img/safari-pinned-tab.svg" color="#4e2334">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="msapplication-TileColor" content="#9f00a7">
+  <meta name="theme-color" content="#454e56">
+  <meta name="viewport" content="width=device-width,minimum-scale=1">
+  
+
+
+    
+ 
+
+
+
+
+    <link rel="canonical" href="https://server-x-101.github.io/snippets/setup-google-maps-flutter/" />
+
+    <meta name="description" content="Setup a Flutter app with Google Maps and GPS Location Tracking">
+    <meta name="image" content="https://server-x-101.github.io/img/default-cover.png">
+
+    <meta property="og:title" content="Flutter Google Maps Setup" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://server-x-101.github.io/snippets/setup-google-maps-flutter/" />
+    <meta property="og:image" content="https://server-x-101.github.io/img/default-cover.png" />
+    <meta property="og:description" content="Setup a Flutter app with Google Maps and GPS Location Tracking" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@server-x-101">
+    <meta name="twitter:title" content="Flutter Google Maps Setup">
+    <meta name="twitter:description" content="Setup a Flutter app with Google Maps and GPS Location Tracking">
+    <meta name="twitter:image" content="https://server-x-101.github.io/img/default-cover.png">
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/sw.js');
+      });
+    }
+  </script>
+
+</head>
+
+<body>
+  <global-data permalink="https://server-x-101.github.io/snippets/setup-google-maps-flutter/" vimeo="" youtube=""
+    free="" next="https://server-x-101.github.io/snippets/passing-data-to-modals-in-ionic-4/"
+    prev="https://server-x-101.github.io/snippets/git-how-to-participate-on-github/">
+  </global-data>
+
+  
+
+<div class="h-2"></div>
+<nav  class="flex justify-between container mx-4">
+
+  
+  <a class="hidden md:flex justify-center items-center text-center w-[15%]" href="/">
+    
+    <img id="logo" class="select-none drag-none" src="/img/serverx101-text-logo.png" alt="logo" />
+  </a>
+
+  
+  <a class="flex justify-center items-center text-center ml-2 w-12 h-12 md:hidden" href="/">
+    
+    <img id="logo" class="select-none drag-none" src="/img/serverx101-logo.svg" alt="logo" />
+  </a>
+
+  
+  <ul class="flex justify-center items-center mx-1">
+
+    
+    
+
+    
+    <li class="mx-2 md:mx-4 transition-transform">
+      <a href="/articles" class="font-sans text-xl font-bold leading-none text-gray2 gradient-slide-peach">Articles</a>
+    </li>
+
+    
+    <li class="mx-2 md:mx-4 transition-transform">
+      <a href="/snippets" class="font-sans text-xl font-bold leading-none text-gray2 gradient-slide-peach">Snippets</a>
+    </li>
+
+    
+    <li class="mx-2 md:mx-4 mr-2 transition-transform">
+      <a href="/contests" class="font-sans text-xl font-bold leading-none text-gray2 gradient-slide-peach">Contests</a>
+    </li>
+  </ul>
+</nav>
+
+  
+<main class="container">
+
+
+	<div class="flex w-full justify-between">
+
+
+		<article itemscope itemtype="http://schema.org/Article" class="w-full">
+			<meta itemprop="datePublished" content="2019-01-12 10:13:59 -0700 -0700" />
+			<meta itemprop="dateModified" content="2019-01-12 10:13:59 -0700 -0700" />
+			<meta itemprop="image" content="img/featured.png" />
+			<meta itemprop="publisher" content="gautam ankoji" />
+
+
+			<header>
+
+				
+				
+
+				
+
+				<div class="bg-gray8 py-5 px-3 rounded-full mb-20 flex justify-between mt-3">
+
+					
+					
+					<a class="flex items-center no-underline" itemprop="author" name="Gautam Ankoji" href="/authors/gautam-ankoji/">
+						<img class="w-10 h-10 rounded-full block" src="/authors/img/gautam-ankoji.jpg" alt="Gautam Ankoji avatar">
+						<span class="flex flex-col ml-2">
+							<span class="no-underline">By Gautam Ankoji</span>
+							<span class="text-xs text-gray4">Posted <time itemprop="dateModified">Jan 12, 2019</time>
+						</span>
+	
+					</a>
+
+					
+					<span class="flex items-center justify-content">
+						
+							<a href="/tags/flutter"><span class="tag tag-flutter font-bold hover:scale-110 transition-all duration-300">#flutter</span></a>
+						
+							<a href="/tags/google-maps"><span class="tag tag-google-maps font-bold hover:scale-110 transition-all duration-300">#google-maps</span></a>
+						
+
+						
+					</span>
+					
+				
+				</div>
+
+			</header>
+
+			
+			<section class="prose dark:prose-invert max-w-full lesson-content ancor-blue" itemprop="articleBody">
+
+				<h1 itemprop="name headline" id="flutter-google-maps-setup" class="gradient-text">
+					Flutter Google Maps Setup
+				</h1>
+
+
+				<p>The following guide is designed to get you up and running with Google Maps in Flutter for iOS and Android, as well as device GPS tracking.</p>
+<p>Also refer to the <a href="https://pub.dartlang.org/packages/google_maps_flutter">official Flutter Google Maps Plugin setup docs</a> as needed.</p>
+<h2 id="google-maps-for-flutter">Google Maps for Flutter</h2>
+<h3 id="get-your-google-maps-api-key">Get your Google Maps API Key</h3>
+<p>First, obtain an <a href="https://cloud.google.com/maps-platform/">API key for Google Maps</a> within the context of a Google Cloud Platform project.</p>
+<figure><img src="/snippets/img/gmaps-api.png"
+         alt="where to get the Google maps API key on the gcp console"/>
+</figure>
+
+<h3 id="ios-setup">iOS Setup</h3>
+
+
+<div class="file-name">
+  <span class="file-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><title>file_type_config</title><path d="M23.265,24.381l.9-.894c4.164.136,4.228-.01,4.411-.438l1.144-2.785L29.805,20l-.093-.231c-.049-.122-.2-.486-2.8-2.965V15.5c3-2.89,2.936-3.038,2.765-3.461L28.538,9.225c-.171-.422-.236-.587-4.37-.474l-.9-.93a20.166,20.166,0,0,0-.141-4.106l-.116-.263-2.974-1.3c-.438-.2-.592-.272-3.4,2.786l-1.262-.019c-2.891-3.086-3.028-3.03-3.461-2.855L9.149,3.182c-.433.175-.586.237-.418,4.437l-.893.89c-4.162-.136-4.226.012-4.407.438L2.285,11.733,2.195,12l.094.232c.049.12.194.48,2.8,2.962l0,1.3c-3,2.89-2.935,3.038-2.763,3.462l1.138,2.817c.174.431.236.584,4.369.476l.9.935a20.243,20.243,0,0,0,.137,4.1l.116.265,2.993,1.308c.435.182.586.247,3.386-2.8l1.262.016c2.895,3.09,3.043,3.03,3.466,2.859l2.759-1.115C23.288,28.644,23.44,28.583,23.265,24.381ZM11.407,17.857a4.957,4.957,0,1,1,6.488,2.824A5.014,5.014,0,0,1,11.407,17.857Z" style="fill:#99b8c4"/></svg></span> <b>ios/Runner/AppDelegate.m </b>
+</div>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">#include &#34;AppDelegate.h&#34;
+</span></span><span class="line"><span class="cl">#include &#34;GeneratedPluginRegistrant.h&#34;
+</span></span><span class="line"><span class="cl">#import &#34;GoogleMaps/GoogleMaps.h&#34;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">@implementation AppDelegate
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">- (BOOL)application:(UIApplication *)application
+</span></span><span class="line"><span class="cl">    didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+</span></span><span class="line"><span class="cl">  [GMSServices provideAPIKey:@&#34;YOUR KEY HERE&#34;];
+</span></span><span class="line"><span class="cl">  [GeneratedPluginRegistrant registerWithRegistry:self];
+</span></span><span class="line"><span class="cl">  return [super application:application didFinishLaunchingWithOptions:launchOptions];
+</span></span><span class="line"><span class="cl">}
+</span></span><span class="line"><span class="cl">@end
+</span></span></code></pre></div>
+
+<div class="file-name">
+  <span class="file-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><title>file_type_config</title><path d="M23.265,24.381l.9-.894c4.164.136,4.228-.01,4.411-.438l1.144-2.785L29.805,20l-.093-.231c-.049-.122-.2-.486-2.8-2.965V15.5c3-2.89,2.936-3.038,2.765-3.461L28.538,9.225c-.171-.422-.236-.587-4.37-.474l-.9-.93a20.166,20.166,0,0,0-.141-4.106l-.116-.263-2.974-1.3c-.438-.2-.592-.272-3.4,2.786l-1.262-.019c-2.891-3.086-3.028-3.03-3.461-2.855L9.149,3.182c-.433.175-.586.237-.418,4.437l-.893.89c-4.162-.136-4.226.012-4.407.438L2.285,11.733,2.195,12l.094.232c.049.12.194.48,2.8,2.962l0,1.3c-3,2.89-2.935,3.038-2.763,3.462l1.138,2.817c.174.431.236.584,4.369.476l.9.935a20.243,20.243,0,0,0,.137,4.1l.116.265,2.993,1.308c.435.182.586.247,3.386-2.8l1.262.016c2.895,3.09,3.043,3.03,3.466,2.859l2.759-1.115C23.288,28.644,23.44,28.583,23.265,24.381ZM11.407,17.857a4.957,4.957,0,1,1,6.488,2.824A5.014,5.014,0,0,1,11.407,17.857Z" style="fill:#99b8c4"/></svg></span> <b>ios/Runner/AppDelegate.swift </b>
+</div>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">import UIKit
+</span></span><span class="line"><span class="cl">import Flutter
+</span></span><span class="line"><span class="cl">import GoogleMaps
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">@UIApplicationMain
+</span></span><span class="line"><span class="cl">@objc class AppDelegate: FlutterAppDelegate {
+</span></span><span class="line"><span class="cl">  override func application(
+</span></span><span class="line"><span class="cl">    _ application: UIApplication,
+</span></span><span class="line"><span class="cl">    didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?
+</span></span><span class="line"><span class="cl">  ) -&gt; Bool {
+</span></span><span class="line"><span class="cl">    GMSServices.provideAPIKey(&#34;YOUR KEY HERE&#34;)
+</span></span><span class="line"><span class="cl">    GeneratedPluginRegistrant.register(with: self)
+</span></span><span class="line"><span class="cl">    return super.application(application, didFinishLaunchingWithOptions: launchOptions)
+</span></span><span class="line"><span class="cl">  }
+</span></span><span class="line"><span class="cl">}
+</span></span></code></pre></div><p>Then define the following key-value pair in the Info.plist</p>
+
+
+<div class="file-name">
+  <span class="file-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><title>file_type_config</title><path d="M23.265,24.381l.9-.894c4.164.136,4.228-.01,4.411-.438l1.144-2.785L29.805,20l-.093-.231c-.049-.122-.2-.486-2.8-2.965V15.5c3-2.89,2.936-3.038,2.765-3.461L28.538,9.225c-.171-.422-.236-.587-4.37-.474l-.9-.93a20.166,20.166,0,0,0-.141-4.106l-.116-.263-2.974-1.3c-.438-.2-.592-.272-3.4,2.786l-1.262-.019c-2.891-3.086-3.028-3.03-3.461-2.855L9.149,3.182c-.433.175-.586.237-.418,4.437l-.893.89c-4.162-.136-4.226.012-4.407.438L2.285,11.733,2.195,12l.094.232c.049.12.194.48,2.8,2.962l0,1.3c-3,2.89-2.935,3.038-2.763,3.462l1.138,2.817c.174.431.236.584,4.369.476l.9.935a20.243,20.243,0,0,0,.137,4.1l.116.265,2.993,1.308c.435.182.586.247,3.386-2.8l1.262.016c2.895,3.09,3.043,3.03,3.466,2.859l2.759-1.115C23.288,28.644,23.44,28.583,23.265,24.381ZM11.407,17.857a4.957,4.957,0,1,1,6.488,2.824A5.014,5.014,0,0,1,11.407,17.857Z" style="fill:#99b8c4"/></svg></span> <b>ios/Runner/Info.plist  </b>
+</div>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">key</span><span class="p">&gt;</span>io.flutter.embedded_views_preview<span class="p">&lt;/</span><span class="nt">key</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">true</span><span class="p">/&gt;</span>
+</span></span></code></pre></div><h3 id="android-setup">Android Setup</h3>
+
+
+<div class="file-name">
+  <span class="file-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><title>file_type_config</title><path d="M23.265,24.381l.9-.894c4.164.136,4.228-.01,4.411-.438l1.144-2.785L29.805,20l-.093-.231c-.049-.122-.2-.486-2.8-2.965V15.5c3-2.89,2.936-3.038,2.765-3.461L28.538,9.225c-.171-.422-.236-.587-4.37-.474l-.9-.93a20.166,20.166,0,0,0-.141-4.106l-.116-.263-2.974-1.3c-.438-.2-.592-.272-3.4,2.786l-1.262-.019c-2.891-3.086-3.028-3.03-3.461-2.855L9.149,3.182c-.433.175-.586.237-.418,4.437l-.893.89c-4.162-.136-4.226.012-4.407.438L2.285,11.733,2.195,12l.094.232c.049.12.194.48,2.8,2.962l0,1.3c-3,2.89-2.935,3.038-2.763,3.462l1.138,2.817c.174.431.236.584,4.369.476l.9.935a20.243,20.243,0,0,0,.137,4.1l.116.265,2.993,1.308c.435.182.586.247,3.386-2.8l1.262.016c2.895,3.09,3.043,3.03,3.466,2.859l2.759-1.115C23.288,28.644,23.44,28.583,23.265,24.381ZM11.407,17.857a4.957,4.957,0,1,1,6.488,2.824A5.014,5.014,0,0,1,11.407,17.857Z" style="fill:#99b8c4"/></svg></span> <b>android/app/src/main/AndroidManifest.xml </b>
+</div>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">manifest</span> <span class="err">...</span>
+</span></span><span class="line"><span class="cl">  <span class="err">&lt;</span><span class="na">application</span> <span class="err">...</span>
+</span></span><span class="line"><span class="cl">    <span class="err">&lt;</span><span class="na">meta-data</span> <span class="na">android:name</span><span class="o">=</span><span class="s">&#34;com.google.android.geo.API_KEY&#34;</span>
+</span></span><span class="line"><span class="cl">               <span class="na">android:value</span><span class="o">=</span><span class="s">&#34;YOUR API KEY HERE&#34;</span><span class="p">/&gt;</span>
+</span></span></code></pre></div><h2 id="tracking-gps-location-data">Tracking GPS Location Data</h2>
+<p>Many map-based apps use the device location as part of the user experience. Your app must obtain permission from the user to access location services. There are several Flutter packages available for this task, but the setup below is tested with the <a href="https://pub.dartlang.org/packages/location">location plugin</a>.</p>
+<h3 id="ios">iOS</h3>
+<p>Add the permission request details to the Info.plist</p>
+
+
+<div class="file-name">
+  <span class="file-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><title>file_type_config</title><path d="M23.265,24.381l.9-.894c4.164.136,4.228-.01,4.411-.438l1.144-2.785L29.805,20l-.093-.231c-.049-.122-.2-.486-2.8-2.965V15.5c3-2.89,2.936-3.038,2.765-3.461L28.538,9.225c-.171-.422-.236-.587-4.37-.474l-.9-.93a20.166,20.166,0,0,0-.141-4.106l-.116-.263-2.974-1.3c-.438-.2-.592-.272-3.4,2.786l-1.262-.019c-2.891-3.086-3.028-3.03-3.461-2.855L9.149,3.182c-.433.175-.586.237-.418,4.437l-.893.89c-4.162-.136-4.226.012-4.407.438L2.285,11.733,2.195,12l.094.232c.049.12.194.48,2.8,2.962l0,1.3c-3,2.89-2.935,3.038-2.763,3.462l1.138,2.817c.174.431.236.584,4.369.476l.9.935a20.243,20.243,0,0,0,.137,4.1l.116.265,2.993,1.308c.435.182.586.247,3.386-2.8l1.262.016c2.895,3.09,3.043,3.03,3.466,2.859l2.759-1.115C23.288,28.644,23.44,28.583,23.265,24.381ZM11.407,17.857a4.957,4.957,0,1,1,6.488,2.824A5.014,5.014,0,0,1,11.407,17.857Z" style="fill:#99b8c4"/></svg></span> <b>ios/Runner/Info.plist  </b>
+</div>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">key</span><span class="p">&gt;</span>NSLocationWhenInUseUsageDescription<span class="p">&lt;/</span><span class="nt">key</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">string</span><span class="p">&gt;</span>This app needs access to location when open.<span class="p">&lt;/</span><span class="nt">string</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">key</span><span class="p">&gt;</span>NSLocationAlwaysUsageDescription<span class="p">&lt;/</span><span class="nt">key</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">string</span><span class="p">&gt;</span>This app needs access to location when in the background.<span class="p">&lt;/</span><span class="nt">string</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">key</span><span class="p">&gt;</span>NSLocationAlwaysAndWhenInUseUsageDescription<span class="p">&lt;/</span><span class="nt">key</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">string</span><span class="p">&gt;</span>This app needs access to location when open and in the background.<span class="p">&lt;/</span><span class="nt">string</span><span class="p">&gt;</span>
+</span></span></code></pre></div><h3 id="android-setup-1">Android Setup</h3>
+<p>Note. The permission below will give access to highly accurate GPS data. If you only need accuracy within a city block change the value to ACCESS_COARSE_LOCATION.</p>
+
+
+<div class="file-name">
+  <span class="file-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><title>file_type_config</title><path d="M23.265,24.381l.9-.894c4.164.136,4.228-.01,4.411-.438l1.144-2.785L29.805,20l-.093-.231c-.049-.122-.2-.486-2.8-2.965V15.5c3-2.89,2.936-3.038,2.765-3.461L28.538,9.225c-.171-.422-.236-.587-4.37-.474l-.9-.93a20.166,20.166,0,0,0-.141-4.106l-.116-.263-2.974-1.3c-.438-.2-.592-.272-3.4,2.786l-1.262-.019c-2.891-3.086-3.028-3.03-3.461-2.855L9.149,3.182c-.433.175-.586.237-.418,4.437l-.893.89c-4.162-.136-4.226.012-4.407.438L2.285,11.733,2.195,12l.094.232c.049.12.194.48,2.8,2.962l0,1.3c-3,2.89-2.935,3.038-2.763,3.462l1.138,2.817c.174.431.236.584,4.369.476l.9.935a20.243,20.243,0,0,0,.137,4.1l.116.265,2.993,1.308c.435.182.586.247,3.386-2.8l1.262.016c2.895,3.09,3.043,3.03,3.466,2.859l2.759-1.115C23.288,28.644,23.44,28.583,23.265,24.381ZM11.407,17.857a4.957,4.957,0,1,1,6.488,2.824A5.014,5.014,0,0,1,11.407,17.857Z" style="fill:#99b8c4"/></svg></span> <b>android/app/src/main/AndroidManifest.xml </b>
+</div>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">manifest</span> <span class="err">...</span>
+</span></span><span class="line"><span class="cl">    <span class="err">&lt;</span><span class="na">uses-permission</span> <span class="na">android:name</span><span class="o">=</span><span class="s">&#34;android.permission.ACCESS_FINE_LOCATION&#34;</span> <span class="p">/&gt;</span>
+</span></span></code></pre></div>
+
+				
+			</section>
+
+
+		</article>
+		
+		
+		<aside class="tableOfContents">
+			<nav id="TableOfContents">
+  <ul>
+    <li><a href="#google-maps-for-flutter">Google Maps for Flutter</a>
+      <ul>
+        <li><a href="#get-your-google-maps-api-key">Get your Google Maps API Key</a></li>
+        <li><a href="#ios-setup">iOS Setup</a></li>
+        <li><a href="#android-setup">Android Setup</a></li>
+      </ul>
+    </li>
+    <li><a href="#tracking-gps-location-data">Tracking GPS Location Data</a>
+      <ul>
+        <li><a href="#ios">iOS</a></li>
+        <li><a href="#android-setup-1">Android Setup</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+		</aside>
+		
+	</div>
+
+
+</main>
+
+  
+<footer class="container mt-6 text-gray3">
+    <div class="h-12"></div>
+    
+    <div class="my-6">
+        <div class="lg:flex justify-center text-center">
+            <div class="lg:text-left">
+                <div class="p-6 flex flex-col items-center justify-center lg:items-start">
+                    <a href="/">
+                        <img class="h-10 select-none drag-none" src="/img/serverx101-text-logo.png" alt="server-x-101">
+                    </a>
+
+                    <p class="max-w-sm mt-2 text-gray-400 dark:text-gray-400">
+                        Decode Concepts, Not Code.
+                    </p>
+                    <div class="flex mt-6 -mx-2">
+                        
+                        <a href="#"
+                            class="px-2 text-peach1"
+                            aria-label="Reddit">
+                            <svg class="w-10 h-10 fill-current" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C21.9939 17.5203 17.5203 21.9939 12 22ZM6.807 10.543C6.20862 10.5433 5.67102 10.9088 5.45054 11.465C5.23006 12.0213 5.37133 12.6558 5.807 13.066C5.92217 13.1751 6.05463 13.2643 6.199 13.33C6.18644 13.4761 6.18644 13.6229 6.199 13.769C6.199 16.009 8.814 17.831 12.028 17.831C15.242 17.831 17.858 16.009 17.858 13.769C17.8696 13.6229 17.8696 13.4761 17.858 13.33C18.4649 13.0351 18.786 12.3585 18.6305 11.7019C18.475 11.0453 17.8847 10.5844 17.21 10.593H17.157C16.7988 10.6062 16.458 10.7512 16.2 11C15.0625 10.2265 13.7252 9.79927 12.35 9.77L13 6.65L15.138 7.1C15.1931 7.60706 15.621 7.99141 16.131 7.992C16.1674 7.99196 16.2038 7.98995 16.24 7.986C16.7702 7.93278 17.1655 7.47314 17.1389 6.94094C17.1122 6.40873 16.6729 5.991 16.14 5.991C16.1022 5.99191 16.0645 5.99491 16.027 6C15.71 6.03367 15.4281 6.21641 15.268 6.492L12.82 6C12.7983 5.99535 12.7762 5.993 12.754 5.993C12.6094 5.99472 12.4851 6.09583 12.454 6.237L11.706 9.71C10.3138 9.7297 8.95795 10.157 7.806 10.939C7.53601 10.6839 7.17843 10.5422 6.807 10.543ZM12.18 16.524C12.124 16.524 12.067 16.524 12.011 16.524C11.955 16.524 11.898 16.524 11.842 16.524C11.0121 16.5208 10.2054 16.2497 9.542 15.751C9.49626 15.6958 9.47445 15.6246 9.4814 15.5533C9.48834 15.482 9.52348 15.4163 9.579 15.371C9.62737 15.3318 9.68771 15.3102 9.75 15.31C9.81233 15.31 9.87275 15.3315 9.921 15.371C10.4816 15.7818 11.159 16.0022 11.854 16C11.9027 16 11.9513 16 12 16C12.059 16 12.119 16 12.178 16C12.864 16.0011 13.5329 15.7863 14.09 15.386C14.1427 15.3322 14.2147 15.302 14.29 15.302C14.3653 15.302 14.4373 15.3322 14.49 15.386C14.5985 15.4981 14.5962 15.6767 14.485 15.786V15.746C13.8213 16.2481 13.0123 16.5208 12.18 16.523V16.524ZM14.307 14.08H14.291L14.299 14.041C13.8591 14.011 13.4994 13.6789 13.4343 13.2429C13.3691 12.8068 13.6162 12.3842 14.028 12.2269C14.4399 12.0697 14.9058 12.2202 15.1478 12.5887C15.3899 12.9572 15.3429 13.4445 15.035 13.76C14.856 13.9554 14.6059 14.0707 14.341 14.08H14.306H14.307ZM9.67 14C9.11772 14 8.67 13.5523 8.67 13C8.67 12.4477 9.11772 12 9.67 12C10.2223 12 10.67 12.4477 10.67 13C10.67 13.5523 10.2223 14 9.67 14Z">
+                                </path>
+                            </svg>
+                        </a>
+                        
+                        <a href="#"
+                            class="mx-2 text-peach1"
+                            aria-label="Facebook">
+                            <svg class="w-10 h-10 fill-current" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M2.00195 12.002C2.00312 16.9214 5.58036 21.1101 10.439 21.881V14.892H7.90195V12.002H10.442V9.80204C10.3284 8.75958 10.6845 7.72064 11.4136 6.96698C12.1427 6.21332 13.1693 5.82306 14.215 5.90204C14.9655 5.91417 15.7141 5.98101 16.455 6.10205V8.56104H15.191C14.7558 8.50405 14.3183 8.64777 14.0017 8.95171C13.6851 9.25566 13.5237 9.68693 13.563 10.124V12.002H16.334L15.891 14.893H13.563V21.881C18.8174 21.0506 22.502 16.2518 21.9475 10.9611C21.3929 5.67041 16.7932 1.73997 11.4808 2.01722C6.16831 2.29447 2.0028 6.68235 2.00195 12.002Z">
+                                </path>
+                            </svg>
+                        </a>
+                        
+                        <a href="https://github.com/server-x-101/"
+                            class="mx-2 text-peach1 "
+                            aria-label="Github"
+                            target="_blank">
+                            <svg class="w-10 h-10 fill-current" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12.026 2C7.13295 1.99937 2.96183 5.54799 2.17842 10.3779C1.395 15.2079 4.23061 19.893 8.87302 21.439C9.37302 21.529 9.55202 21.222 9.55202 20.958C9.55202 20.721 9.54402 20.093 9.54102 19.258C6.76602 19.858 6.18002 17.92 6.18002 17.92C5.99733 17.317 5.60459 16.7993 5.07302 16.461C4.17302 15.842 5.14202 15.856 5.14202 15.856C5.78269 15.9438 6.34657 16.3235 6.66902 16.884C6.94195 17.3803 7.40177 17.747 7.94632 17.9026C8.49087 18.0583 9.07503 17.99 9.56902 17.713C9.61544 17.207 9.84055 16.7341 10.204 16.379C7.99002 16.128 5.66202 15.272 5.66202 11.449C5.64973 10.4602 6.01691 9.5043 6.68802 8.778C6.38437 7.91731 6.42013 6.97325 6.78802 6.138C6.78802 6.138 7.62502 5.869 9.53002 7.159C11.1639 6.71101 12.8882 6.71101 14.522 7.159C16.428 5.868 17.264 6.138 17.264 6.138C17.6336 6.97286 17.6694 7.91757 17.364 8.778C18.0376 9.50423 18.4045 10.4626 18.388 11.453C18.388 15.286 16.058 16.128 13.836 16.375C14.3153 16.8651 14.5612 17.5373 14.511 18.221C14.511 19.555 14.499 20.631 14.499 20.958C14.499 21.225 14.677 21.535 15.186 21.437C19.8265 19.8884 22.6591 15.203 21.874 10.3743C21.089 5.54565 16.9181 1.99888 12.026 2Z">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-6 lg:mt-0 lg:flex-1 ">
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+
+                    <div class="p-4 mb-2">
+                        <h3 class="uppercase text-peach1">About</h3>
+                        <span class="block mt-2 text-md dark:text-gray-400">
+                            <a class="hover:underline hover:text-gray1" href="/about-us"><span>About Us</span></a>
+                        </span>
+                        <span class="block mt-2 text-md">
+                            <a class="hover:underline hover:text-gray1" href="/community"><span>Community</span></a>
+                        </span>
+                        
+                    </div>
+
+                    <div class="p-4 mb-2">
+                        <h3 class="uppercase text-peach1"> Popular Articles</h3>
+                        <span class="block mt-2 text-md">
+                            <a class="hover:underline hover:text-gray1" href="/articles/dsa-mastery" ><span>DSA Mastery</span></a>
+                        </span>
+                        <span class="block mt-2 text-md">
+                            <a class="hover:underline hover:text-gray1" href="/articles/first-article"><span>Article</span></a>
+                        </span>
+                        <span class="block mt-2 text-md">
+                            <a class="hover:underline hover:text-gray1" href="/"><span> Article</span></a>
+                        </span>
+                    </div>
+                    <div class="p-4 mb-2">
+                        <h3 class="uppercase text-peach1">Others Links</h3>
+                        <span class="block mt-2 text-md">
+                            <a class="hover:underline hover:text-gray1" href="/snippets"><spans>Snippets</spans></a>
+                        </span>
+                        <span class="block mt-2 text-md">
+                            <a class="hover:underline hover:text-gray1" href="/authors"><spans>Authors</spans></a>
+                        </span>
+                        <span class ="block mt-2 text-md">
+                            <a class="hover:underline hover:text-gray1" href="/tags"><spans>Tags</spans></a>
+                        </span>
+                    </div>
+
+                    <div class="p-4 mb-2">
+                        <h3 class="uppercase text-peach1">Contact</h3>
+                        
+                        <span class="block mt-2 text-md">
+                            <a class="hover:underline hover:text-gray1" href="mailto:service.serverx101@gmail.com">service.serverx101@gmail.com</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mx-auto w-auto h-[1px] my-6 bg-gradient-to-r from-peach3 to-peach1 rounded-full"></div>
+
+        <div class="flex flex-col items-center sm:flex-row sm:justify-between select-none drag-none">
+            <span>Copyright © 2024
+                <a href="https://github.com/server-x-101" target="_blank">
+                    <span class="text-peach1 hover:underline hover:underline-offset-2">SERVER X 101</span></a> | All Rights Reserved.
+            </span>
+
+            <div class="flex mt-3 -mx-2 sm:mt-0">
+                <p
+                    class="mx-2 text-sm text-gray-400 transition-colors duration-300 hover:text-gray-400 dark:hover:text-gray-300">
+                    Developed by&nbsp;
+                    <a href="https://github.com/gautamankoji" rel="noopener" class="text-gray-400" target="_blank">
+                        <span class="hover:underline hover:underline-offset-2 hover:text-gray2">gautamankoji</span>
+                    </a>                    
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+  <route-loader>
+    <div class="fixed w-full top-0 left-0 h-1 gradient-loader"></div>
+  </route-loader>
+
+  <scroll-up></scroll-up>
+
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Angular on SERVER-X-101</title>
+    <link>https://server-x-101.github.io/tags/angular/</link>
+    <description>Recent content in Angular on SERVER-X-101</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 19 Feb 2019 23:12:09 -0700</lastBuildDate>
+    <atom:link href="https://server-x-101.github.io/tags/angular/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>GitHub Action deploying Angular App to Firebase Hosting</title>
+      <link>https://server-x-101.github.io/snippets/github-actions-deploy-angular-to-firebase-hosting/</link>
+      <pubDate>Tue, 19 Feb 2019 23:12:09 -0700</pubDate>
+      <guid>https://server-x-101.github.io/snippets/github-actions-deploy-angular-to-firebase-hosting/</guid>
+      <description>This snippet helps you to setup GitHub Actions in your Angular project to build and deploy your app to Firebase on git push.&#xA;Step 1. Actions In your repository click on Actions.&#xA;Step 2. New Workflow To create your first workflow click on Set up a workflow yourself&#xA;Your first GitHub action looks like this:&#xA;main.yml name: CI on: [push] jobs: build: runs-on: ubuntu-latest steps: - uses: actions/checkout@v1 - name: Run a one-line script run: echo Hello, world!</description>
+    </item>
+  </channel>
+</rss>

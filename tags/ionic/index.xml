@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ionic on SERVER-X-101</title>
+    <link>https://server-x-101.github.io/tags/ionic/</link>
+    <description>Recent content in ionic on SERVER-X-101</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 22 Sep 2018 23:12:09 -0700</lastBuildDate>
+    <atom:link href="https://server-x-101.github.io/tags/ionic/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Passing Data to Modals in Ionic 4</title>
+      <link>https://server-x-101.github.io/snippets/passing-data-to-modals-in-ionic-4/</link>
+      <pubDate>Sat, 22 Sep 2018 23:12:09 -0700</pubDate>
+      <guid>https://server-x-101.github.io/snippets/passing-data-to-modals-in-ionic-4/</guid>
+      <description>Below is a guide on utilizing componentProps to transmit data into an Ionic 4 modal. This method is particularly beneficial for updating dynamic content.&#xA;Passing Data to Ionic 4 Modals In previous versions of Ionic, the NavParams class was employed to access passed data. However, with Ionic 4, this approach is deprecated and discouraged, although it remains functional. Version 4 introduces a more straightforward method for data sharing with modals.</description>
+    </item>
+  </channel>
+</rss>

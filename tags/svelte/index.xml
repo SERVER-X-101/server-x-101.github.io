@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>svelte on SERVER-X-101</title>
+    <link>https://server-x-101.github.io/tags/svelte/</link>
+    <description>Recent content in svelte on SERVER-X-101</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 23 Apr 2019 07:41:02 -0700</lastBuildDate>
+    <atom:link href="https://server-x-101.github.io/tags/svelte/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Exploring Svelte Custom Store Examples</title>
+      <link>https://server-x-101.github.io/snippets/exploring-svelte-custom-store-examples/</link>
+      <pubDate>Tue, 23 Apr 2019 07:41:02 -0700</pubDate>
+      <guid>https://server-x-101.github.io/snippets/exploring-svelte-custom-store-examples/</guid>
+      <description>A Svelte store provides a reactive data stream capable of dynamic changes. Constructing a custom store in Svelte is straightforward. It involves creating a writable store within a function and returning its subscribe function encapsulated in an object.&#xA;Applications of Custom Stores Application: Business Logic Custom stores are handy for abstracting data operations, serving as fundamental components for more intricate functionalities.&#xA;App.svelte import { writable } from &amp;#39;svelte/store&amp;#39;; function myStore() { const { subscribe, set, update } = writable(0); return { subscribe, addOne: () =&amp;gt; update(n =&amp;gt; n + 1), reset: () =&amp;gt; set(0) }; } // Utilize it like a standard store myStore.</description>
+    </item>
+  </channel>
+</rss>

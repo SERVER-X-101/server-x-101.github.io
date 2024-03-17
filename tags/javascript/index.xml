@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>javascript on SERVER-X-101</title>
+    <link>https://server-x-101.github.io/tags/javascript/</link>
+    <description>Recent content in javascript on SERVER-X-101</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 19 Apr 2020 08:00:17 -0700</lastBuildDate>
+    <atom:link href="https://server-x-101.github.io/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Using JavaScript with Flutter Web</title>
+      <link>https://server-x-101.github.io/snippets/using-javascript-with-flutter-web/</link>
+      <pubDate>Sun, 19 Apr 2020 08:00:17 -0700</pubDate>
+      <guid>https://server-x-101.github.io/snippets/using-javascript-with-flutter-web/</guid>
+      <description>Flutter Web enables the development of progressive web apps (PWAs) using Dart. However, to access browser APIs or integrate with existing JavaScript code, you&amp;rsquo;ll need to interoperate between Dart and JavaScript. Below, we explore how to achieve this in a Flutter web app.&#xA;Interoperating JavaScript with Dart Dart.js is a built-in library that facilitates communication between Dart and JavaScript.&#xA;Adding JavaScript Functions Create a JavaScript file (app.js) in the web directory.</description>
+    </item>
+    <item>
+      <title>Intersection Observer for Lazy-Loaded Images</title>
+      <link>https://server-x-101.github.io/snippets/intersection-observer-lazy-load-images/</link>
+      <pubDate>Fri, 25 Jan 2019 05:48:23 -0700</pubDate>
+      <guid>https://server-x-101.github.io/snippets/intersection-observer-lazy-load-images/</guid>
+      <description>IntersectionObserver is a browser API that allows you to detect when an element is visible in the window or within a scrollable element. Browser support is pretty decent with Safari being the main holdout at the time of this article, but there is a polyfill to support Apple users.&#xA;Packages using IntersectionObserver:&#xA;QuickLink - Adds a preload tag to visible links on the page. Vanilla Lazy Load - Lazy loaded images.</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>google-maps on SERVER-X-101</title>
+    <link>https://server-x-101.github.io/tags/google-maps/</link>
+    <description>Recent content in google-maps on SERVER-X-101</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 12 Jan 2019 10:13:59 -0700</lastBuildDate>
+    <atom:link href="https://server-x-101.github.io/tags/google-maps/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Flutter Google Maps Setup</title>
+      <link>https://server-x-101.github.io/snippets/setup-google-maps-flutter/</link>
+      <pubDate>Sat, 12 Jan 2019 10:13:59 -0700</pubDate>
+      <guid>https://server-x-101.github.io/snippets/setup-google-maps-flutter/</guid>
+      <description>The following guide is designed to get you up and running with Google Maps in Flutter for iOS and Android, as well as device GPS tracking.&#xA;Also refer to the official Flutter Google Maps Plugin setup docs as needed.&#xA;Google Maps for Flutter Get your Google Maps API Key First, obtain an API key for Google Maps within the context of a Google Cloud Platform project.&#xA;iOS Setup file_type_config ios/Runner/AppDelegate.m #include &amp;#34;AppDelegate.</description>
+    </item>
+  </channel>
+</rss>

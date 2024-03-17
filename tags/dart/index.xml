@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Dart on SERVER-X-101</title>
+    <link>https://server-x-101.github.io/tags/dart/</link>
+    <description>Recent content in Dart on SERVER-X-101</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 21 Dec 2019 07:55:05 -0700</lastBuildDate>
+    <atom:link href="https://server-x-101.github.io/tags/dart/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Accessing Index in Dart List.map()</title>
+      <link>https://server-x-101.github.io/snippets/accessing-index-in-dart-list-map/</link>
+      <pubDate>Sat, 21 Dec 2019 07:55:05 -0700</pubDate>
+      <guid>https://server-x-101.github.io/snippets/accessing-index-in-dart-list-map/</guid>
+      <description>The following guide demonstrates how to access the index during iteration when utilizing List.map in Dart. This is frequently needed in Flutter when mapping a list of values to widgets.&#xA;Problem In Dart, unlike JavaScript, directly accessing the index of a list during a List.map operation is not straightforward.&#xA;file_type_dartlang main.dart List myList = [&amp;#39;a&amp;#39;, &amp;#39;b&amp;#39;, &amp;#39;c&amp;#39;]; myList.map((val, index) { // Index access does not work! // Which index am I on?</description>
+    </item>
+    <item>
+      <title>Managing Radial Pan Events in Flutter</title>
+      <link>https://server-x-101.github.io/snippets/managing-radial-pan-events-in-flutter/</link>
+      <pubDate>Mon, 02 Dec 2019 09:19:58 -0700</pubDate>
+      <guid>https://server-x-101.github.io/snippets/managing-radial-pan-events-in-flutter/</guid>
+      <description>One UI element not natively supported in Flutter is a click wheel, rotary control, or radial knob. The following snippet demonstrates how to create a circular container and detect the direction (clockwise or counterclockwise) and velocity of user rotation.&#xA;Access the complete source code for the wheel demo.&#xA;Flutter Circular Pan Wheel Detecting Pan Gestures Utilize a GestureDetector to encompass a circular container with a BoxShape.circle. Each pan event on the circle will generate data containing movement information.</description>
+    </item>
+  </channel>
+</rss>

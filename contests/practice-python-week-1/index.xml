@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Practice Python Week 1 on SERVER-X-101</title>
+    <link>https://server-x-101.github.io/contests/practice-python-week-1/</link>
+    <description>Recent content in Practice Python Week 1 on SERVER-X-101</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 29 Feb 2024 10:07:00 +0000</lastBuildDate>
+    <atom:link href="https://server-x-101.github.io/contests/practice-python-week-1/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ABD and SKY</title>
+      <link>https://server-x-101.github.io/contests/practice-python-week-1/abd_and_sky/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://server-x-101.github.io/contests/practice-python-week-1/abd_and_sky/</guid>
+      <description>Problem Statement Sky and Abd are known for their ability to score all across the ground. Given A, B, C, and D where A and C represent the no of 4&amp;rsquo;s scored by Sky and Abd and B and D represent the no of 6&amp;rsquo;s scored by Sky and Abd respectively. You as a cricket fan are always involved in this new Mr.360 debate and You want to settle it by comparing the scores gained by the boundaries of Sky and Abd.</description>
+    </item>
+    <item>
+      <title>Add</title>
+      <link>https://server-x-101.github.io/contests/practice-python-week-1/add/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://server-x-101.github.io/contests/practice-python-week-1/add/</guid>
+      <description>Problem Statement Given 2 numbers A, B. Print A+B&#xA;Input:&#xA;1st line contains A 2nd line contains B Output:&#xA;Print A+B&#xA;Sample Input:&#xA;Sample Input 1 2 Sample Output:&#xA;Sample Ouput 3 Solution file_type_python&#xD;count_of_family_members.py a, b = map(int, input().split()) print(a + b) </description>
+    </item>
+    <item>
+      <title>Angles of Triangle</title>
+      <link>https://server-x-101.github.io/contests/practice-python-week-1/angles_of_triangle/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://server-x-101.github.io/contests/practice-python-week-1/angles_of_triangle/</guid>
+      <description>Problem Statement** You are given 3 angles in degrees namely A, B and C. You need to find if these angles can form an equilateral triangle.&#xA;Input Format:&#xA;First line contains T, no of testcases Each testcase contains A, B and C Output Format:&#xA;Print YES if an equilateral triangle can be formed else NO Constraints:&#xA;1 &amp;lt;= T &amp;lt;= 10000 10 &amp;lt;= A, B, C &amp;lt;= 360 Sample Input:</description>
+    </item>
+    <item>
+      <title>Array Mirror</title>
+      <link>https://server-x-101.github.io/contests/practice-python-week-1/array_mirror/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://server-x-101.github.io/contests/practice-python-week-1/array_mirror/</guid>
+      <description>Problem Statement Given an array of integers, determine if the array is the same when read forwards and backward.&#xA;Input Format:&#xA;The first line contains an integer T, the number of test cases (1 ≤ T ≤ 103). The first line of each test case contains two space-separated integers N (1 ≤ N ≤ 105) and the number of elements in the array, and Ai (1 ≤ Ai ≤ 105), the elements of the array.</description>
+    </item>
+    <item>
+      <title>Can or Can&#39;t</title>
+      <link>https://server-x-101.github.io/contests/practice-python-week-1/can_or_cant/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://server-x-101.github.io/contests/practice-python-week-1/can_or_cant/</guid>
+      <description>Problem Statement Given a string consisting of only 0s and 1s, you are allowed to change any one character in the string to either a 0 or a 1. Determine if it is possible to make the entire string consist of only 0s or only 1s by performing this operation at most once.&#xA;Input Format:&#xA;The first line contains an integer T, the number of test cases (1 ≤ T ≤ 1000).</description>
+    </item>
+    <item>
+      <title>Class Coordinator</title>
+      <link>https://server-x-101.github.io/contests/practice-python-week-1/class_coordinator/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://server-x-101.github.io/contests/practice-python-week-1/class_coordinator/</guid>
+      <description>Problem Statement Chefina is the new class coordinator of CSE. She records the height of every student and wants to sort the data in ascending order. You, being the CR of her class, are expected to help her in this task.&#xA;Input Format:&#xA;The first line contains an integer T, the number of test cases. Each test case contains two lines: The first line contains an integer N, the number of students in the class.</description>
+    </item>
+    <item>
+      <title>CR7 and LEO</title>
+      <link>https://server-x-101.github.io/contests/practice-python-week-1/cr7_and_leo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://server-x-101.github.io/contests/practice-python-week-1/cr7_and_leo/</guid>
+      <description>Problem Statement Cristiano Ronaldo and Lionel Messi are two students who are studying at VIIT_CSE. They are good friends and also hold a good rivalry for the top spot in coding competitions conducted by HackerEarth VIIT. One day, they came across this question on strings. The question is to reverse the order of vowels in the string without changing the order of other characters. You being a mutual friend of both, are also trying to secure the top spot.</description>
+    </item>
+    <item>
+      <title>Date?</title>
+      <link>https://server-x-101.github.io/contests/practice-python-week-1/date/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://server-x-101.github.io/contests/practice-python-week-1/date/</guid>
+      <description>Jack and Rose: Pangrams Jack wants to ask Rose out on a date. He is planning to take her to a movie called &amp;ldquo;Titanic&amp;rdquo; and then have a candlelight dinner with her but Rose is so busy with her coding assignment and needs to complete it first. You being a friend of Jack and good at coding are asked to complete the assignment on her behalf.&#xA;The assignment is to find the total no of pangrams from N strings.</description>
+    </item>
+    <item>
+      <title>Dmart</title>
+      <link>https://server-x-101.github.io/contests/practice-python-week-1/dmart/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://server-x-101.github.io/contests/practice-python-week-1/dmart/</guid>
+      <description>Problem Statement Roy is a small kid who loves chocolates a lot. Whenever he goes to Dmart, he buys many chocolates as they are reasonably priced. Yesterday, Roy&amp;rsquo;s mom took him to Dmart, and as usual, he bought a lot of chocolates. Chocolates available in Dmart with their prices are listed below:&#xA;Perk: ₹10 5star: ₹20 Dairymilk: ₹15 Chocos: ₹30 Bournville: ₹145 Kitkat: ₹60 After reaching home, Roy wants to calculate his total bill.</description>
+    </item>
+    <item>
+      <title>First Digit Combination</title>
+      <link>https://server-x-101.github.io/contests/practice-python-week-1/first_digit_combination_of_number/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://server-x-101.github.io/contests/practice-python-week-1/first_digit_combination_of_number/</guid>
+      <description>Problem Statement Given an array A of size N that contains non-negative integers, determine whether the number formed by selecting the first digit of all the N numbers is divisible by 3.&#xA;Input Format:&#xA;The first line contains an integer T denoting the number of test cases (1 ≤ T ≤ 10). The first line of each test case contains a single integer N denoting the size of the array A (1 ≤ N ≤ 10^3).</description>
+    </item>
+    <item>
+      <title>List of Lists</title>
+      <link>https://server-x-101.github.io/contests/practice-python-week-1/list_of_lists/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://server-x-101.github.io/contests/practice-python-week-1/list_of_lists/</guid>
+      <description>Problem Statement You are given a list of lists. Find the list whose sum of elements is the highest.&#xA;Sample Input:&#xA;Sample Input 3 1 2 3 4 5 6 7 8 9 123 Sample Output:&#xA;Sample Ouput 7 8 9 Solution file_type_python&#xD;list_of_lists.py n = int(input()) l = [list(map(int, input().split())) for _ in range(n)] print(*max(l, key=sum)) </description>
+    </item>
+    <item>
+      <title>N &#43; NN &#43; NNN</title>
+      <link>https://server-x-101.github.io/contests/practice-python-week-1/n_nn_nnn/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://server-x-101.github.io/contests/practice-python-week-1/n_nn_nnn/</guid>
+      <description>Problem Statement You will be given a number N, print N + NN + NNN value.&#xA;Input Format:&#xA;The first line contains an integer T, the number of test cases (1 ≤ T ≤ 10). Output Format:&#xA;For each test case, print the number N N times in a separate line. Constraints:&#xA;1 ≤ N ≤ 100 Sample Input:&#xA;Sample Input 2 3 5 Sample Output:&#xA;Sample Ouput 3 3 3 5 5 5 Explanation:</description>
+    </item>
+    <item>
+      <title>No Multiple</title>
+      <link>https://server-x-101.github.io/contests/practice-python-week-1/no_multiple/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://server-x-101.github.io/contests/practice-python-week-1/no_multiple/</guid>
+      <description>Problem Statement You will be given a list of integers. Print the integers in the list that are not multiples of 5.&#xA;Input Format:&#xA;A list containing integers.&#xA;Output Format:&#xA;Print the integers in the list that are not multiples of 5.&#xA;Constraints:&#xA;The length of the list is not specified. Sample Input:&#xA;Sample Input 1 2 3 4 5 6 5 Sample Output:&#xA;Sample Ouput 1 2 3 4 6 Solution file_type_python&#xD;no_multiple.</description>
+    </item>
+    <item>
+      <title>Number System</title>
+      <link>https://server-x-101.github.io/contests/practice-python-week-1/number_system/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://server-x-101.github.io/contests/practice-python-week-1/number_system/</guid>
+      <description>Problem Statement Arjun is currently learning various number notations like Binary, Hexadecimal, etc. He came across the following problem: You are given T test cases and for every test case, he is given a random string. He is quite confused about it. Help Arjun find the correct numeric representation for the given input. If there are multiple possible answers, print the minimum one.&#xA;Constraints:&#xA;1 ≤ T ≤ 10000 1 ≤ length of s ≤ 100 Sample Input:</description>
+    </item>
+    <item>
+      <title>Palindromic Arrays</title>
+      <link>https://server-x-101.github.io/contests/practice-python-week-1/palindromic_arrays/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://server-x-101.github.io/contests/practice-python-week-1/palindromic_arrays/</guid>
+      <description>Problem Statement You are obsessed with palindromes and are always trying to convert words into palindromes. Given N spaced integers, you need to find if these numbers can be rearranged to form a palindrome. If yes, print &amp;ldquo;PALINDROMIC&amp;rdquo;; otherwise, print &amp;ldquo;NOT PALINDROMIC&amp;rdquo; in your output console.&#xA;Input Format:&#xA;The first line contains T, the number of test cases. Each test case contains:&#xA;N, the size of the array Followed by N space-separated integers Output Forma:</description>
+    </item>
+    <item>
+      <title>Prime Setbits</title>
+      <link>https://server-x-101.github.io/contests/practice-python-week-1/prime_setbits/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://server-x-101.github.io/contests/practice-python-week-1/prime_setbits/</guid>
+      <description>Problem Statement Tesla is working on prime numbers. He wants to find all the numbers whose total number of set bits is prime. You, being his lab partner, are expected to help Tesla with his new theory. You are given N, and you need to print all the numbers inclusive of N, whose count of set bits is prime.&#xA;Input Format:&#xA;The first line contains T, the number of test cases.</description>
+    </item>
+    <item>
+      <title>Primes upto N</title>
+      <link>https://server-x-101.github.io/contests/practice-python-week-1/primes_upto_n/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://server-x-101.github.io/contests/practice-python-week-1/primes_upto_n/</guid>
+      <description>Problem Statement You will be given a number N, print the prime numbers up to N.&#xA;Input Format:&#xA;An integer N&#xA;Output Format:&#xA;Print prime numbers up to N with space separation between them.&#xA;Constraints:&#xA;1 &amp;lt;= N &amp;lt;= 100&#xA;Sample Input:&#xA;Sample Input 29 Sample Output:&#xA;Sample Ouput 2 3 5 7 11 13 17 19 23 29 Solution file_type_python&#xD;primes_upto_n.py n = int(input()) primes = [True]*(n + 1) primes[0] = primes[1] = False for i in range(2, int(n**0.</description>
+    </item>
+    <item>
+      <title>Pythagoras Triplets</title>
+      <link>https://server-x-101.github.io/contests/practice-python-week-1/pythagoras_triplets/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://server-x-101.github.io/contests/practice-python-week-1/pythagoras_triplets/</guid>
+      <description>Problem Statement Given an array of integers, write a function that prints YES if there is a triplet (a, b, c) that satisfies a² + b² = c² or else print NO.&#xA;Input:&#xA;The 1st line contains the number of test cases T. The next T lines contain Ti integers. Output:&#xA;Print YES if there is any pair which satisfies the condition or Print NO. Sample Input:&#xA;Sample Input 5 3 1 4 6 5 Sample Output:</description>
+    </item>
+    <item>
+      <title>Quadratic Equation</title>
+      <link>https://server-x-101.github.io/contests/practice-python-week-1/quadratic_equation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://server-x-101.github.io/contests/practice-python-week-1/quadratic_equation/</guid>
+      <description>Problem Statement Given coefficients A, B, and C of a quadratic equation, check if the roots are real and distinct. Print &amp;ldquo;YES&amp;rdquo; if they are real and distinct, otherwise print &amp;ldquo;NO&amp;rdquo;.&#xA;Input Format:&#xA;A single line containing three space-separated integers, representing the coefficients A, B, and C of the quadratic equation.&#xA;Output Format:&#xA;Print &amp;ldquo;YES&amp;rdquo; if the roots are real and distinct, otherwise print &amp;ldquo;NO&amp;rdquo;.&#xA;Constraints:&#xA;1 ≤ |A|, |B|, |C| ≤ 100 Sample Input:</description>
+    </item>
+    <item>
+      <title>Ronaldo</title>
+      <link>https://server-x-101.github.io/contests/practice-python-week-1/ronaldo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://server-x-101.github.io/contests/practice-python-week-1/ronaldo/</guid>
+      <description>Problem Statement&#xA;Given a string s of length 7, consisting of uppercase and lowercase English letters, check if it is equal to &amp;ldquo;RONALDO&amp;rdquo; (without quotes), where each letter can be in any case.&#xA;Input Format:&#xA;The first line contains an integer T, the number of test cases (T &amp;lt; 1000). The second line of each test case contains a string s. Output Format:&#xA;Print &amp;ldquo;YES&amp;rdquo; if the string is equal to &amp;ldquo;RONALDO&amp;rdquo; regardless of case, otherwise print &amp;ldquo;NO&amp;rdquo;.</description>
+    </item>
+    <item>
+      <title>Set Clear</title>
+      <link>https://server-x-101.github.io/contests/practice-python-week-1/set_clear/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://server-x-101.github.io/contests/practice-python-week-1/set_clear/</guid>
+      <description>Problem Statement You will be given a number N. Clear the rightmost set bit of the number and print the result.&#xA;Input Format:&#xA;An integer N&#xA;Output Format:&#xA;Print the output&#xA;Constraints:&#xA;Time Limit: 50 seconds Memory Limit: 256 MB Sample Input:&#xA;Sample Input 5 Sample Output:&#xA;Sample Ouput 4 Solution file_type_python&#xD;set_clear.py n = int(input()) print(n &amp;amp; (n - 1)) </description>
+    </item>
+    <item>
+      <title>Unique Year</title>
+      <link>https://server-x-101.github.io/contests/practice-python-week-1/unique_year/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://server-x-101.github.io/contests/practice-python-week-1/unique_year/</guid>
+      <description>Problem Statement Kiran finds a problem that he is currently facing difficulty. You are given T test cases and for every test case You are given a Year Y. Find the minimum year number which is strictly larger than the given one and has only distinct digits.&#xA;Constraints:&#xA;1 ≤ T ≤ 100 1000 ≤ Y ≤ 5000 Sample Input:&#xA;Sample Input 1 1987 Sample Output:&#xA;Sample Ouput 2013 Solution file_type_python&#xD;unique_year.</description>
+    </item>
+    <item>
+      <title>XOR Lost Number</title>
+      <link>https://server-x-101.github.io/contests/practice-python-week-1/xor_lost_number/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://server-x-101.github.io/contests/practice-python-week-1/xor_lost_number/</guid>
+      <description>Problem Statement Chefina has 2 numbers A and B. She created another number C which is the bitwise XOR of A and B. Here, ^ denotes the bitwise XOR operation. Chefina somehow lost track of A and now only has B and C. Now she needs your help to find the lost number A.&#xA;Input Format:&#xA;The first line contains an integer T, the number of test cases (1 ≤ T ≤ 100).</description>
+    </item>
+  </channel>
+</rss>

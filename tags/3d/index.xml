@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>3d on SERVER-X-101</title>
+    <link>https://server-x-101.github.io/tags/3d/</link>
+    <description>Recent content in 3d on SERVER-X-101</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 27 Feb 2024 08:36:36 -0700</lastBuildDate>
+    <atom:link href="https://server-x-101.github.io/tags/3d/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Three Js A Resourceful Guide</title>
+      <link>https://server-x-101.github.io/articles/three-js-guide/</link>
+      <pubDate>Tue, 27 Feb 2024 08:36:36 -0700</pubDate>
+      <guid>https://server-x-101.github.io/articles/three-js-guide/</guid>
+      <description>Welcome to the exciting realm of Three.js - a dynamic JavaScript library empowering developers to craft mesmerizing 3D graphics for the web effortlessly. Whether you&amp;rsquo;re taking your first steps or you&amp;rsquo;re an experienced hand, Three.js offers a myriad of tools and resources to unleash your creativity and bring your visions to life.&#xA;Core Resources ThreeJS Official Website: Your go-to destination for all things Three.js. Delve into documentation, explore examples, and kickstart your 3D projects.</description>
+    </item>
+  </channel>
+</rss>

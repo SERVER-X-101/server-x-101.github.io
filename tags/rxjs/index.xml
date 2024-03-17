@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>RxJS on SERVER-X-101</title>
+    <link>https://server-x-101.github.io/tags/rxjs/</link>
+    <description>Recent content in RxJS on SERVER-X-101</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 18 Aug 2018 18:39:19 -0700</lastBuildDate>
+    <atom:link href="https://server-x-101.github.io/tags/rxjs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Testing RxJS Observables with Jest</title>
+      <link>https://server-x-101.github.io/snippets/testing-rxjs-observables-with-jest/</link>
+      <pubDate>Sat, 18 Aug 2018 18:39:19 -0700</pubDate>
+      <guid>https://server-x-101.github.io/snippets/testing-rxjs-observables-with-jest/</guid>
+      <description>Testing RxJS Observables with Jest is straightforward and allows you to ensure your asynchronous data streams behave as expected. Below are examples of how to write unit tests for RxJS Observables using Jest.&#xA;Testing a Single Emitted Value Consider an Observable that emits a single string value. You can create this Observable using the of operator. It&amp;rsquo;s essential to use the done keyword to inform Jest that the test is asynchronous and should wait for completion.</description>
+    </item>
+  </channel>
+</rss>

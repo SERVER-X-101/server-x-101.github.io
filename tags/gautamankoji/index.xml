@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>gautamankoji on SERVER-X-101</title>
+    <link>https://server-x-101.github.io/tags/gautamankoji/</link>
+    <description>Recent content in gautamankoji on SERVER-X-101</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 02 Feb 2024 22:08:13 -0700</lastBuildDate>
+    <atom:link href="https://server-x-101.github.io/tags/gautamankoji/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tarjan&#39;s Algorithm</title>
+      <link>https://server-x-101.github.io/articles/tarjans-algorithm/</link>
+      <pubDate>Fri, 02 Feb 2024 22:08:13 -0700</pubDate>
+      <guid>https://server-x-101.github.io/articles/tarjans-algorithm/</guid>
+      <description>A directed graph exhibits strong connectivity when every pair of vertices is connected by a path. A strongly connected component (SCC) within such a graph is a largest subgraph where every vertex is reachable from every other vertex. For instance, in the given graph, there are three SCCs.&#xA;Algorithm:&#xA;Tarjan&amp;rsquo;s algorithm utilizes DFS (Depth First Search) traversal. It maintains three arrays: disc[] to store discovery time of vertices, low[] to store the earliest visited vertex reachable from subtree rooted with current vertex, and stackMember[] to keep track of vertices present in the stack.</description>
+    </item>
+  </channel>
+</rss>

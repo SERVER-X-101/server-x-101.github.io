@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Authors on SERVER-X-101</title>
+    <link>https://server-x-101.github.io/authors/</link>
+    <description>Recent content in Authors on SERVER-X-101</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 27 Feb 2024 09:32:30 -0700</lastBuildDate>
+    <atom:link href="https://server-x-101.github.io/authors/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Gautam Ankoji</title>
+      <link>https://server-x-101.github.io/authors/gautam-ankoji/</link>
+      <pubDate>Tue, 27 Feb 2024 09:32:30 -0700</pubDate>
+      <guid>https://server-x-101.github.io/authors/gautam-ankoji/</guid>
+      <description>Gautam Ankoji, a Computer Science student, is the mastermind behind server-x-101.</description>
+    </item>
+  </channel>
+</rss>

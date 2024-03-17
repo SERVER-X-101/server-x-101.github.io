@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>css on SERVER-X-101</title>
+    <link>https://server-x-101.github.io/tags/css/</link>
+    <description>Recent content in css on SERVER-X-101</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 24 Mar 2020 12:03:21 -0700</lastBuildDate>
+    <atom:link href="https://server-x-101.github.io/tags/css/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Building a CSS Dropdown Menu Without JavaScript</title>
+      <link>https://server-x-101.github.io/snippets/building-a-css-dropdown-menu-without-javascript/</link>
+      <pubDate>Tue, 24 Mar 2020 12:03:21 -0700</pubDate>
+      <guid>https://server-x-101.github.io/snippets/building-a-css-dropdown-menu-without-javascript/</guid>
+      <description>In the following example, we&amp;rsquo;ll illustrate how to construct a dropdown menu using CSS exclusively, without any JavaScript. This approach ensures that the dropdown retains its state when clicked. A key element of this demonstration is the :focus-within pseudo selector, which enables the dropdown to remain open even when its child links are clicked.&#xA;Step 1: Setting up the Navigation Bar Begin by creating the basic structure of the navigation bar.</description>
+    </item>
+  </channel>
+</rss>

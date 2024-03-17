@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ui on SERVER-X-101</title>
+    <link>https://server-x-101.github.io/tags/ui/</link>
+    <description>Recent content in ui on SERVER-X-101</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 02 Dec 2019 09:19:58 -0700</lastBuildDate>
+    <atom:link href="https://server-x-101.github.io/tags/ui/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Managing Radial Pan Events in Flutter</title>
+      <link>https://server-x-101.github.io/snippets/managing-radial-pan-events-in-flutter/</link>
+      <pubDate>Mon, 02 Dec 2019 09:19:58 -0700</pubDate>
+      <guid>https://server-x-101.github.io/snippets/managing-radial-pan-events-in-flutter/</guid>
+      <description>One UI element not natively supported in Flutter is a click wheel, rotary control, or radial knob. The following snippet demonstrates how to create a circular container and detect the direction (clockwise or counterclockwise) and velocity of user rotation.&#xA;Access the complete source code for the wheel demo.&#xA;Flutter Circular Pan Wheel Detecting Pan Gestures Utilize a GestureDetector to encompass a circular container with a BoxShape.circle. Each pan event on the circle will generate data containing movement information.</description>
+    </item>
+  </channel>
+</rss>

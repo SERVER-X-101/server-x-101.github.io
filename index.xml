@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SERVER X 101 on SERVER-X-101</title>
+    <link>https://server-x-101.github.io/</link>
+    <description>Recent content in SERVER X 101 on SERVER-X-101</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 27 Feb 2024 08:36:36 -0700</lastBuildDate>
+    <atom:link href="https://server-x-101.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ultimate Web Development Resources</title>
+      <link>https://server-x-101.github.io/articles/ultimate-web-development-resources/</link>
+      <pubDate>Tue, 12 Mar 2024 08:36:36 -0700</pubDate>
+      <guid>https://server-x-101.github.io/articles/ultimate-web-development-resources/</guid>
+      <description>A collection of Web Developement Resources at one place&#xA;Table of Contents Table of Contents Web Development Roadmaps Web design softwares Prototyping tools for UI/UX Free Hosting Websites to learn Websites for code challenges Web Images or Photos Web Color Palettes Chrome Extensions For Web Developers Chart Visualizations Web Illustrations Web fonts Website Optimization Tools Interview Preparation Free Website Templates For Inspiration Website Copier HTML Learning Resources CSS Learning Resources JS Learning Resources Let&amp;rsquo;s pick a framework/library for you Bio Links Github Student Developer Pack Resources Website for Project Management and Notes User Authentication Animations and Graphics Awesome CSS generators Free YouTube resources Code Playgrounds Top React Component Libraries Top JavaScript Libraries Top JavaScript Frameworks Top JavaScript Runtime Top JavaScript Frameworks Backend List Of Projects Web For Testing and Check The Security Score Web Development Roadmaps Frontend Development Backend Development FullStack Development Web design softwares Adobe Dreamweaver Rapidweaver Coffeecup HTML Editor VsCode Wix Zeplin Figma InVision Sketch Webflow Lunacy Origami FluidUI Vectr Prototyping tools for UI/UX Figma Invision AdobeXD Canva Sketch Webflow Justinmind Fluid UI Framer Penpot Balsamiq Wireframing Axure RP Origami Studio Free Hosting Vercel Amazon Byethost 000webhost Netlify Firebase Gitlab Github glitch pagecloud Render Surge Wix cyclic InfinityFree Deta Railway Supabase Glitch Fleek ByetHost Strikingly WordPress Weebly Jimdo AwardSpace Anglefire Neocities Tripod uCoz FreeHostingEU u Host Full Freehostia 000webhost.</description>
+    </item>
+    <item>
+      <title>Gautam Ankoji</title>
+      <link>https://server-x-101.github.io/authors/gautam-ankoji/</link>
+      <pubDate>Tue, 27 Feb 2024 09:32:30 -0700</pubDate>
+      <guid>https://server-x-101.github.io/authors/gautam-ankoji/</guid>
+      <description>Gautam Ankoji, a Computer Science student, is the mastermind behind server-x-101.</description>
+    </item>
+    <item>
+      <title>DSA Mastery</title>
+      <link>https://server-x-101.github.io/articles/dsa-mastery/</link>
+      <pubDate>Tue, 27 Feb 2024 08:36:36 -0700</pubDate>
+      <guid>https://server-x-101.github.io/articles/dsa-mastery/</guid>
+      <description>DSA Mastery in 9 Weeks: Read, Solve, Code!&#xA;Data Structures and Algorithms Roadmap Five steps to Mastering DSA Mastering DSA as a beginner is simplified into 5 steps:&#xA;Choose a programming language. Understand time and space complexities. Learn basic data structures and algorithms. Practice a lot. Join competitions to get really good. INDEX 1. Master at least one Programming Language&#xD;2. Understand Complexities&#xD;3. Learn essential Data Structures and Algorithms&#xD;3.</description>
+    </item>
+    <item>
+      <title>Three Js A Resourceful Guide</title>
+      <link>https://server-x-101.github.io/articles/three-js-guide/</link>
+      <pubDate>Tue, 27 Feb 2024 08:36:36 -0700</pubDate>
+      <guid>https://server-x-101.github.io/articles/three-js-guide/</guid>
+      <description>Welcome to the exciting realm of Three.js - a dynamic JavaScript library empowering developers to craft mesmerizing 3D graphics for the web effortlessly. Whether you&amp;rsquo;re taking your first steps or you&amp;rsquo;re an experienced hand, Three.js offers a myriad of tools and resources to unleash your creativity and bring your visions to life.&#xA;Core Resources ThreeJS Official Website: Your go-to destination for all things Three.js. Delve into documentation, explore examples, and kickstart your 3D projects.</description>
+    </item>
+    <item>
+      <title>Sieve of Eratosthenes Algorithm</title>
+      <link>https://server-x-101.github.io/articles/sieve-of-eratosthenes/</link>
+      <pubDate>Tue, 13 Feb 2024 22:08:13 -0700</pubDate>
+      <guid>https://server-x-101.github.io/articles/sieve-of-eratosthenes/</guid>
+      <description>The Sieve of Eratosthenes is an ancient algorithm used to find all prime numbers up to a specified integer. It works by iteratively marking the multiples of each prime number starting from 2 as composite (not prime). After iterating through all numbers up to the square root of the limit, the remaining unmarked numbers are primes.&#xA;Python Implementation file_type_python&#xD;sieve_of_eratosthenes.py def sieve_of_eratosthenes(limit): primes = [True] * (limit + 1) primes[0] = primes[1] = False p = 2 while p * p &amp;lt;= limit: # If primes[p] is not changed, then it is a prime if primes[p]: # Update all multiples of p starting from p^2 for i in range(p * p, limit + 1, p): primes[i] = False p += 1 prime_numbers = [] for i in range(2, limit + 1): if primes[i]: prime_numbers.</description>
+    </item>
+    <item>
+      <title>Tarjan&#39;s Algorithm</title>
+      <link>https://server-x-101.github.io/articles/tarjans-algorithm/</link>
+      <pubDate>Fri, 02 Feb 2024 22:08:13 -0700</pubDate>
+      <guid>https://server-x-101.github.io/articles/tarjans-algorithm/</guid>
+      <description>A directed graph exhibits strong connectivity when every pair of vertices is connected by a path. A strongly connected component (SCC) within such a graph is a largest subgraph where every vertex is reachable from every other vertex. For instance, in the given graph, there are three SCCs.&#xA;Algorithm:&#xA;Tarjan&amp;rsquo;s algorithm utilizes DFS (Depth First Search) traversal. It maintains three arrays: disc[] to store discovery time of vertices, low[] to store the earliest visited vertex reachable from subtree rooted with current vertex, and stackMember[] to keep track of vertices present in the stack.</description>
+    </item>
+    <item>
+      <title>First Article</title>
+      <link>https://server-x-101.github.io/articles/first-article/</link>
+      <pubDate>Fri, 02 Feb 2024 15:08:13 -0700</pubDate>
+      <guid>https://server-x-101.github.io/articles/first-article/</guid>
+      <description>Sample article here.</description>
+    </item>
+    <item>
+      <title>Privacy Policy</title>
+      <link>https://server-x-101.github.io/privacy/</link>
+      <pubDate>Sun, 11 Sep 2022 08:36:36 -0700</pubDate>
+      <guid>https://server-x-101.github.io/privacy/</guid>
+      <description>Privacy Policy SERVER-X-101 (&amp;ldquo;SERVER-X-101&amp;rdquo; &amp;ldquo;we&amp;rdquo; or &amp;ldquo;us&amp;rdquo;) is committed to protecting your privacy. This Privacy Policy explains the methods and reasons we collect, use, disclose, transfer, and store your information. If you have any questions about the contents of this policy, don’t hesitate to contact us.&#xA;If you do not consent to the collection and use of information from or about you in accordance with this Privacy Policy, then you are not permitted to use SERVER-X-101 or any services provided on https://server-x-101.</description>
+    </item>
+    <item>
+      <title>Terms</title>
+      <link>https://server-x-101.github.io/terms/</link>
+      <pubDate>Sun, 11 Sep 2022 08:36:36 -0700</pubDate>
+      <guid>https://server-x-101.github.io/terms/</guid>
+      <description>Terms &amp;amp;&amp;amp; Conditions By accessing this website, you are agreeing to be bound by these website Terms and Conditions of Use, all applicable laws and regulations, and agree that you are responsible for compliance with any applicable local laws. If you do not agree with any of these terms, you are prohibited from using or accessing this site. The materials contained in this website are protected by applicable copyright and trademark law.</description>
+    </item>
+    <item>
+      <title>Server-side Firebase User Authentication Setup</title>
+      <link>https://server-x-101.github.io/snippets/server-side-firebase-user-authentication-setup/</link>
+      <pubDate>Fri, 22 May 2020 05:56:37 -0700</pubDate>
+      <guid>https://server-x-101.github.io/snippets/server-side-firebase-user-authentication-setup/</guid>
+      <description>The subsequent example illustrates the setup of server-side authentication in Firebase on any node server utilizing Express.js.&#xA;Note: If utilizing Firebase Cloud Functions, you can utilize Callable Functions to automatically manage this authentication type.&#xA;Client-side: Embed the ID Token Your client-side code needs to append the ID token to the authorization header when sending a request to the server. The following instance utilizes the browser&amp;rsquo;s built-in fetch API.&#xA;file_type_js&#xD;frontend-app.js import firebase from &amp;#39;firebase&amp;#39;; const auth = firebase.</description>
+    </item>
+    <item>
+      <title>Using JavaScript with Flutter Web</title>
+      <link>https://server-x-101.github.io/snippets/using-javascript-with-flutter-web/</link>
+      <pubDate>Sun, 19 Apr 2020 08:00:17 -0700</pubDate>
+      <guid>https://server-x-101.github.io/snippets/using-javascript-with-flutter-web/</guid>
+      <description>Flutter Web enables the development of progressive web apps (PWAs) using Dart. However, to access browser APIs or integrate with existing JavaScript code, you&amp;rsquo;ll need to interoperate between Dart and JavaScript. Below, we explore how to achieve this in a Flutter web app.&#xA;Interoperating JavaScript with Dart Dart.js is a built-in library that facilitates communication between Dart and JavaScript.&#xA;Adding JavaScript Functions Create a JavaScript file (app.js) in the web directory.</description>
+    </item>
+    <item>
+      <title>Building a CSS Dropdown Menu Without JavaScript</title>
+      <link>https://server-x-101.github.io/snippets/building-a-css-dropdown-menu-without-javascript/</link>
+      <pubDate>Tue, 24 Mar 2020 12:03:21 -0700</pubDate>
+      <guid>https://server-x-101.github.io/snippets/building-a-css-dropdown-menu-without-javascript/</guid>
+      <description>In the following example, we&amp;rsquo;ll illustrate how to construct a dropdown menu using CSS exclusively, without any JavaScript. This approach ensures that the dropdown retains its state when clicked. A key element of this demonstration is the :focus-within pseudo selector, which enables the dropdown to remain open even when its child links are clicked.&#xA;Step 1: Setting up the Navigation Bar Begin by creating the basic structure of the navigation bar.</description>
+    </item>
+    <item>
+      <title>Accessing Index in Dart List.map()</title>
+      <link>https://server-x-101.github.io/snippets/accessing-index-in-dart-list-map/</link>
+      <pubDate>Sat, 21 Dec 2019 07:55:05 -0700</pubDate>
+      <guid>https://server-x-101.github.io/snippets/accessing-index-in-dart-list-map/</guid>
+      <description>The following guide demonstrates how to access the index during iteration when utilizing List.map in Dart. This is frequently needed in Flutter when mapping a list of values to widgets.&#xA;Problem In Dart, unlike JavaScript, directly accessing the index of a list during a List.map operation is not straightforward.&#xA;file_type_dartlang main.dart List myList = [&amp;#39;a&amp;#39;, &amp;#39;b&amp;#39;, &amp;#39;c&amp;#39;]; myList.map((val, index) { // Index access does not work! // Which index am I on?</description>
+    </item>
+    <item>
+      <title>Managing Radial Pan Events in Flutter</title>
+      <link>https://server-x-101.github.io/snippets/managing-radial-pan-events-in-flutter/</link>
+      <pubDate>Mon, 02 Dec 2019 09:19:58 -0700</pubDate>
+      <guid>https://server-x-101.github.io/snippets/managing-radial-pan-events-in-flutter/</guid>
+      <description>One UI element not natively supported in Flutter is a click wheel, rotary control, or radial knob. The following snippet demonstrates how to create a circular container and detect the direction (clockwise or counterclockwise) and velocity of user rotation.&#xA;Access the complete source code for the wheel demo.&#xA;Flutter Circular Pan Wheel Detecting Pan Gestures Utilize a GestureDetector to encompass a circular container with a BoxShape.circle. Each pan event on the circle will generate data containing movement information.</description>
+    </item>
+    <item>
+      <title>Setup Nest on Cloud Functions</title>
+      <link>https://server-x-101.github.io/snippets/setup-nestjs-on-cloud-functions/</link>
+      <pubDate>Mon, 12 Aug 2019 10:26:16 -0700</pubDate>
+      <guid>https://server-x-101.github.io/snippets/setup-nestjs-on-cloud-functions/</guid>
+      <description>Setting up NestJS on Firebase Cloud Functions allows you to leverage the power of NestJS in serverless environments. Below are two different techniques for achieving this integration.&#xA;Option A - Point a Function to Nest This setup modifies the functions configuration to use the Nest /dist output instead of the default functions directory. It&amp;rsquo;s suitable for existing Nest applications.&#xA;Step 1 - Create Nest App Generate a new Nest app and remove the automatically generated functions directory.</description>
+    </item>
+    <item>
+      <title>React Hooks for Managing Media Queries</title>
+      <link>https://server-x-101.github.io/snippets/react-hooks-for-managing-media-queries/</link>
+      <pubDate>Mon, 08 Jul 2019 23:11:49 -0400</pubDate>
+      <guid>https://server-x-101.github.io/snippets/react-hooks-for-managing-media-queries/</guid>
+      <description>Hooks provide a way to use state and other React features without using class components.&#xA;useMediaQuery() Hook This simple hook facilitates the sharing and rendering of components, logic, and styling based on media queries directly from your JSX code.&#xA;Creating the Hook hooks/useMediaQuery.jsx import { useState, useEffect } from &amp;#34;react&amp;#34;; const useMediaQuery = (query) =&amp;gt; { const [matches, setMatches] = useState(false); useEffect(() =&amp;gt; { const media = window.matchMedia(query); if (media.matches !</description>
+    </item>
+    <item>
+      <title>Exploring Svelte Custom Store Examples</title>
+      <link>https://server-x-101.github.io/snippets/exploring-svelte-custom-store-examples/</link>
+      <pubDate>Tue, 23 Apr 2019 07:41:02 -0700</pubDate>
+      <guid>https://server-x-101.github.io/snippets/exploring-svelte-custom-store-examples/</guid>
+      <description>A Svelte store provides a reactive data stream capable of dynamic changes. Constructing a custom store in Svelte is straightforward. It involves creating a writable store within a function and returning its subscribe function encapsulated in an object.&#xA;Applications of Custom Stores Application: Business Logic Custom stores are handy for abstracting data operations, serving as fundamental components for more intricate functionalities.&#xA;App.svelte import { writable } from &amp;#39;svelte/store&amp;#39;; function myStore() { const { subscribe, set, update } = writable(0); return { subscribe, addOne: () =&amp;gt; update(n =&amp;gt; n + 1), reset: () =&amp;gt; set(0) }; } // Utilize it like a standard store myStore.</description>
+    </item>
+    <item>
+      <title>Sample Cron Schedules</title>
+      <link>https://server-x-101.github.io/snippets/sample-cron-schedules/</link>
+      <pubDate>Mon, 08 Apr 2019 07:41:02 -0700</pubDate>
+      <guid>https://server-x-101.github.io/snippets/sample-cron-schedules/</guid>
+      <description>Cron is a persistent process utilized on Linux servers, operating at specific times according to the crontab pattern (with a minimum granularity of 1 minute). It is employed for configuring cronjobs, background tasks executed at predetermined times or intervals. Additionally, Firebase now features a time-triggered Cloud Function that can be configured with crontab. The following guide illustrates how to schedule cronjobs in this format.&#xA;Tip: Instead of memorizing all examples below, consider using the Crontab Guru app for reference.</description>
+    </item>
+    <item>
+      <title>Flutter Skeleton Text with Shimmer Animation</title>
+      <link>https://server-x-101.github.io/snippets/flutter-skeleton-text/</link>
+      <pubDate>Tue, 19 Mar 2019 09:35:09 -0700</pubDate>
+      <guid>https://server-x-101.github.io/snippets/flutter-skeleton-text/</guid>
+      <description>Skeleton text is a strategy that improves the perceived load time of content by rendering a blank placeholder that roughly matches the size of the expected content. This method was originally made popular by Facebook, but is now used on many popular apps and websites.&#xA;Use this skeleton text widget as a placeholder when loading data from an external source.&#xA;Flutter Skeleton Text Widget The skeleton text effect can be created in Flutter with an animated loop over a color gradient.</description>
+    </item>
+    <item>
+      <title>GitHub Action deploying Angular App to Firebase Hosting</title>
+      <link>https://server-x-101.github.io/snippets/github-actions-deploy-angular-to-firebase-hosting/</link>
+      <pubDate>Tue, 19 Feb 2019 23:12:09 -0700</pubDate>
+      <guid>https://server-x-101.github.io/snippets/github-actions-deploy-angular-to-firebase-hosting/</guid>
+      <description>This snippet helps you to setup GitHub Actions in your Angular project to build and deploy your app to Firebase on git push.&#xA;Step 1. Actions In your repository click on Actions.&#xA;Step 2. New Workflow To create your first workflow click on Set up a workflow yourself&#xA;Your first GitHub action looks like this:&#xA;main.yml name: CI on: [push] jobs: build: runs-on: ubuntu-latest steps: - uses: actions/checkout@v1 - name: Run a one-line script run: echo Hello, world!</description>
+    </item>
+    <item>
+      <title>Intersection Observer for Lazy-Loaded Images</title>
+      <link>https://server-x-101.github.io/snippets/intersection-observer-lazy-load-images/</link>
+      <pubDate>Fri, 25 Jan 2019 05:48:23 -0700</pubDate>
+      <guid>https://server-x-101.github.io/snippets/intersection-observer-lazy-load-images/</guid>
+      <description>IntersectionObserver is a browser API that allows you to detect when an element is visible in the window or within a scrollable element. Browser support is pretty decent with Safari being the main holdout at the time of this article, but there is a polyfill to support Apple users.&#xA;Packages using IntersectionObserver:&#xA;QuickLink - Adds a preload tag to visible links on the page. Vanilla Lazy Load - Lazy loaded images.</description>
+    </item>
+    <item>
+      <title>How to Participate on Github</title>
+      <link>https://server-x-101.github.io/snippets/git-how-to-participate-on-github/</link>
+      <pubDate>Thu, 17 Jan 2019 05:42:54 -0700</pubDate>
+      <guid>https://server-x-101.github.io/snippets/git-how-to-participate-on-github/</guid>
+      <description>Contributing to open-source is satisfying on many levels. Not only does it validate your skills for recruiters, but it leads to higher quality software that empowers developers to build better products. But submitting your first pull request on GitHub can be intimidating. The goal of this guide is to give you a clear set of steps for contributing any OS project (like SERVER-X-101).&#xA;This guide assumes that you have a Github account and git installed on your machine.</description>
+    </item>
+    <item>
+      <title>Flutter Google Maps Setup</title>
+      <link>https://server-x-101.github.io/snippets/setup-google-maps-flutter/</link>
+      <pubDate>Sat, 12 Jan 2019 10:13:59 -0700</pubDate>
+      <guid>https://server-x-101.github.io/snippets/setup-google-maps-flutter/</guid>
+      <description>The following guide is designed to get you up and running with Google Maps in Flutter for iOS and Android, as well as device GPS tracking.&#xA;Also refer to the official Flutter Google Maps Plugin setup docs as needed.&#xA;Google Maps for Flutter Get your Google Maps API Key First, obtain an API key for Google Maps within the context of a Google Cloud Platform project.&#xA;iOS Setup file_type_config ios/Runner/AppDelegate.m #include &amp;#34;AppDelegate.</description>
+    </item>
+    <item>
+      <title>Passing Data to Modals in Ionic 4</title>
+      <link>https://server-x-101.github.io/snippets/passing-data-to-modals-in-ionic-4/</link>
+      <pubDate>Sat, 22 Sep 2018 23:12:09 -0700</pubDate>
+      <guid>https://server-x-101.github.io/snippets/passing-data-to-modals-in-ionic-4/</guid>
+      <description>Below is a guide on utilizing componentProps to transmit data into an Ionic 4 modal. This method is particularly beneficial for updating dynamic content.&#xA;Passing Data to Ionic 4 Modals In previous versions of Ionic, the NavParams class was employed to access passed data. However, with Ionic 4, this approach is deprecated and discouraged, although it remains functional. Version 4 introduces a more straightforward method for data sharing with modals.</description>
+    </item>
+    <item>
+      <title>Testing RxJS Observables with Jest</title>
+      <link>https://server-x-101.github.io/snippets/testing-rxjs-observables-with-jest/</link>
+      <pubDate>Sat, 18 Aug 2018 18:39:19 -0700</pubDate>
+      <guid>https://server-x-101.github.io/snippets/testing-rxjs-observables-with-jest/</guid>
+      <description>Testing RxJS Observables with Jest is straightforward and allows you to ensure your asynchronous data streams behave as expected. Below are examples of how to write unit tests for RxJS Observables using Jest.&#xA;Testing a Single Emitted Value Consider an Observable that emits a single string value. You can create this Observable using the of operator. It&amp;rsquo;s essential to use the done keyword to inform Jest that the test is asynchronous and should wait for completion.</description>
+    </item>
+    <item>
+      <title>ABD and SKY</title>
+      <link>https://server-x-101.github.io/contests/practice-python-week-1/abd_and_sky/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://server-x-101.github.io/contests/practice-python-week-1/abd_and_sky/</guid>
+      <description>Problem Statement Sky and Abd are known for their ability to score all across the ground. Given A, B, C, and D where A and C represent the no of 4&amp;rsquo;s scored by Sky and Abd and B and D represent the no of 6&amp;rsquo;s scored by Sky and Abd respectively. You as a cricket fan are always involved in this new Mr.360 debate and You want to settle it by comparing the scores gained by the boundaries of Sky and Abd.</description>
+    </item>
+    <item>
+      <title>Add</title>
+      <link>https://server-x-101.github.io/contests/practice-python-week-1/add/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://server-x-101.github.io/contests/practice-python-week-1/add/</guid>
+      <description>Problem Statement Given 2 numbers A, B. Print A+B&#xA;Input:&#xA;1st line contains A 2nd line contains B Output:&#xA;Print A+B&#xA;Sample Input:&#xA;Sample Input 1 2 Sample Output:&#xA;Sample Ouput 3 Solution file_type_python&#xD;count_of_family_members.py a, b = map(int, input().split()) print(a + b) </description>
+    </item>
+    <item>
+      <title>Angles of Triangle</title>
+      <link>https://server-x-101.github.io/contests/practice-python-week-1/angles_of_triangle/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://server-x-101.github.io/contests/practice-python-week-1/angles_of_triangle/</guid>
+      <description>Problem Statement** You are given 3 angles in degrees namely A, B and C. You need to find if these angles can form an equilateral triangle.&#xA;Input Format:&#xA;First line contains T, no of testcases Each testcase contains A, B and C Output Format:&#xA;Print YES if an equilateral triangle can be formed else NO Constraints:&#xA;1 &amp;lt;= T &amp;lt;= 10000 10 &amp;lt;= A, B, C &amp;lt;= 360 Sample Input:</description>
+    </item>
+    <item>
+      <title>Array Mirror</title>
+      <link>https://server-x-101.github.io/contests/practice-python-week-1/array_mirror/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://server-x-101.github.io/contests/practice-python-week-1/array_mirror/</guid>
+      <description>Problem Statement Given an array of integers, determine if the array is the same when read forwards and backward.&#xA;Input Format:&#xA;The first line contains an integer T, the number of test cases (1 ≤ T ≤ 103). The first line of each test case contains two space-separated integers N (1 ≤ N ≤ 105) and the number of elements in the array, and Ai (1 ≤ Ai ≤ 105), the elements of the array.</description>
+    </item>
+    <item>
+      <title>Can or Can&#39;t</title>
+      <link>https://server-x-101.github.io/contests/practice-python-week-1/can_or_cant/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://server-x-101.github.io/contests/practice-python-week-1/can_or_cant/</guid>
+      <description>Problem Statement Given a string consisting of only 0s and 1s, you are allowed to change any one character in the string to either a 0 or a 1. Determine if it is possible to make the entire string consist of only 0s or only 1s by performing this operation at most once.&#xA;Input Format:&#xA;The first line contains an integer T, the number of test cases (1 ≤ T ≤ 1000).</description>
+    </item>
+    <item>
+      <title>Class Coordinator</title>
+      <link>https://server-x-101.github.io/contests/practice-python-week-1/class_coordinator/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://server-x-101.github.io/contests/practice-python-week-1/class_coordinator/</guid>
+      <description>Problem Statement Chefina is the new class coordinator of CSE. She records the height of every student and wants to sort the data in ascending order. You, being the CR of her class, are expected to help her in this task.&#xA;Input Format:&#xA;The first line contains an integer T, the number of test cases. Each test case contains two lines: The first line contains an integer N, the number of students in the class.</description>
+    </item>
+    <item>
+      <title>Count of Family Members</title>
+      <link>https://server-x-101.github.io/contests/vignans-challenge-19/count_of_family_members/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://server-x-101.github.io/contests/vignans-challenge-19/count_of_family_members/</guid>
+      <description>Problem Statement You are given a string representing the qualities of people. People with the same qualities are considered family members. You are tasked with finding the count of family members for a given individual.&#xA;Input Format:&#xA;The first line contains an integer T, the number of test cases. The first line of each test case contains a string S representing the qualities of people in the group. The second line of each test case contains a string representing the quality of the individual.</description>
+    </item>
+    <item>
+      <title>Count of Vowels</title>
+      <link>https://server-x-101.github.io/contests/practice-pythoon-week-2/count_of_vowels/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://server-x-101.github.io/contests/practice-pythoon-week-2/count_of_vowels/</guid>
+      <description>Problem Statement You will be given a string. Print the count of vowels present in the given string.&#xA;Input Format:&#xA;Input contains a string S.&#xA;Output Format:&#xA;Print the count of vowels in the given string&#xA;Constraints:&#xA;1 &amp;lt;= |S| &amp;lt;= 1000&#xA;Sample Input:&#xA;vowels Sample Output:&#xA;2 Solution file_type_python&#xD;count_of_family_members.py s = int(input()) print(sum(1 for c in s if c.lower() in &amp;#39;aeiouAEIOU&amp;#39;)) </description>
+    </item>
+    <item>
+      <title>Count Vowels</title>
+      <link>https://server-x-101.github.io/contests/vignans-challenge-19/count_vowels/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://server-x-101.github.io/contests/vignans-challenge-19/count_vowels/</guid>
+      <description>Problem Statement Given a string, you have to print the number of vowels present in the string.&#xA;Input Format:&#xA;The first line contains an integer T, the number of test cases. The first line of each test case contains a string S. Output Format:&#xA;For each test case, print the count of vowels in the string separated by a space. Constraints:&#xA;1 ≤ T ≤ 10 1 ≤ len(S) ≤ 1000 Sample Input:</description>
+    </item>
+    <item>
+      <title>CR7 and LEO</title>
+      <link>https://server-x-101.github.io/contests/practice-python-week-1/cr7_and_leo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://server-x-101.github.io/contests/practice-python-week-1/cr7_and_leo/</guid>
+      <description>Problem Statement Cristiano Ronaldo and Lionel Messi are two students who are studying at VIIT_CSE. They are good friends and also hold a good rivalry for the top spot in coding competitions conducted by HackerEarth VIIT. One day, they came across this question on strings. The question is to reverse the order of vowels in the string without changing the order of other characters. You being a mutual friend of both, are also trying to secure the top spot.</description>
+    </item>
+    <item>
+      <title>Date?</title>
+      <link>https://server-x-101.github.io/contests/practice-python-week-1/date/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://server-x-101.github.io/contests/practice-python-week-1/date/</guid>
+      <description>Jack and Rose: Pangrams Jack wants to ask Rose out on a date. He is planning to take her to a movie called &amp;ldquo;Titanic&amp;rdquo; and then have a candlelight dinner with her but Rose is so busy with her coding assignment and needs to complete it first. You being a friend of Jack and good at coding are asked to complete the assignment on her behalf.&#xA;The assignment is to find the total no of pangrams from N strings.</description>
+    </item>
+    <item>
+      <title>Decimal to Binary</title>
+      <link>https://server-x-101.github.io/contests/vignans-challenge-19/decimal_to_binary/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://server-x-101.github.io/contests/vignans-challenge-19/decimal_to_binary/</guid>
+      <description>Problem Statment Given a decimal number, convert it to its binary representation.&#xA;Input Format:&#xA;The first line contains an integer, T, representing the number of test cases (1 &amp;lt;= T &amp;lt;= 9).&#xA;Each test case contains a single positive integer, N, on a new line (1 &amp;lt;= N &amp;lt;= 109).&#xA;Output Format:&#xA;For each test case, print the binary representation of the corresponding decimal number N on a new line. Constraints:</description>
+    </item>
+    <item>
+      <title>Decode It</title>
+      <link>https://server-x-101.github.io/contests/practice-pythoon-week-2/decode_it/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://server-x-101.github.io/contests/practice-pythoon-week-2/decode_it/</guid>
+      <description>Problem Statement Today, it&amp;rsquo;s all the world of Cryptography. In every prestigious coding competition, there will be at least one question on Cryptography. So do we!&#xA;Cryptography is a combination of Cryptology and Cryptanalysis. Cryptology deals with encryption and decryption of messages. Cryptanalysis deals with analyzing how a message is encrypted and cracking the logic of encryption to decrypt it. At this instant, you should play the role of cryptanalyst. Your task is to analyze the given messages and crack the logic or pattern behind it, then write a code to decrypt it.</description>
+    </item>
+    <item>
+      <title>Dmart</title>
+      <link>https://server-x-101.github.io/contests/practice-python-week-1/dmart/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://server-x-101.github.io/contests/practice-python-week-1/dmart/</guid>
+      <description>Problem Statement Roy is a small kid who loves chocolates a lot. Whenever he goes to Dmart, he buys many chocolates as they are reasonably priced. Yesterday, Roy&amp;rsquo;s mom took him to Dmart, and as usual, he bought a lot of chocolates. Chocolates available in Dmart with their prices are listed below:&#xA;Perk: ₹10 5star: ₹20 Dairymilk: ₹15 Chocos: ₹30 Bournville: ₹145 Kitkat: ₹60 After reaching home, Roy wants to calculate his total bill.</description>
+    </item>
+    <item>
+      <title>Fat to Fit</title>
+      <link>https://server-x-101.github.io/contests/practice-pythoon-week-2/fat_to_fit/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://server-x-101.github.io/contests/practice-pythoon-week-2/fat_to_fit/</guid>
+      <description>Problem Statement Moses lives on Earth 101 where each month has exactly 30 days and each week has exactly 7 days. As Moses was fat, everyone used to tease him. One day, Moses decided to get fit. He laid out a plan and started working out every day. After a few months, he became the fittest guy on the whole planet.&#xA;Sumanth, who is also fat, heard the story of Moses and decided to get fit as well.</description>
+    </item>
+    <item>
+      <title>Find Number</title>
+      <link>https://server-x-101.github.io/contests/vignans-challenge-19/find_number/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://server-x-101.github.io/contests/vignans-challenge-19/find_number/</guid>
+      <description>Problem Statement Hari needs to convert alphabets to their corresponding numerical positions (a = 1, b = 2, &amp;hellip;, z = 26). Help him with the conversions!&#xA;Input Format:&#xA;The first line contains an integer, T, representing the number of test cases (1 &amp;lt;= T &amp;lt;= 10).&#xA;Each test case consists of a single line containing an alphabet (either uppercase or lowercase).&#xA;Output Format:&#xA;For each test case, print the corresponding number on a new line.</description>
+    </item>
+    <item>
+      <title>Find the Odd one</title>
+      <link>https://server-x-101.github.io/contests/practice-pythoon-week-2/find_the_odd_one/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://server-x-101.github.io/contests/practice-pythoon-week-2/find_the_odd_one/</guid>
+      <description>Problem Statement Surya is fond of shoes and has lots of pairs of shoes. He came to know that his dog spoiled one of his shoes, and he wants you to find the shoe that is missing. Each shoe has a specific number (1-9) indicating the type of shoe.&#xA;Given a string containing a list of shoes Surya has (he may have multiple pairs of the same type), find the shoe which has no pair.</description>
+    </item>
+    <item>
+      <title>First Digit Combination</title>
+      <link>https://server-x-101.github.io/contests/practice-python-week-1/first_digit_combination_of_number/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://server-x-101.github.io/contests/practice-python-week-1/first_digit_combination_of_number/</guid>
+      <description>Problem Statement Given an array A of size N that contains non-negative integers, determine whether the number formed by selecting the first digit of all the N numbers is divisible by 3.&#xA;Input Format:&#xA;The first line contains an integer T denoting the number of test cases (1 ≤ T ≤ 10). The first line of each test case contains a single integer N denoting the size of the array A (1 ≤ N ≤ 10^3).</description>
+    </item>
+    <item>
+      <title>Get Started</title>
+      <link>https://server-x-101.github.io/get-started/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://server-x-101.github.io/get-started/</guid>
+      <description>Getting Starting Learning Paths This is how you do it.&#xA;webdev react firebase flutter Get in Touch This is how you do it.&#xA;Experience Points This is how you do it.</description>
+    </item>
+    <item>
+      <title>Kth String</title>
+      <link>https://server-x-101.github.io/contests/practice-pythoon-week-2/kth_string/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://server-x-101.github.io/contests/practice-pythoon-week-2/kth_string/</guid>
+      <description>Problem Statement Your task is simple. You are given T test cases and each test cases has a string and a integer k. You need to reverse the string and print the kth character in the string. See Sample Input and Output for better understanding.&#xA;Input Format:&#xA;The input consists of:&#xA;T test cases, where T is an integer. Each test case consists of a string and an integer l. Output Format:</description>
+    </item>
+    <item>
+      <title>List of Lists</title>
+      <link>https://server-x-101.github.io/contests/practice-python-week-1/list_of_lists/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://server-x-101.github.io/contests/practice-python-week-1/list_of_lists/</guid>
+      <description>Problem Statement You are given a list of lists. Find the list whose sum of elements is the highest.&#xA;Sample Input:&#xA;Sample Input 3 1 2 3 4 5 6 7 8 9 123 Sample Output:&#xA;Sample Ouput 7 8 9 Solution file_type_python&#xD;list_of_lists.py n = int(input()) l = [list(map(int, input().split())) for _ in range(n)] print(*max(l, key=sum)) </description>
+    </item>
+    <item>
+      <title>Max Score in Roe</title>
+      <link>https://server-x-101.github.io/contests/vignans-challenge-19/max_score_in_row/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://server-x-101.github.io/contests/vignans-challenge-19/max_score_in_row/</guid>
+      <description>Problem Statement There are N x M students in the class. Each student was given a score. On the ground all students are arranged in an Nx M grid M students in each row. Now, your task is to find the maximum score in each row and print them.&#xA;Input Format:&#xA;The first line contains an integer T, the number of test cases. The first line of each test case contains two positive integers N and M The next N lines contains M inputs of the matrix Output Format:</description>
+    </item>
+    <item>
+      <title>N &#43; NN &#43; NNN</title>
+      <link>https://server-x-101.github.io/contests/practice-python-week-1/n_nn_nnn/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://server-x-101.github.io/contests/practice-python-week-1/n_nn_nnn/</guid>
+      <description>Problem Statement You will be given a number N, print N + NN + NNN value.&#xA;Input Format:&#xA;The first line contains an integer T, the number of test cases (1 ≤ T ≤ 10). Output Format:&#xA;For each test case, print the number N N times in a separate line. Constraints:&#xA;1 ≤ N ≤ 100 Sample Input:&#xA;Sample Input 2 3 5 Sample Output:&#xA;Sample Ouput 3 3 3 5 5 5 Explanation:</description>
+    </item>
+    <item>
+      <title>Need to Eliminate</title>
+      <link>https://server-x-101.github.io/contests/practice-pythoon-week-2/need_to_eliminate/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://server-x-101.github.io/contests/practice-pythoon-week-2/need_to_eliminate/</guid>
+      <description>Problem Statement Find out max no. of adjacent set bits.&#xA;Input Format:&#xA;The first line contains an integer T, the number of test cases.&#xA;Each of the next T lines contains a binary string.&#xA;Constraints:&#xA;1 &amp;lt;= T &amp;lt;= 10 The length of each binary string is between 5 and 10. Sample Input:&#xA;3 111011110 1101101101 11101110111 Sample Output:&#xA;4 2 3 Solution file_type_python&#xD;count_of_family_members.py for _ in range(int(input())): bin_str = input() print(max(map(len, bin_str.</description>
+    </item>
+    <item>
+      <title>No Multiple</title>
+      <link>https://server-x-101.github.io/contests/practice-python-week-1/no_multiple/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://server-x-101.github.io/contests/practice-python-week-1/no_multiple/</guid>
+      <description>Problem Statement You will be given a list of integers. Print the integers in the list that are not multiples of 5.&#xA;Input Format:&#xA;A list containing integers.&#xA;Output Format:&#xA;Print the integers in the list that are not multiples of 5.&#xA;Constraints:&#xA;The length of the list is not specified. Sample Input:&#xA;Sample Input 1 2 3 4 5 6 5 Sample Output:&#xA;Sample Ouput 1 2 3 4 6 Solution file_type_python&#xD;no_multiple.</description>
+    </item>
+    <item>
+      <title>Nth Fibonacci Number</title>
+      <link>https://server-x-101.github.io/contests/vignans-challenge-19/nth_fibonacci/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://server-x-101.github.io/contests/vignans-challenge-19/nth_fibonacci/</guid>
+      <description>Problem Statement Given a number n, calculate the nth Fibonacci number.&#xA;Input Format:&#xA;The first line contains an integer T, the number of test cases. Output Format:&#xA;For each test case, print the nth Fibonacci number. Constraints:&#xA;1 ≤ T ≤ 10 Sample Input:&#xA;Sample Input 2 5 7 Sample Output:&#xA;Sample Output 5 13 Explanation:&#xA;The Fibonacci sequence is defined as a sequence where each number is the sum of the two preceding numbers.</description>
+    </item>
+    <item>
+      <title>Number System</title>
+      <link>https://server-x-101.github.io/contests/practice-python-week-1/number_system/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://server-x-101.github.io/contests/practice-python-week-1/number_system/</guid>
+      <description>Problem Statement Arjun is currently learning various number notations like Binary, Hexadecimal, etc. He came across the following problem: You are given T test cases and for every test case, he is given a random string. He is quite confused about it. Help Arjun find the correct numeric representation for the given input. If there are multiple possible answers, print the minimum one.&#xA;Constraints:&#xA;1 ≤ T ≤ 10000 1 ≤ length of s ≤ 100 Sample Input:</description>
+    </item>
+    <item>
+      <title>Pair of Dragons</title>
+      <link>https://server-x-101.github.io/contests/vignans-challenge-19/pair_dragons/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://server-x-101.github.io/contests/vignans-challenge-19/pair_dragons/</guid>
+      <description>Problem Statement In the world of Dragons, the power of a dragon can be modified by pairing up with another dragon. The common power of two dragons will be the product of their individual powers. Given a list of dragons and their powers, you are tasked with finding the pair of dragons with the maximum possible power.&#xA;Input Format:&#xA;The first line contains an integer T, the number of test cases.</description>
+    </item>
+    <item>
+      <title>Palindromic Arrays</title>
+      <link>https://server-x-101.github.io/contests/practice-python-week-1/palindromic_arrays/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://server-x-101.github.io/contests/practice-python-week-1/palindromic_arrays/</guid>
+      <description>Problem Statement You are obsessed with palindromes and are always trying to convert words into palindromes. Given N spaced integers, you need to find if these numbers can be rearranged to form a palindrome. If yes, print &amp;ldquo;PALINDROMIC&amp;rdquo;; otherwise, print &amp;ldquo;NOT PALINDROMIC&amp;rdquo; in your output console.&#xA;Input Format:&#xA;The first line contains T, the number of test cases. Each test case contains:&#xA;N, the size of the array Followed by N space-separated integers Output Forma:</description>
+    </item>
+    <item>
+      <title>Power of Negative Numbers</title>
+      <link>https://server-x-101.github.io/contests/vignans-challenge-19/power_of_negative_numbers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://server-x-101.github.io/contests/vignans-challenge-19/power_of_negative_numbers/</guid>
+      <description>Problem Statement Raj loves negative numbers! He wants to analyze a group of numbers and find the total &amp;ldquo;negativity.&amp;rdquo; In simpler terms, you need to calculate the sum of all negative numbers in the group. Additionally, if there are no negative numbers, Raj also wants to know how many numbers are in the group (their count).&#xA;Input:&#xA;The first line contains a single integer, T, representing the number of test cases (1 &amp;lt;= T &amp;lt;= 10).</description>
+    </item>
+    <item>
+      <title>Prime Number</title>
+      <link>https://server-x-101.github.io/contests/practice-pythoon-week-2/prime_number/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://server-x-101.github.io/contests/practice-pythoon-week-2/prime_number/</guid>
+      <description>Problem Statement Given an integer n, print all prime numbers before n.&#xA;Input Format:&#xA;The input consists of only a single integer n.&#xA;Output Format:&#xA;Print the first n prime numbers separated by a space.&#xA;Constraints:&#xA;1 &amp;lt;= n &amp;lt;= 1000&#xA;Sample Input:&#xA;10 Sample Output:&#xA;2 3 5 7 Solution file_type_python&#xD;count_of_family_members.py n = int(input()) sieve = [True] * (n + 1) sieve[0] = sieve[1] = False for p in range(2, int(n**0.</description>
+    </item>
+    <item>
+      <title>Prime Setbits</title>
+      <link>https://server-x-101.github.io/contests/practice-python-week-1/prime_setbits/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://server-x-101.github.io/contests/practice-python-week-1/prime_setbits/</guid>
+      <description>Problem Statement Tesla is working on prime numbers. He wants to find all the numbers whose total number of set bits is prime. You, being his lab partner, are expected to help Tesla with his new theory. You are given N, and you need to print all the numbers inclusive of N, whose count of set bits is prime.&#xA;Input Format:&#xA;The first line contains T, the number of test cases.</description>
+    </item>
+    <item>
+      <title>Primes upto N</title>
+      <link>https://server-x-101.github.io/contests/practice-python-week-1/primes_upto_n/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://server-x-101.github.io/contests/practice-python-week-1/primes_upto_n/</guid>
+      <description>Problem Statement You will be given a number N, print the prime numbers up to N.&#xA;Input Format:&#xA;An integer N&#xA;Output Format:&#xA;Print prime numbers up to N with space separation between them.&#xA;Constraints:&#xA;1 &amp;lt;= N &amp;lt;= 100&#xA;Sample Input:&#xA;Sample Input 29 Sample Output:&#xA;Sample Ouput 2 3 5 7 11 13 17 19 23 29 Solution file_type_python&#xD;primes_upto_n.py n = int(input()) primes = [True]*(n + 1) primes[0] = primes[1] = False for i in range(2, int(n**0.</description>
+    </item>
+    <item>
+      <title>Printing Pattern</title>
+      <link>https://server-x-101.github.io/contests/practice-pythoon-week-2/printing_pattern/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://server-x-101.github.io/contests/practice-pythoon-week-2/printing_pattern/</guid>
+      <description>Problem Statement You will be given a number N denoting the number of rows. Print the following type Pattern.&#xA;N = 5 * * * * * * * * * * * * * * * Input Format:&#xA;An integer N denoting the number of rows.&#xA;Output Format:&#xA;Print the following type of pattern:&#xA;Constraints:&#xA;N is an integer greater than or equal to 1. Sample Input:&#xA;5 Sample Output:</description>
+    </item>
+    <item>
+      <title>Pythagoras Triplets</title>
+      <link>https://server-x-101.github.io/contests/practice-python-week-1/pythagoras_triplets/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://server-x-101.github.io/contests/practice-python-week-1/pythagoras_triplets/</guid>
+      <description>Problem Statement Given an array of integers, write a function that prints YES if there is a triplet (a, b, c) that satisfies a² + b² = c² or else print NO.&#xA;Input:&#xA;The 1st line contains the number of test cases T. The next T lines contain Ti integers. Output:&#xA;Print YES if there is any pair which satisfies the condition or Print NO. Sample Input:&#xA;Sample Input 5 3 1 4 6 5 Sample Output:</description>
+    </item>
+    <item>
+      <title>Quadratic Equation</title>
+      <link>https://server-x-101.github.io/contests/practice-python-week-1/quadratic_equation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://server-x-101.github.io/contests/practice-python-week-1/quadratic_equation/</guid>
+      <description>Problem Statement Given coefficients A, B, and C of a quadratic equation, check if the roots are real and distinct. Print &amp;ldquo;YES&amp;rdquo; if they are real and distinct, otherwise print &amp;ldquo;NO&amp;rdquo;.&#xA;Input Format:&#xA;A single line containing three space-separated integers, representing the coefficients A, B, and C of the quadratic equation.&#xA;Output Format:&#xA;Print &amp;ldquo;YES&amp;rdquo; if the roots are real and distinct, otherwise print &amp;ldquo;NO&amp;rdquo;.&#xA;Constraints:&#xA;1 ≤ |A|, |B|, |C| ≤ 100 Sample Input:</description>
+    </item>
+    <item>
+      <title>Read the String</title>
+      <link>https://server-x-101.github.io/contests/practice-pythoon-week-2/read_the_string/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://server-x-101.github.io/contests/practice-pythoon-week-2/read_the_string/</guid>
+      <description>Problem Statement You are given a string. Read the string and print it again. The string may contain up to 100 characters.&#xA;Input Format:&#xA;A single string containing up to 100 characters.&#xA;Output Format:&#xA;Print the same string that was given as input.&#xA;Constraints:&#xA;Time Limit: 50 seconds for each input test case. Memory Limit: 256 MB. Source Limit: 1024 KB. Sample Input:&#xA;Hello, world! Sample Output:&#xA;Hello, world! Solution file_type_python&#xD;count_of_family_members.</description>
+    </item>
+    <item>
+      <title>Remove Duplicates</title>
+      <link>https://server-x-101.github.io/contests/practice-pythoon-week-2/remove_duplicates/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://server-x-101.github.io/contests/practice-pythoon-week-2/remove_duplicates/</guid>
+      <description>Problem Statement Given a s S, your task is to remove all duplicate characters from the s S.&#xA;NOTE:&#xA;The order of characters in the output s should be the same as given in the input s. String S contains only lowercase characters [&amp;lsquo;a&amp;rsquo;-&amp;lsquo;z&amp;rsquo;]. Input Format:&#xA;The input contains a single s S. Output Format:&#xA;Print the s S with no duplicate characters. Constraints:&#xA;Test Files 1 to 5: 10 &amp;lt;= length of S &amp;lt;= 15 Test Files 6 to 10: 1 &amp;lt;= length of S &amp;lt;= 100000 Sample Input 1:</description>
+    </item>
+    <item>
+      <title>Ronaldo</title>
+      <link>https://server-x-101.github.io/contests/practice-python-week-1/ronaldo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://server-x-101.github.io/contests/practice-python-week-1/ronaldo/</guid>
+      <description>Problem Statement&#xA;Given a string s of length 7, consisting of uppercase and lowercase English letters, check if it is equal to &amp;ldquo;RONALDO&amp;rdquo; (without quotes), where each letter can be in any case.&#xA;Input Format:&#xA;The first line contains an integer T, the number of test cases (T &amp;lt; 1000). The second line of each test case contains a string s. Output Format:&#xA;Print &amp;ldquo;YES&amp;rdquo; if the string is equal to &amp;ldquo;RONALDO&amp;rdquo; regardless of case, otherwise print &amp;ldquo;NO&amp;rdquo;.</description>
+    </item>
+    <item>
+      <title>Set Clear</title>
+      <link>https://server-x-101.github.io/contests/practice-python-week-1/set_clear/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://server-x-101.github.io/contests/practice-python-week-1/set_clear/</guid>
+      <description>Problem Statement You will be given a number N. Clear the rightmost set bit of the number and print the result.&#xA;Input Format:&#xA;An integer N&#xA;Output Format:&#xA;Print the output&#xA;Constraints:&#xA;Time Limit: 50 seconds Memory Limit: 256 MB Sample Input:&#xA;Sample Input 5 Sample Output:&#xA;Sample Ouput 4 Solution file_type_python&#xD;set_clear.py n = int(input()) print(n &amp;amp; (n - 1)) </description>
+    </item>
+    <item>
+      <title>Sum of Primes</title>
+      <link>https://server-x-101.github.io/contests/vignans-challenge-19/sum_of_primes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://server-x-101.github.io/contests/vignans-challenge-19/sum_of_primes/</guid>
+      <description>Problem Statement Given two positive integers A and B, your task is to find the sum of all prime numbers between A and B (inclusively).&#xA;Input Format:&#xA;The first line contains an integer T, the number of test cases. The first line of each test case contains two space-separated positive integers A and B. Output Format:&#xA;For each test case, print the sum of all prime numbers between A and B on a new line Constraints:</description>
+    </item>
+    <item>
+      <title>Unique Year</title>
+      <link>https://server-x-101.github.io/contests/practice-python-week-1/unique_year/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://server-x-101.github.io/contests/practice-python-week-1/unique_year/</guid>
+      <description>Problem Statement Kiran finds a problem that he is currently facing difficulty. You are given T test cases and for every test case You are given a Year Y. Find the minimum year number which is strictly larger than the given one and has only distinct digits.&#xA;Constraints:&#xA;1 ≤ T ≤ 100 1000 ≤ Y ≤ 5000 Sample Input:&#xA;Sample Input 1 1987 Sample Output:&#xA;Sample Ouput 2013 Solution file_type_python&#xD;unique_year.</description>
+    </item>
+    <item>
+      <title>XOR Lost Number</title>
+      <link>https://server-x-101.github.io/contests/practice-python-week-1/xor_lost_number/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://server-x-101.github.io/contests/practice-python-week-1/xor_lost_number/</guid>
+      <description>Problem Statement Chefina has 2 numbers A and B. She created another number C which is the bitwise XOR of A and B. Here, ^ denotes the bitwise XOR operation. Chefina somehow lost track of A and now only has B and C. Now she needs your help to find the lost number A.&#xA;Input Format:&#xA;The first line contains an integer T, the number of test cases (1 ≤ T ≤ 100).</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vignan&#39;s Challenge 19 on SERVER-X-101</title>
+    <link>https://server-x-101.github.io/contests/vignans-challenge-19/</link>
+    <description>Recent content in Vignan&#39;s Challenge 19 on SERVER-X-101</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 25 Feb 2024 10:14:00 +0000</lastBuildDate>
+    <atom:link href="https://server-x-101.github.io/contests/vignans-challenge-19/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Count of Family Members</title>
+      <link>https://server-x-101.github.io/contests/vignans-challenge-19/count_of_family_members/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://server-x-101.github.io/contests/vignans-challenge-19/count_of_family_members/</guid>
+      <description>Problem Statement You are given a string representing the qualities of people. People with the same qualities are considered family members. You are tasked with finding the count of family members for a given individual.&#xA;Input Format:&#xA;The first line contains an integer T, the number of test cases. The first line of each test case contains a string S representing the qualities of people in the group. The second line of each test case contains a string representing the quality of the individual.</description>
+    </item>
+    <item>
+      <title>Count Vowels</title>
+      <link>https://server-x-101.github.io/contests/vignans-challenge-19/count_vowels/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://server-x-101.github.io/contests/vignans-challenge-19/count_vowels/</guid>
+      <description>Problem Statement Given a string, you have to print the number of vowels present in the string.&#xA;Input Format:&#xA;The first line contains an integer T, the number of test cases. The first line of each test case contains a string S. Output Format:&#xA;For each test case, print the count of vowels in the string separated by a space. Constraints:&#xA;1 ≤ T ≤ 10 1 ≤ len(S) ≤ 1000 Sample Input:</description>
+    </item>
+    <item>
+      <title>Decimal to Binary</title>
+      <link>https://server-x-101.github.io/contests/vignans-challenge-19/decimal_to_binary/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://server-x-101.github.io/contests/vignans-challenge-19/decimal_to_binary/</guid>
+      <description>Problem Statment Given a decimal number, convert it to its binary representation.&#xA;Input Format:&#xA;The first line contains an integer, T, representing the number of test cases (1 &amp;lt;= T &amp;lt;= 9).&#xA;Each test case contains a single positive integer, N, on a new line (1 &amp;lt;= N &amp;lt;= 109).&#xA;Output Format:&#xA;For each test case, print the binary representation of the corresponding decimal number N on a new line. Constraints:</description>
+    </item>
+    <item>
+      <title>Find Number</title>
+      <link>https://server-x-101.github.io/contests/vignans-challenge-19/find_number/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://server-x-101.github.io/contests/vignans-challenge-19/find_number/</guid>
+      <description>Problem Statement Hari needs to convert alphabets to their corresponding numerical positions (a = 1, b = 2, &amp;hellip;, z = 26). Help him with the conversions!&#xA;Input Format:&#xA;The first line contains an integer, T, representing the number of test cases (1 &amp;lt;= T &amp;lt;= 10).&#xA;Each test case consists of a single line containing an alphabet (either uppercase or lowercase).&#xA;Output Format:&#xA;For each test case, print the corresponding number on a new line.</description>
+    </item>
+    <item>
+      <title>Max Score in Roe</title>
+      <link>https://server-x-101.github.io/contests/vignans-challenge-19/max_score_in_row/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://server-x-101.github.io/contests/vignans-challenge-19/max_score_in_row/</guid>
+      <description>Problem Statement There are N x M students in the class. Each student was given a score. On the ground all students are arranged in an Nx M grid M students in each row. Now, your task is to find the maximum score in each row and print them.&#xA;Input Format:&#xA;The first line contains an integer T, the number of test cases. The first line of each test case contains two positive integers N and M The next N lines contains M inputs of the matrix Output Format:</description>
+    </item>
+    <item>
+      <title>Nth Fibonacci Number</title>
+      <link>https://server-x-101.github.io/contests/vignans-challenge-19/nth_fibonacci/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://server-x-101.github.io/contests/vignans-challenge-19/nth_fibonacci/</guid>
+      <description>Problem Statement Given a number n, calculate the nth Fibonacci number.&#xA;Input Format:&#xA;The first line contains an integer T, the number of test cases. Output Format:&#xA;For each test case, print the nth Fibonacci number. Constraints:&#xA;1 ≤ T ≤ 10 Sample Input:&#xA;Sample Input 2 5 7 Sample Output:&#xA;Sample Output 5 13 Explanation:&#xA;The Fibonacci sequence is defined as a sequence where each number is the sum of the two preceding numbers.</description>
+    </item>
+    <item>
+      <title>Pair of Dragons</title>
+      <link>https://server-x-101.github.io/contests/vignans-challenge-19/pair_dragons/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://server-x-101.github.io/contests/vignans-challenge-19/pair_dragons/</guid>
+      <description>Problem Statement In the world of Dragons, the power of a dragon can be modified by pairing up with another dragon. The common power of two dragons will be the product of their individual powers. Given a list of dragons and their powers, you are tasked with finding the pair of dragons with the maximum possible power.&#xA;Input Format:&#xA;The first line contains an integer T, the number of test cases.</description>
+    </item>
+    <item>
+      <title>Power of Negative Numbers</title>
+      <link>https://server-x-101.github.io/contests/vignans-challenge-19/power_of_negative_numbers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://server-x-101.github.io/contests/vignans-challenge-19/power_of_negative_numbers/</guid>
+      <description>Problem Statement Raj loves negative numbers! He wants to analyze a group of numbers and find the total &amp;ldquo;negativity.&amp;rdquo; In simpler terms, you need to calculate the sum of all negative numbers in the group. Additionally, if there are no negative numbers, Raj also wants to know how many numbers are in the group (their count).&#xA;Input:&#xA;The first line contains a single integer, T, representing the number of test cases (1 &amp;lt;= T &amp;lt;= 10).</description>
+    </item>
+    <item>
+      <title>Sum of Primes</title>
+      <link>https://server-x-101.github.io/contests/vignans-challenge-19/sum_of_primes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://server-x-101.github.io/contests/vignans-challenge-19/sum_of_primes/</guid>
+      <description>Problem Statement Given two positive integers A and B, your task is to find the sum of all prime numbers between A and B (inclusively).&#xA;Input Format:&#xA;The first line contains an integer T, the number of test cases. The first line of each test case contains two space-separated positive integers A and B. Output Format:&#xA;For each test case, print the sum of all prime numbers between A and B on a new line Constraints:</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>nest on SERVER-X-101</title>
+    <link>https://server-x-101.github.io/tags/nest/</link>
+    <description>Recent content in nest on SERVER-X-101</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 12 Aug 2019 10:26:16 -0700</lastBuildDate>
+    <atom:link href="https://server-x-101.github.io/tags/nest/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Setup Nest on Cloud Functions</title>
+      <link>https://server-x-101.github.io/snippets/setup-nestjs-on-cloud-functions/</link>
+      <pubDate>Mon, 12 Aug 2019 10:26:16 -0700</pubDate>
+      <guid>https://server-x-101.github.io/snippets/setup-nestjs-on-cloud-functions/</guid>
+      <description>Setting up NestJS on Firebase Cloud Functions allows you to leverage the power of NestJS in serverless environments. Below are two different techniques for achieving this integration.&#xA;Option A - Point a Function to Nest This setup modifies the functions configuration to use the Nest /dist output instead of the default functions directory. It&amp;rsquo;s suitable for existing Nest applications.&#xA;Step 1 - Create Nest App Generate a new Nest app and remove the automatically generated functions directory.</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>linux on SERVER-X-101</title>
+    <link>https://server-x-101.github.io/tags/linux/</link>
+    <description>Recent content in linux on SERVER-X-101</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 08 Apr 2019 07:41:02 -0700</lastBuildDate>
+    <atom:link href="https://server-x-101.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Sample Cron Schedules</title>
+      <link>https://server-x-101.github.io/snippets/sample-cron-schedules/</link>
+      <pubDate>Mon, 08 Apr 2019 07:41:02 -0700</pubDate>
+      <guid>https://server-x-101.github.io/snippets/sample-cron-schedules/</guid>
+      <description>Cron is a persistent process utilized on Linux servers, operating at specific times according to the crontab pattern (with a minimum granularity of 1 minute). It is employed for configuring cronjobs, background tasks executed at predetermined times or intervals. Additionally, Firebase now features a time-triggered Cloud Function that can be configured with crontab. The following guide illustrates how to schedule cronjobs in this format.&#xA;Tip: Instead of memorizing all examples below, consider using the Crontab Guru app for reference.</description>
+    </item>
+  </channel>
+</rss>

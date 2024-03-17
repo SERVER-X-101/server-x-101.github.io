@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Algolia on SERVER-X-101</title>
+    <link>https://server-x-101.github.io/tags/algolia/</link>
+    <description>Recent content in Algolia on SERVER-X-101</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="https://server-x-101.github.io/tags/algolia/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

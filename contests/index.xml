@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Contests on SERVER-X-101</title>
+    <link>https://server-x-101.github.io/contests/</link>
+    <description>Recent content in Contests on SERVER-X-101</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 07 Mar 2024 10:07:00 +0000</lastBuildDate>
+    <atom:link href="https://server-x-101.github.io/contests/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

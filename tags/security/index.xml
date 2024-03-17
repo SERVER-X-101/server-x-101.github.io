@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>security on SERVER-X-101</title>
+    <link>https://server-x-101.github.io/tags/security/</link>
+    <description>Recent content in security on SERVER-X-101</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 22 May 2020 05:56:37 -0700</lastBuildDate>
+    <atom:link href="https://server-x-101.github.io/tags/security/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Server-side Firebase User Authentication Setup</title>
+      <link>https://server-x-101.github.io/snippets/server-side-firebase-user-authentication-setup/</link>
+      <pubDate>Fri, 22 May 2020 05:56:37 -0700</pubDate>
+      <guid>https://server-x-101.github.io/snippets/server-side-firebase-user-authentication-setup/</guid>
+      <description>The subsequent example illustrates the setup of server-side authentication in Firebase on any node server utilizing Express.js.&#xA;Note: If utilizing Firebase Cloud Functions, you can utilize Callable Functions to automatically manage this authentication type.&#xA;Client-side: Embed the ID Token Your client-side code needs to append the ID token to the authorization header when sending a request to the server. The following instance utilizes the browser&amp;rsquo;s built-in fetch API.&#xA;file_type_js&#xD;frontend-app.js import firebase from &amp;#39;firebase&amp;#39;; const auth = firebase.</description>
+    </item>
+  </channel>
+</rss>

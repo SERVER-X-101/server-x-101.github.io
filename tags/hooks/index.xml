@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>hooks on SERVER-X-101</title>
+    <link>https://server-x-101.github.io/tags/hooks/</link>
+    <description>Recent content in hooks on SERVER-X-101</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 08 Jul 2019 23:11:49 -0400</lastBuildDate>
+    <atom:link href="https://server-x-101.github.io/tags/hooks/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>React Hooks for Managing Media Queries</title>
+      <link>https://server-x-101.github.io/snippets/react-hooks-for-managing-media-queries/</link>
+      <pubDate>Mon, 08 Jul 2019 23:11:49 -0400</pubDate>
+      <guid>https://server-x-101.github.io/snippets/react-hooks-for-managing-media-queries/</guid>
+      <description>Hooks provide a way to use state and other React features without using class components.&#xA;useMediaQuery() Hook This simple hook facilitates the sharing and rendering of components, logic, and styling based on media queries directly from your JSX code.&#xA;Creating the Hook hooks/useMediaQuery.jsx import { useState, useEffect } from &amp;#34;react&amp;#34;; const useMediaQuery = (query) =&amp;gt; { const [matches, setMatches] = useState(false); useEffect(() =&amp;gt; { const media = window.matchMedia(query); if (media.matches !</description>
+    </item>
+  </channel>
+</rss>
