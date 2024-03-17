@@ -1,7 +1,7 @@
 <div align="center">
 
 <img src=".github/images/logo.png" alt="SERVER-X-101" title="SERVER-X-101" width="350px"/>
-<h1> SERVER X 101 </h1>
+<h3> <b>SERVER X 101</b> </h3>
 </div>
 
 ## For Contributors
