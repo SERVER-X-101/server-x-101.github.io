@@ -4,15 +4,37 @@
 <h3> <b>SERVER X 101</b> </h3>
 </div>
 
-## For Contributors
+## Website Development Instructions
 
-### Key Notes:
+To contribute to the development of our website, follow these steps:
 
-- Do not edit the public directory.
-- Do not attempt to edit directly as it is an active site.
-- Submit a pull request (PR) for your updates.
+1. **Clone the Repository:** 
+   ```
+   git clone https://github.com/SERVER-X-101/SERVER-X-101.git
+   ```
 
-Instructions to start contributing:
+2. **Install Dependencies:** 
+   ```
+   npm i
+   ```
+
+3. **Start Localhost Server:** 
+   ```
+   npm start
+   ```
+
+4. **Make Changes:** 
+   Once the server is running, make your desired changes to the codebase.
+
+5. **Create a Pull Request:** 
+   After making changes, create a pull request (PR) to merge your code into the main branch.
+
+6. **Resolve Issues:** 
+   Ensure that your PR addresses and resolves any related issues by mentioning them in the PR description.
+
+Thank you for contributing to our project!
+
+## Instructions for Content Contributors::
 
 For Articles:
 
