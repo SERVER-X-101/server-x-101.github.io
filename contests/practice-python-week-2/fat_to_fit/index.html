@@ -9,7 +9,7 @@
   <link rel="canonical" href="https://server-x-101.github.io/"/>
   
   <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="/svelte/index.7e4d7209.css" />
+  <link rel="stylesheet" href="/svelte/index.0cf5a566.css" />
   <script type="module" defer src="/svelte/index.a4b68e6f.js" />
   </script>
 
@@ -479,12 +479,9 @@ Sumanth, who is also fat, heard the story of Moses and decided to get fit as wel
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="cl"><span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())):</span>
 </span></span><span class="line"><span class="cl">    <span class="n">r</span><span class="p">,</span> <span class="n">s</span><span class="p">,</span> <span class="n">m</span> <span class="o">=</span> <span class="nb">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="nb">input</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">())</span>
 </span></span><span class="line"><span class="cl">    <span class="n">d</span> <span class="o">=</span> <span class="n">m</span> <span class="o">*</span> <span class="mi">30</span> <span class="o">//</span> <span class="mi">7</span>
+</span></span><span class="line"><span class="cl">    <span class="n">tot_reps</span> <span class="o">=</span> <span class="n">d</span> <span class="o">*</span> <span class="mi">7</span> <span class="o">*</span> <span class="p">((</span><span class="n">r</span> <span class="o">+</span> <span class="n">r</span> <span class="o">+</span> <span class="n">d</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">*</span> <span class="n">r</span> <span class="o">//</span> <span class="mi">2</span><span class="p">)</span> <span class="o">*</span> <span class="n">s</span>
 </span></span><span class="line"><span class="cl">    <span class="n">remain_reps</span> <span class="o">=</span> <span class="n">m</span> <span class="o">*</span> <span class="mi">30</span> <span class="o">%</span> <span class="mi">7</span>
-</span></span><span class="line"><span class="cl">    <span class="n">tot_reps</span> <span class="o">=</span> <span class="mi">0</span>
-</span></span><span class="line"><span class="cl">    <span class="n">week_reps</span> <span class="o">=</span> <span class="n">r</span>
-</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">d</span><span class="p">):</span>
-</span></span><span class="line"><span class="cl">        <span class="n">tot_reps</span> <span class="o">+=</span> <span class="mi">7</span> <span class="o">*</span> <span class="n">week_reps</span> <span class="o">*</span> <span class="n">s</span>
-</span></span><span class="line"><span class="cl">        <span class="n">week_reps</span> <span class="o">+=</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="cl">    <span class="n">week_reps</span> <span class="o">=</span> <span class="n">r</span> <span class="o">+</span> <span class="n">d</span>
 </span></span><span class="line"><span class="cl">    <span class="n">tot_reps</span> <span class="o">+=</span> <span class="n">remain_reps</span> <span class="o">*</span> <span class="n">week_reps</span> <span class="o">*</span> <span class="n">s</span>
 </span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="n">tot_reps</span><span class="p">)</span>
 </span></span></code></pre></div>
