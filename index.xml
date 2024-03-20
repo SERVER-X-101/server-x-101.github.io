@@ -52,17 +52,10 @@
     </item>
     <item>
       <title>Privacy Policy</title>
-      <link>https://server-x-101.github.io/privacy/</link>
+      <link>https://server-x-101.github.io/privacy-policy/</link>
       <pubDate>Sun, 11 Sep 2022 08:36:36 -0700</pubDate>
-      <guid>https://server-x-101.github.io/privacy/</guid>
-      <description>Privacy Policy SERVER-X-101 (&amp;ldquo;SERVER-X-101&amp;rdquo; &amp;ldquo;we&amp;rdquo; or &amp;ldquo;us&amp;rdquo;) is committed to protecting your privacy. This Privacy Policy explains the methods and reasons we collect, use, disclose, transfer, and store your information. If you have any questions about the contents of this policy, don’t hesitate to contact us.&#xA;If you do not consent to the collection and use of information from or about you in accordance with this Privacy Policy, then you are not permitted to use SERVER-X-101 or any services provided on https://server-x-101.</description>
-    </item>
-    <item>
-      <title>Terms</title>
-      <link>https://server-x-101.github.io/terms/</link>
-      <pubDate>Sun, 11 Sep 2022 08:36:36 -0700</pubDate>
-      <guid>https://server-x-101.github.io/terms/</guid>
-      <description>Terms &amp;amp;&amp;amp; Conditions By accessing this website, you are agreeing to be bound by these website Terms and Conditions of Use, all applicable laws and regulations, and agree that you are responsible for compliance with any applicable local laws. If you do not agree with any of these terms, you are prohibited from using or accessing this site. The materials contained in this website are protected by applicable copyright and trademark law.</description>
+      <guid>https://server-x-101.github.io/privacy-policy/</guid>
+      <description>Privacy Policy SERVER-X-101 is committed to protecting your privacy. This Privacy Policy explains the methods and reasons we collect, use, disclose, transfer, and store your information. If you have any questions about the contents of this policy, don’t hesitate to contact us.&#xA;If you do not consent to the collection and use of information from or about you in accordance with this Privacy Policy, then you are not permitted to use SERVER-X-101 or any services provided on https://server-x-101.</description>
     </item>
     <item>
       <title>Server-side Firebase User Authentication Setup</title>
@@ -175,6 +168,13 @@
       <pubDate>Sat, 18 Aug 2018 18:39:19 -0700</pubDate>
       <guid>https://server-x-101.github.io/snippets/testing-rxjs-observables-with-jest/</guid>
       <description>Testing RxJS Observables with Jest is straightforward and allows you to ensure your asynchronous data streams behave as expected. Below are examples of how to write unit tests for RxJS Observables using Jest.&#xA;Testing a Single Emitted Value Consider an Observable that emits a single string value. You can create this Observable using the of operator. It&amp;rsquo;s essential to use the done keyword to inform Jest that the test is asynchronous and should wait for completion.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://server-x-101.github.io/terms-and-conditions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://server-x-101.github.io/terms-and-conditions/</guid>
+      <description>Terms and Conditions Welcome to SERVER-X-101! These terms and conditions (&amp;ldquo;Terms&amp;rdquo;) govern your use of our website, services, and products. By accessing or using SERVER-X-101, you agree to be bound by these Terms. Please read them carefully before using our services.&#xA;1. Services Provided SERVER-X-101 provides tools, articles, contests, and competition solutions for student developers and programmers. Our services are designed to facilitate learning, collaboration, and skill development in the field of technology.</description>
     </item>
     <item>
       <title>ABD and SKY</title>
@@ -301,13 +301,6 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://server-x-101.github.io/contests/practice-python-week-1/first_digit_combination_of_number/</guid>
       <description>Problem Statement Given an array A of size N that contains non-negative integers, determine whether the number formed by selecting the first digit of all the N numbers is divisible by 3.&#xA;Input Format:&#xA;The first line contains an integer T denoting the number of test cases (1 ≤ T ≤ 10). The first line of each test case contains a single integer N denoting the size of the array A (1 ≤ N ≤ 10^3).</description>
-    </item>
-    <item>
-      <title>Get Started</title>
-      <link>https://server-x-101.github.io/get-started/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://server-x-101.github.io/get-started/</guid>
-      <description>Getting Starting Learning Paths This is how you do it.&#xA;webdev react firebase flutter Get in Touch This is how you do it.&#xA;Experience Points This is how you do it.</description>
     </item>
     <item>
       <title>Kth String</title>

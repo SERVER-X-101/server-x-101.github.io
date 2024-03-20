@@ -83,10 +83,7 @@
     <loc>https://server-x-101.github.io/articles/tarjans-algorithm/</loc>
     <lastmod>2024-02-02T22:08:13-07:00</lastmod>
   </url><url>
-    <loc>https://server-x-101.github.io/privacy/</loc>
-    <lastmod>2022-09-11T08:36:36-07:00</lastmod>
-  </url><url>
-    <loc>https://server-x-101.github.io/terms/</loc>
+    <loc>https://server-x-101.github.io/privacy-policy/</loc>
     <lastmod>2022-09-11T08:36:36-07:00</lastmod>
   </url><url>
     <loc>https://server-x-101.github.io/tags/auth/</loc>
@@ -212,6 +209,8 @@
     <loc>https://server-x-101.github.io/snippets/testing-rxjs-observables-with-jest/</loc>
     <lastmod>2018-08-18T18:39:19-07:00</lastmod>
   </url><url>
+    <loc>https://server-x-101.github.io/terms-and-conditions/</loc>
+  </url><url>
     <loc>https://server-x-101.github.io/contests/practice-python-week-1/abd_and_sky/</loc>
   </url><url>
     <loc>https://server-x-101.github.io/contests/practice-python-week-1/add/</loc>
@@ -267,8 +266,6 @@
     <loc>https://server-x-101.github.io/tags/firestore/</loc>
   </url><url>
     <loc>https://server-x-101.github.io/contests/practice-python-week-1/first_digit_combination_of_number/</loc>
-  </url><url>
-    <loc>https://server-x-101.github.io/get-started/</loc>
   </url><url>
     <loc>https://server-x-101.github.io/tags/go/</loc>
   </url><url>
