@@ -7,10 +7,13 @@
   <meta name="description" content="server-x-101: community for programmers and developers">
   <title>Sieve of Eratosthenes Algorithm</title>
   <link rel="canonical" href="https://server-x-101.github.io/"/>
+  <link rel="preconnect">
+  <link rel="preload">
+  <link rel="dns-prefetch" href="https://server-x-101.github.io/" />
   
   <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="/svelte/index.0cf5a566.css" />
-  <script type="module" defer src="/svelte/index.a4b68e6f.js" />
+  <link rel="stylesheet" href="/svelte/index.3238d2b0.css" />
+  <script type="module" defer src="/svelte/index.3d65baf9.js" />
   </script>
 
   
@@ -64,8 +67,15 @@
   </global-data>
 
   
+<div class="fixed top-0 w-full bg-transparent z-50">
+    <div class="sticky top-0 z-50">
+        <div class="w-full">
+            <div id="myBar" class="h-1 bg-gradient-to-r from-peach via-peach to-peach w-0"></div>
+        </div>
+    </div>
+</div>
 
-<div class="h-2"></div>
+
 <nav  class="flex justify-between container mx-4">
 
   
@@ -106,7 +116,6 @@
   
 <main class="container">
 
-
 	<div class="flex flex-col sm:flex-row justify-content">
 		<article itemscope itemtype="http://schema.org/Article" class=" sm:w-3/4 mb-4 sm:mb-0 order-2 sm:order-1 pb-4">
 			<meta itemprop="datePublished" content="0001-01-01 00:00:00 &#43;0000 UTC" />
@@ -120,27 +129,31 @@
 
 					
 					
-					<a class="flex items-center no-underline" itemprop="author" name="Gautam Ankoji" href="/authors/gautam-ankoji/">
-						<img class="w-10 h-10 rounded-full block" src="/authors/img/gautam-ankoji.jpg" alt="Gautam Ankoji avatar">
+					<a class="flex items-center no-underline" itemprop="author" name="Gautam Ankoji"
+						href="/authors/gautam-ankoji/">
+						<img class="w-10 h-10 rounded-full block" src="/authors/img/gautam-ankoji.jpg"
+							alt="Gautam Ankoji avatar">
 						<span class="flex flex-col ml-2">
 							<span class="no-underline">By Gautam Ankoji</span>
 							<span class="text-xs text-gray4">Posted <time itemprop="dateModified">Feb 13, 2024</time>
-						</span>
-	
+							</span>
+
 					</a>
 
 					
 					<span class="flex items-center justify-content ">
 						
-							<a href="/tags/algorithms"><span class="tag tag-algorithms font-bold hover:scale-110 transition-all duration-300 ">#algorithms</span></a>
+						<a href="/tags/algorithms"><span
+								class="tag tag-algorithms font-bold hover:scale-110 transition-all duration-300 ">#algorithms</span></a>
 						
-							<a href="/tags/prime-numbers"><span class="tag tag-prime-numbers font-bold hover:scale-110 transition-all duration-300 ">#prime-numbers</span></a>
+						<a href="/tags/prime-numbers"><span
+								class="tag tag-prime-numbers font-bold hover:scale-110 transition-all duration-300 ">#prime-numbers</span></a>
 						
 
 						
 					</span>
-					
-				
+
+
 				</div>
 
 			</header>
@@ -235,7 +248,7 @@ The Sieve of Eratosthenes is an ancient algorithm used to find all prime numbers
 </ol>
 
 
-				
+
 			</section>
 
 
@@ -255,7 +268,25 @@ The Sieve of Eratosthenes is an ancient algorithm used to find all prime numbers
 		</aside>
 		
 	</div>
+	<script>
+		window.onscroll = function () { myFunction() };
 
+		function myFunction() {
+			var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+			var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+			var scrolled = (winScroll / height) * 100;
+			document.getElementById("myBar").style.width = scrolled + "%";
+
+			
+			var progressContainer = document.getElementById("progressContainer");
+			if (winScroll > 20) { 
+				progressContainer.style.display = "block";
+			} else {
+				progressContainer.style.display = "none";
+			}
+		}
+
+	</script>
 
 </main>
 

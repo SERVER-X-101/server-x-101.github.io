@@ -7,10 +7,13 @@
   <meta name="description" content="server-x-101: community for programmers and developers">
   <title>Managing Radial Pan Events in Flutter</title>
   <link rel="canonical" href="https://server-x-101.github.io/"/>
+  <link rel="preconnect">
+  <link rel="preload">
+  <link rel="dns-prefetch" href="https://server-x-101.github.io/" />
   
   <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="/svelte/index.0cf5a566.css" />
-  <script type="module" defer src="/svelte/index.a4b68e6f.js" />
+  <link rel="stylesheet" href="/svelte/index.3238d2b0.css" />
+  <script type="module" defer src="/svelte/index.3d65baf9.js" />
   </script>
 
   
@@ -66,8 +69,15 @@
   </global-data>
 
   
+<div class="fixed top-0 w-full bg-transparent z-50">
+    <div class="sticky top-0 z-50">
+        <div class="w-full">
+            <div id="myBar" class="h-1 bg-gradient-to-r from-peach via-peach to-peach w-0"></div>
+        </div>
+    </div>
+</div>
 
-<div class="h-2"></div>
+
 <nav  class="flex justify-between container mx-4">
 
   
@@ -267,6 +277,25 @@
 		</aside>
 		
 	</div>
+	<script>
+		window.onscroll = function () { myFunction() };
+
+		function myFunction() {
+			var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+			var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+			var scrolled = (winScroll / height) * 100;
+			document.getElementById("myBar").style.width = scrolled + "%";
+
+			
+			var progressContainer = document.getElementById("progressContainer");
+			if (winScroll > 20) { 
+				progressContainer.style.display = "block";
+			} else {
+				progressContainer.style.display = "none";
+			}
+		}
+
+	</script>
 
 
 </main>
