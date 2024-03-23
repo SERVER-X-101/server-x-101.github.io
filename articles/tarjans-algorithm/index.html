@@ -12,7 +12,7 @@
   <link rel="dns-prefetch" href="{my-hugo-site-page-path}" />
   
   <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="/svelte/index.3238d2b0.css" />
+  <link rel="stylesheet" href="/svelte/index.93a2a5f1.css" />
   <script type="module" defer src="/svelte/index.3d65baf9.js" />
   </script>
 
@@ -163,7 +163,7 @@
 				</h1>
 
 
-				<p class="drop-cap">A directed graph exhibits strong connectivity when every pair of vertices is connected by a path. A strongly connected component (SCC) within such a graph is a largest subgraph where every vertex is reachable from every other vertex. For instance, in the given graph, there are three SCCs.</p>
+				<p>A directed graph exhibits strong connectivity when every pair of vertices is connected by a path. A strongly connected component (SCC) within such a graph is a largest subgraph where every vertex is reachable from every other vertex. For instance, in the given graph, there are three SCCs.</p>
 <p><strong>Algorithm</strong>:</p>
 <ul>
 <li>Tarjan&rsquo;s algorithm utilizes DFS (Depth First Search) traversal.</li>
@@ -173,20 +173,266 @@
 <li><code>SCCUtil</code> performs DFS traversal, updating discovery times and lowest reachable ancestor.</li>
 <li>When the vertex is part of an SCC, it pops vertices from the stack and prints them until the current vertex is reached again.</li>
 </ul>
-<h3 id="c-implementation-of-tarjans-algorithm-to-print-all-sccs">C++ implementation of Tarjan’s algorithm to print all SCCs</h3>
+<h3 id="implementation-of-tarjans-algorithm-to-print-all-sccs">Implementation of Tarjan’s algorithm to print all SCCs</h3>
 
 
-<div class="file-name">
-  <span class="file-icon"><svg  viewBox="0 0 256 288" xmlns="http://www.w3.org/2000/svg">
+
+
+
+<div class="tabs tabs-left">
+  
+
+
+
+
+
+
+<style>
+  .tabs input#tab-0-0:checked ~ .tab-content-0-0 {
+    display: block;
+  }
+  
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2rem 0 2rem 0;
+  position: relative;
+
+  &.tabs-left {
+    justify-content: flex-start;
+  }
+
+  &.tabs-right {
+    justify-content: flex-end;
+  }
+
+  input.tab-input {
+    display: none;
+  }
+
+  label.tab-label {
+    background-color: #12181b;
+    border-color: #2a2e35;
+    border-radius: 4px 4px 0px 0px;
+    color: #6c7983;
+    border-width: 2px;
+    cursor: pointer;
+    display: inline-block;
+    order: 1;
+    padding: 0.3rem 0.6rem;
+    position: relative;
+    top: 1px;
+    user-select: none;
+  }
+  
+  input.tab-input:checked + label.tab-label {
+    background-color: #12181b;
+    color: #f8f8f8;
+    border-color: #454e56;
+  }
+
+  .tab-content {
+    display: none;
+    order: 2;
+    width: 100%;
+    margin-top: 0%;
+    margin-left: 0%;
+  }
+}
+</style>
+
+<input type="radio" class="tab-input" name="tab-select-0" id="tab-0-0" checked>
+<label for="tab-0-0" class="tab-label">
+  <span class="flex flex-row items-center"><span class="w-5 block mr-2"><svg xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32">
+    <defs>
+        <linearGradient id="a" x1="-133.268" y1="-202.91" x2="-133.198" y2="-202.84" gradientTransform="translate(25243.061 38519.17) scale(189.38 189.81)" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#387eb8"/>
+            <stop offset="1" stop-color="#366994"/>
+        </linearGradient>
+        <linearGradient id="b" x1="-133.575" y1="-203.203" x2="-133.495" y2="-203.133" gradientTransform="translate(25309.061 38583.42) scale(189.38 189.81)" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#ffe052"/>
+            <stop offset="1" stop-color="#ffc331"/>
+        </linearGradient>
+    </defs>
+    <title>file_type_python</title>
+    <path d="M15.885,2.1c-7.1,0-6.651,3.07-6.651,3.07V8.36h6.752v1H6.545S2,8.8,2,16.005s4.013,6.912,4.013,6.912H8.33V19.556s-.13-4.013,3.9-4.013h6.762s3.772.06,3.772-3.652V5.8s.572-3.712-6.842-3.712h0ZM12.153,4.237a1.214,1.214,0,1,1-1.183,1.244v-.02a1.214,1.214,0,0,1,1.214-1.214h0Z" style="fill:url(#a)"/>
+    <path d="M16.085,29.91c7.1,0,6.651-3.08,6.651-3.08V23.65H15.985v-1h9.47S30,23.158,30,15.995s-4.013-6.912-4.013-6.912H23.64V12.4s.13,4.013-3.9,4.013H12.975S9.2,16.356,9.2,20.068V26.2s-.572,3.712,6.842,3.712h.04Zm3.732-2.147A1.214,1.214,0,1,1,21,26.519v.03a1.214,1.214,0,0,1-1.214,1.214h.03Z" style="fill:url(#b)"/>
+</svg></span>Python</span>
+</label> 
+<div class="tab-content m-0 tab-content-0-0">
+  <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">defaultdict</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">Graph</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">vertices</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">V</span> <span class="o">=</span> <span class="n">vertices</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">graph</span> <span class="o">=</span> <span class="n">defaultdict</span><span class="p">(</span><span class="nb">list</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">Time</span> <span class="o">=</span> <span class="mi">0</span>
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="nf">addEdge</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">u</span><span class="p">,</span> <span class="n">v</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">graph</span><span class="p">[</span><span class="n">u</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">v</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="nf">SCCUtil</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">u</span><span class="p">,</span> <span class="n">low</span><span class="p">,</span> <span class="n">disc</span><span class="p">,</span> <span class="n">stackMember</span><span class="p">,</span> <span class="n">st</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="n">disc</span><span class="p">[</span><span class="n">u</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">Time</span>
+</span></span><span class="line"><span class="cl">        <span class="n">low</span><span class="p">[</span><span class="n">u</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">Time</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">Time</span> <span class="o">+=</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="cl">        <span class="n">stackMember</span><span class="p">[</span><span class="n">u</span><span class="p">]</span> <span class="o">=</span> <span class="kc">True</span>
+</span></span><span class="line"><span class="cl">        <span class="n">st</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">u</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">graph</span><span class="p">[</span><span class="n">u</span><span class="p">]:</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="n">disc</span><span class="p">[</span><span class="n">v</span><span class="p">]</span> <span class="o">==</span> <span class="o">-</span><span class="mi">1</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                <span class="bp">self</span><span class="o">.</span><span class="n">SCCUtil</span><span class="p">(</span><span class="n">v</span><span class="p">,</span> <span class="n">low</span><span class="p">,</span> <span class="n">disc</span><span class="p">,</span> <span class="n">stackMember</span><span class="p">,</span> <span class="n">st</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                <span class="n">low</span><span class="p">[</span><span class="n">u</span><span class="p">]</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">low</span><span class="p">[</span><span class="n">u</span><span class="p">],</span> <span class="n">low</span><span class="p">[</span><span class="n">v</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl">            <span class="k">elif</span> <span class="n">stackMember</span><span class="p">[</span><span class="n">v</span><span class="p">]</span> <span class="o">==</span> <span class="kc">True</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                <span class="n">low</span><span class="p">[</span><span class="n">u</span><span class="p">]</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">low</span><span class="p">[</span><span class="n">u</span><span class="p">],</span> <span class="n">disc</span><span class="p">[</span><span class="n">v</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl">        <span class="n">w</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="n">low</span><span class="p">[</span><span class="n">u</span><span class="p">]</span> <span class="o">==</span> <span class="n">disc</span><span class="p">[</span><span class="n">u</span><span class="p">]:</span>
+</span></span><span class="line"><span class="cl">            <span class="k">while</span> <span class="n">w</span> <span class="o">!=</span> <span class="n">u</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                <span class="n">w</span> <span class="o">=</span> <span class="n">st</span><span class="o">.</span><span class="n">pop</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">                <span class="nb">print</span><span class="p">(</span><span class="n">w</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">&#34; &#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                <span class="n">stackMember</span><span class="p">[</span><span class="n">w</span><span class="p">]</span> <span class="o">=</span> <span class="kc">False</span>
+</span></span><span class="line"><span class="cl">            <span class="nb">print</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="nf">SCC</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="n">disc</span> <span class="o">=</span> <span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">*</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">V</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">low</span> <span class="o">=</span> <span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">*</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">V</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">stackMember</span> <span class="o">=</span> <span class="p">[</span><span class="kc">False</span><span class="p">]</span> <span class="o">*</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">V</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">st</span> <span class="o">=</span> <span class="p">[]</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">V</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="n">disc</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="o">-</span><span class="mi">1</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                <span class="bp">self</span><span class="o">.</span><span class="n">SCCUtil</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">low</span><span class="p">,</span> <span class="n">disc</span><span class="p">,</span> <span class="n">stackMember</span><span class="p">,</span> <span class="n">st</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">g1</span> <span class="o">=</span> <span class="n">Graph</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">g1</span><span class="o">.</span><span class="n">addEdge</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">g1</span><span class="o">.</span><span class="n">addEdge</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">g1</span><span class="o">.</span><span class="n">addEdge</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">g1</span><span class="o">.</span><span class="n">addEdge</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">g1</span><span class="o">.</span><span class="n">addEdge</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;SSC in first graph &#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">g1</span><span class="o">.</span><span class="n">SCC</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">g2</span> <span class="o">=</span> <span class="n">Graph</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">g2</span><span class="o">.</span><span class="n">addEdge</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">g2</span><span class="o">.</span><span class="n">addEdge</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">g2</span><span class="o">.</span><span class="n">addEdge</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;</span><span class="se">\n</span><span class="s2">SSC in second graph &#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">g2</span><span class="o">.</span><span class="n">SCC</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">g3</span> <span class="o">=</span> <span class="n">Graph</span><span class="p">(</span><span class="mi">7</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">g3</span><span class="o">.</span><span class="n">addEdge</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">g3</span><span class="o">.</span><span class="n">addEdge</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">g3</span><span class="o">.</span><span class="n">addEdge</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">g3</span><span class="o">.</span><span class="n">addEdge</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">g3</span><span class="o">.</span><span class="n">addEdge</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">g3</span><span class="o">.</span><span class="n">addEdge</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">g3</span><span class="o">.</span><span class="n">addEdge</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">g3</span><span class="o">.</span><span class="n">addEdge</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;</span><span class="se">\n</span><span class="s2">SSC in third graph &#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">g3</span><span class="o">.</span><span class="n">SCC</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">g4</span> <span class="o">=</span> <span class="n">Graph</span><span class="p">(</span><span class="mi">11</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">g4</span><span class="o">.</span><span class="n">addEdge</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">g4</span><span class="o">.</span><span class="n">addEdge</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">g4</span><span class="o">.</span><span class="n">addEdge</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">g4</span><span class="o">.</span><span class="n">addEdge</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">g4</span><span class="o">.</span><span class="n">addEdge</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">g4</span><span class="o">.</span><span class="n">addEdge</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">g4</span><span class="o">.</span><span class="n">addEdge</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">g4</span><span class="o">.</span><span class="n">addEdge</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">g4</span><span class="o">.</span><span class="n">addEdge</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">g4</span><span class="o">.</span><span class="n">addEdge</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">g4</span><span class="o">.</span><span class="n">addEdge</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">g4</span><span class="o">.</span><span class="n">addEdge</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">8</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">g4</span><span class="o">.</span><span class="n">addEdge</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">9</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">g4</span><span class="o">.</span><span class="n">addEdge</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">g4</span><span class="o">.</span><span class="n">addEdge</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="mi">9</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">g4</span><span class="o">.</span><span class="n">addEdge</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">g4</span><span class="o">.</span><span class="n">addEdge</span><span class="p">(</span><span class="mi">9</span><span class="p">,</span> <span class="mi">8</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;</span><span class="se">\n</span><span class="s2">SSC in fourth graph &#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">g4</span><span class="o">.</span><span class="n">SCC</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">g5</span> <span class="o">=</span> <span class="n">Graph</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">g5</span><span class="o">.</span><span class="n">addEdge</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">g5</span><span class="o">.</span><span class="n">addEdge</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">g5</span><span class="o">.</span><span class="n">addEdge</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">g5</span><span class="o">.</span><span class="n">addEdge</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">g5</span><span class="o">.</span><span class="n">addEdge</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">g5</span><span class="o">.</span><span class="n">addEdge</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;</span><span class="se">\n</span><span class="s2">SSC in fifth graph &#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">g5</span><span class="o">.</span><span class="n">SCC</span><span class="p">()</span>
+</span></span></code></pre></div>
+</div>
+
+  
+
+
+
+
+
+
+
+
+<style>
+  .tabs input#tab-0-1:checked ~ .tab-content-0-1 {
+    display: block;
+  }
+  
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2rem 0 2rem 0;
+  position: relative;
+
+  &.tabs-left {
+    justify-content: flex-start;
+  }
+
+  &.tabs-right {
+    justify-content: flex-end;
+  }
+
+  input.tab-input {
+    display: none;
+  }
+
+  label.tab-label {
+    background-color: #12181b;
+    border-color: #2a2e35;
+    border-radius: 4px 4px 0px 0px;
+    color: #6c7983;
+    border-width: 2px;
+    cursor: pointer;
+    display: inline-block;
+    order: 1;
+    padding: 0.3rem 0.6rem;
+    position: relative;
+    top: 1px;
+    user-select: none;
+  }
+  
+  input.tab-input:checked + label.tab-label {
+    background-color: #12181b;
+    color: #f8f8f8;
+    border-color: #454e56;
+  }
+
+  .tab-content {
+    display: none;
+    order: 2;
+    width: 100%;
+    margin-top: 0%;
+    margin-left: 0%;
+  }
+}
+</style>
+
+<input type="radio" class="tab-input" name="tab-select-0" id="tab-0-1" >
+<label for="tab-0-1" class="tab-label">
+  <span class="flex flex-row items-center"><span class="w-5 block mr-2"><svg  viewBox="0 0 256 288" xmlns="http://www.w3.org/2000/svg">
     <path d="M255.569 84.72c-.002-4.83-1.035-9.098-3.124-12.761-2.052-3.602-5.125-6.621-9.247-9.008-34.025-19.619-68.083-39.178-102.097-58.817-9.17-5.294-18.061-5.101-27.163.269C100.395 12.39 32.59 51.237 12.385 62.94 4.064 67.757.015 75.129.013 84.711 0 124.166.013 163.62 0 203.076c.002 4.724.991 8.909 2.988 12.517 2.053 3.711 5.169 6.813 9.386 9.254 20.206 11.703 88.02 50.547 101.56 58.536 9.106 5.373 17.997 5.565 27.17.269 34.015-19.64 68.075-39.198 102.105-58.817 4.217-2.44 7.333-5.544 9.386-9.252 1.994-3.608 2.985-7.793 2.987-12.518 0 0 0-78.889-.013-118.345" fill="#5C8DBC"/>
     <path d="M128.182 143.509L2.988 215.593c2.053 3.711 5.169 6.813 9.386 9.254 20.206 11.703 88.02 50.547 101.56 58.536 9.106 5.373 17.997 5.565 27.17.269 34.015-19.64 68.075-39.198 102.105-58.817 4.217-2.44 7.333-5.544 9.386-9.252l-124.413-72.074" fill="#1A4674"/>
     <path d="M91.101 164.861c7.285 12.718 20.98 21.296 36.69 21.296 15.807 0 29.58-8.687 36.828-21.541l-36.437-21.107-37.081 21.352" fill="#1A4674"/>
     <path d="M255.569 84.72c-.002-4.83-1.035-9.098-3.124-12.761l-124.263 71.55 124.413 72.074c1.994-3.608 2.985-7.793 2.987-12.518 0 0 0-78.889-.013-118.345" fill="#1B598E"/>
     <path d="M248.728 148.661h-9.722v9.724h-9.724v-9.724h-9.721v-9.721h9.721v-9.722h9.724v9.722h9.722v9.721M213.253 148.661h-9.721v9.724h-9.722v-9.724h-9.722v-9.721h9.722v-9.722h9.722v9.722h9.721v9.721" fill="#FFF"/>
     <path d="M164.619 164.616c-7.248 12.854-21.021 21.541-36.828 21.541-15.71 0-29.405-8.578-36.69-21.296a42.062 42.062 0 0 1-5.574-20.968c0-23.341 18.923-42.263 42.264-42.263 15.609 0 29.232 8.471 36.553 21.059l36.941-21.272c-14.683-25.346-42.096-42.398-73.494-42.398-46.876 0-84.875 38-84.875 84.874 0 15.378 4.091 29.799 11.241 42.238 14.646 25.48 42.137 42.637 73.634 42.637 31.555 0 59.089-17.226 73.714-42.781l-36.886-21.371" fill="#FFF"/>
-</svg></span> <b>main.cpp </b>
-</div>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;bits/stdc++.h&gt;</span><span class="cp">
+</svg></span>C&#43;&#43;</span>
+</label> 
+<div class="tab-content m-0 tab-content-0-1">
+  <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;bits/stdc++.h&gt;</span><span class="cp">
 </span></span></span><span class="line"><span class="cl"><span class="cp">#define NIL -1
 </span></span></span><span class="line"><span class="cl"><span class="cp"></span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">
@@ -309,19 +555,84 @@
 </span></span><span class="line"><span class="cl">    <span class="n">g5</span><span class="p">.</span><span class="n">SCC</span><span class="p">();</span>
 </span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></div><h3 id="java-implementation-of-tarjans-algorithm-to-print-all-sccs">Java implementation of Tarjan’s algorithm to print all SCCs</h3>
+</span></span></code></pre></div>
+</div>
+
+  
 
 
-<div class="file-name">
-  <span class="file-icon"><svg viewBox="0 0 256 346" xmlns="http://www.w3.org/2000/svg">
+
+
+
+
+
+
+<style>
+  .tabs input#tab-0-2:checked ~ .tab-content-0-2 {
+    display: block;
+  }
+  
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2rem 0 2rem 0;
+  position: relative;
+
+  &.tabs-left {
+    justify-content: flex-start;
+  }
+
+  &.tabs-right {
+    justify-content: flex-end;
+  }
+
+  input.tab-input {
+    display: none;
+  }
+
+  label.tab-label {
+    background-color: #12181b;
+    border-color: #2a2e35;
+    border-radius: 4px 4px 0px 0px;
+    color: #6c7983;
+    border-width: 2px;
+    cursor: pointer;
+    display: inline-block;
+    order: 1;
+    padding: 0.3rem 0.6rem;
+    position: relative;
+    top: 1px;
+    user-select: none;
+  }
+  
+  input.tab-input:checked + label.tab-label {
+    background-color: #12181b;
+    color: #f8f8f8;
+    border-color: #454e56;
+  }
+
+  .tab-content {
+    display: none;
+    order: 2;
+    width: 100%;
+    margin-top: 0%;
+    margin-left: 0%;
+  }
+}
+</style>
+
+<input type="radio" class="tab-input" name="tab-select-0" id="tab-0-2" >
+<label for="tab-0-2" class="tab-label">
+  <span class="flex flex-row items-center"><span class="w-5 block mr-2"><svg viewBox="0 0 256 346" xmlns="http://www.w3.org/2000/svg">
     <path d="M82.554 267.473s-13.198 7.675 9.393 10.272c27.369 3.122 41.356 2.675 71.517-3.034 0 0 7.93 4.972 19.003 9.279-67.611 28.977-153.019-1.679-99.913-16.517M74.292 229.659s-14.803 10.958 7.805 13.296c29.236 3.016 52.324 3.263 92.276-4.43 0 0 5.526 5.602 14.215 8.666-81.747 23.904-172.798 1.885-114.296-17.532" fill="#5382A1"/>
     <path d="M143.942 165.515c16.66 19.18-4.377 36.44-4.377 36.44s42.301-21.837 22.874-49.183c-18.144-25.5-32.059-38.172 43.268-81.858 0 0-118.238 29.53-61.765 94.6" fill="#E76F00"/>
     <path d="M233.364 295.442s9.767 8.047-10.757 14.273c-39.026 11.823-162.432 15.393-196.714.471-12.323-5.36 10.787-12.8 18.056-14.362 7.581-1.644 11.914-1.337 11.914-1.337-13.705-9.655-88.583 18.957-38.034 27.15 137.853 22.356 251.292-10.066 215.535-26.195M88.9 190.48s-62.771 14.91-22.228 20.323c17.118 2.292 51.243 1.774 83.03-.89 25.978-2.19 52.063-6.85 52.063-6.85s-9.16 3.923-15.787 8.448c-63.744 16.765-186.886 8.966-151.435-8.183 29.981-14.492 54.358-12.848 54.358-12.848M201.506 253.422c64.8-33.672 34.839-66.03 13.927-61.67-5.126 1.066-7.411 1.99-7.411 1.99s1.903-2.98 5.537-4.27c41.37-14.545 73.187 42.897-13.355 65.647 0 .001 1.003-.895 1.302-1.697" fill="#5382A1"/>
     <path d="M162.439.371s35.887 35.9-34.037 91.101c-56.071 44.282-12.786 69.53-.023 98.377-32.73-29.53-56.75-55.526-40.635-79.72C111.395 74.612 176.918 57.393 162.439.37" fill="#E76F00"/>
     <path d="M95.268 344.665c62.199 3.982 157.712-2.209 159.974-31.64 0 0-4.348 11.158-51.404 20.018-53.088 9.99-118.564 8.824-157.399 2.421.001 0 7.95 6.58 48.83 9.201" fill="#5382A1"/>
-</svg></span> <b>Main.java </b>
-</div>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kn">import</span><span class="w"> </span><span class="nn">java.io.*</span><span class="p">;</span><span class="w">
+</svg></span>Java</span>
+</label> 
+<div class="tab-content m-0 tab-content-0-2">
+  <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kn">import</span><span class="w"> </span><span class="nn">java.io.*</span><span class="p">;</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kn">import</span><span class="w"> </span><span class="nn">java.util.*</span><span class="p">;</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kd">class</span> <span class="nc">Graph</span><span class="w"> </span><span class="p">{</span><span class="w">
@@ -440,121 +751,19 @@
 </span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="n">g5</span><span class="p">.</span><span class="na">SCC</span><span class="p">();</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="p">}</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
-</span></span></span></code></pre></div><h3 id="python-implementation-of-tarjans-algorithm-to-print-all-sccs">Python implementation of Tarjan’s algorithm to print all SCCs</h3>
-
-
-<div class="file-name">
-  <span class="file-icon"><svg xmlns="http://www.w3.org/2000/svg"
-    xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32">
-    <defs>
-        <linearGradient id="a" x1="-133.268" y1="-202.91" x2="-133.198" y2="-202.84" gradientTransform="translate(25243.061 38519.17) scale(189.38 189.81)" gradientUnits="userSpaceOnUse">
-            <stop offset="0" stop-color="#387eb8"/>
-            <stop offset="1" stop-color="#366994"/>
-        </linearGradient>
-        <linearGradient id="b" x1="-133.575" y1="-203.203" x2="-133.495" y2="-203.133" gradientTransform="translate(25309.061 38583.42) scale(189.38 189.81)" gradientUnits="userSpaceOnUse">
-            <stop offset="0" stop-color="#ffe052"/>
-            <stop offset="1" stop-color="#ffc331"/>
-        </linearGradient>
-    </defs>
-    <title>file_type_python</title>
-    <path d="M15.885,2.1c-7.1,0-6.651,3.07-6.651,3.07V8.36h6.752v1H6.545S2,8.8,2,16.005s4.013,6.912,4.013,6.912H8.33V19.556s-.13-4.013,3.9-4.013h6.762s3.772.06,3.772-3.652V5.8s.572-3.712-6.842-3.712h0ZM12.153,4.237a1.214,1.214,0,1,1-1.183,1.244v-.02a1.214,1.214,0,0,1,1.214-1.214h0Z" style="fill:url(#a)"/>
-    <path d="M16.085,29.91c7.1,0,6.651-3.08,6.651-3.08V23.65H15.985v-1h9.47S30,23.158,30,15.995s-4.013-6.912-4.013-6.912H23.64V12.4s.13,4.013-3.9,4.013H12.975S9.2,16.356,9.2,20.068V26.2s-.572,3.712,6.842,3.712h.04Zm3.732-2.147A1.214,1.214,0,1,1,21,26.519v.03a1.214,1.214,0,0,1-1.214,1.214h.03Z" style="fill:url(#b)"/>
-</svg></span> <b>main.py </b>
+</span></span></span></code></pre></div>
 </div>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">defaultdict</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">Graph</span><span class="p">:</span>
-</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">vertices</span><span class="p">):</span>
-</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">V</span> <span class="o">=</span> <span class="n">vertices</span>
-</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">graph</span> <span class="o">=</span> <span class="n">defaultdict</span><span class="p">(</span><span class="nb">list</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">Time</span> <span class="o">=</span> <span class="mi">0</span>
-</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="nf">addEdge</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">u</span><span class="p">,</span> <span class="n">v</span><span class="p">):</span>
-</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">graph</span><span class="p">[</span><span class="n">u</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">v</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="nf">SCCUtil</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">u</span><span class="p">,</span> <span class="n">low</span><span class="p">,</span> <span class="n">disc</span><span class="p">,</span> <span class="n">stackMember</span><span class="p">,</span> <span class="n">st</span><span class="p">):</span>
-</span></span><span class="line"><span class="cl">        <span class="n">disc</span><span class="p">[</span><span class="n">u</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">Time</span>
-</span></span><span class="line"><span class="cl">        <span class="n">low</span><span class="p">[</span><span class="n">u</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">Time</span>
-</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">Time</span> <span class="o">+=</span> <span class="mi">1</span>
-</span></span><span class="line"><span class="cl">        <span class="n">stackMember</span><span class="p">[</span><span class="n">u</span><span class="p">]</span> <span class="o">=</span> <span class="kc">True</span>
-</span></span><span class="line"><span class="cl">        <span class="n">st</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">u</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">graph</span><span class="p">[</span><span class="n">u</span><span class="p">]:</span>
-</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="n">disc</span><span class="p">[</span><span class="n">v</span><span class="p">]</span> <span class="o">==</span> <span class="o">-</span><span class="mi">1</span><span class="p">:</span>
-</span></span><span class="line"><span class="cl">                <span class="bp">self</span><span class="o">.</span><span class="n">SCCUtil</span><span class="p">(</span><span class="n">v</span><span class="p">,</span> <span class="n">low</span><span class="p">,</span> <span class="n">disc</span><span class="p">,</span> <span class="n">stackMember</span><span class="p">,</span> <span class="n">st</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">                <span class="n">low</span><span class="p">[</span><span class="n">u</span><span class="p">]</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">low</span><span class="p">[</span><span class="n">u</span><span class="p">],</span> <span class="n">low</span><span class="p">[</span><span class="n">v</span><span class="p">])</span>
-</span></span><span class="line"><span class="cl">            <span class="k">elif</span> <span class="n">stackMember</span><span class="p">[</span><span class="n">v</span><span class="p">]</span> <span class="o">==</span> <span class="kc">True</span><span class="p">:</span>
-</span></span><span class="line"><span class="cl">                <span class="n">low</span><span class="p">[</span><span class="n">u</span><span class="p">]</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">low</span><span class="p">[</span><span class="n">u</span><span class="p">],</span> <span class="n">disc</span><span class="p">[</span><span class="n">v</span><span class="p">])</span>
-</span></span><span class="line"><span class="cl">        <span class="n">w</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span>
-</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="n">low</span><span class="p">[</span><span class="n">u</span><span class="p">]</span> <span class="o">==</span> <span class="n">disc</span><span class="p">[</span><span class="n">u</span><span class="p">]:</span>
-</span></span><span class="line"><span class="cl">            <span class="k">while</span> <span class="n">w</span> <span class="o">!=</span> <span class="n">u</span><span class="p">:</span>
-</span></span><span class="line"><span class="cl">                <span class="n">w</span> <span class="o">=</span> <span class="n">st</span><span class="o">.</span><span class="n">pop</span><span class="p">()</span>
-</span></span><span class="line"><span class="cl">                <span class="nb">print</span><span class="p">(</span><span class="n">w</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">&#34; &#34;</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">                <span class="n">stackMember</span><span class="p">[</span><span class="n">w</span><span class="p">]</span> <span class="o">=</span> <span class="kc">False</span>
-</span></span><span class="line"><span class="cl">            <span class="nb">print</span><span class="p">()</span>
-</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="nf">SCC</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-</span></span><span class="line"><span class="cl">        <span class="n">disc</span> <span class="o">=</span> <span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">*</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">V</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">        <span class="n">low</span> <span class="o">=</span> <span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">*</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">V</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">        <span class="n">stackMember</span> <span class="o">=</span> <span class="p">[</span><span class="kc">False</span><span class="p">]</span> <span class="o">*</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">V</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">        <span class="n">st</span> <span class="o">=</span> <span class="p">[]</span>
-</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">V</span><span class="p">):</span>
-</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="n">disc</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="o">-</span><span class="mi">1</span><span class="p">:</span>
-</span></span><span class="line"><span class="cl">                <span class="bp">self</span><span class="o">.</span><span class="n">SCCUtil</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">low</span><span class="p">,</span> <span class="n">disc</span><span class="p">,</span> <span class="n">stackMember</span><span class="p">,</span> <span class="n">st</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="n">g1</span> <span class="o">=</span> <span class="n">Graph</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="n">g1</span><span class="o">.</span><span class="n">addEdge</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="n">g1</span><span class="o">.</span><span class="n">addEdge</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="n">g1</span><span class="o">.</span><span class="n">addEdge</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="n">g1</span><span class="o">.</span><span class="n">addEdge</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="n">g1</span><span class="o">.</span><span class="n">addEdge</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;SSC in first graph &#34;</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="n">g1</span><span class="o">.</span><span class="n">SCC</span><span class="p">()</span>
-</span></span><span class="line"><span class="cl"><span class="n">g2</span> <span class="o">=</span> <span class="n">Graph</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="n">g2</span><span class="o">.</span><span class="n">addEdge</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="n">g2</span><span class="o">.</span><span class="n">addEdge</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="n">g2</span><span class="o">.</span><span class="n">addEdge</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;</span><span class="se">\n</span><span class="s2">SSC in second graph &#34;</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="n">g2</span><span class="o">.</span><span class="n">SCC</span><span class="p">()</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="n">g3</span> <span class="o">=</span> <span class="n">Graph</span><span class="p">(</span><span class="mi">7</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="n">g3</span><span class="o">.</span><span class="n">addEdge</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="n">g3</span><span class="o">.</span><span class="n">addEdge</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="n">g3</span><span class="o">.</span><span class="n">addEdge</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="n">g3</span><span class="o">.</span><span class="n">addEdge</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="n">g3</span><span class="o">.</span><span class="n">addEdge</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="n">g3</span><span class="o">.</span><span class="n">addEdge</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="n">g3</span><span class="o">.</span><span class="n">addEdge</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="n">g3</span><span class="o">.</span><span class="n">addEdge</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;</span><span class="se">\n</span><span class="s2">SSC in third graph &#34;</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="n">g3</span><span class="o">.</span><span class="n">SCC</span><span class="p">()</span>
-</span></span><span class="line"><span class="cl"><span class="n">g4</span> <span class="o">=</span> <span class="n">Graph</span><span class="p">(</span><span class="mi">11</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="n">g4</span><span class="o">.</span><span class="n">addEdge</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="n">g4</span><span class="o">.</span><span class="n">addEdge</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="n">g4</span><span class="o">.</span><span class="n">addEdge</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="n">g4</span><span class="o">.</span><span class="n">addEdge</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="n">g4</span><span class="o">.</span><span class="n">addEdge</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="n">g4</span><span class="o">.</span><span class="n">addEdge</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="n">g4</span><span class="o">.</span><span class="n">addEdge</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="n">g4</span><span class="o">.</span><span class="n">addEdge</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="n">g4</span><span class="o">.</span><span class="n">addEdge</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="n">g4</span><span class="o">.</span><span class="n">addEdge</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="n">g4</span><span class="o">.</span><span class="n">addEdge</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="n">g4</span><span class="o">.</span><span class="n">addEdge</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">8</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="n">g4</span><span class="o">.</span><span class="n">addEdge</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">9</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="n">g4</span><span class="o">.</span><span class="n">addEdge</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="n">g4</span><span class="o">.</span><span class="n">addEdge</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="mi">9</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="n">g4</span><span class="o">.</span><span class="n">addEdge</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="n">g4</span><span class="o">.</span><span class="n">addEdge</span><span class="p">(</span><span class="mi">9</span><span class="p">,</span> <span class="mi">8</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;</span><span class="se">\n</span><span class="s2">SSC in fourth graph &#34;</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="n">g4</span><span class="o">.</span><span class="n">SCC</span><span class="p">()</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="n">g5</span> <span class="o">=</span> <span class="n">Graph</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="n">g5</span><span class="o">.</span><span class="n">addEdge</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="n">g5</span><span class="o">.</span><span class="n">addEdge</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="n">g5</span><span class="o">.</span><span class="n">addEdge</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="n">g5</span><span class="o">.</span><span class="n">addEdge</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="n">g5</span><span class="o">.</span><span class="n">addEdge</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="n">g5</span><span class="o">.</span><span class="n">addEdge</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;</span><span class="se">\n</span><span class="s2">SSC in fifth graph &#34;</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="n">g5</span><span class="o">.</span><span class="n">SCC</span><span class="p">()</span>
-</span></span></code></pre></div>
+
+  
+
+
+
+
+</div>
+
+
+
+
 
 
 			</section>
@@ -568,9 +777,7 @@
   <ul>
     <li>
       <ul>
-        <li><a href="#c-implementation-of-tarjans-algorithm-to-print-all-sccs">C++ implementation of Tarjan’s algorithm to print all SCCs</a></li>
-        <li><a href="#java-implementation-of-tarjans-algorithm-to-print-all-sccs">Java implementation of Tarjan’s algorithm to print all SCCs</a></li>
-        <li><a href="#python-implementation-of-tarjans-algorithm-to-print-all-sccs">Python implementation of Tarjan’s algorithm to print all SCCs</a></li>
+        <li><a href="#implementation-of-tarjans-algorithm-to-print-all-sccs">Implementation of Tarjan’s algorithm to print all SCCs</a></li>
       </ul>
     </li>
   </ul>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Practice Python Week 2 on SERVER-X-101</title>
+    <link>https://server-x-101.github.io/contests/practice-pythoon-week-2/</link>
+    <description>Recent content in Practice Python Week 2 on SERVER-X-101</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 07 Mar 2024 10:07:00 +0000</lastBuildDate>
+    <atom:link href="https://server-x-101.github.io/contests/practice-pythoon-week-2/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Count of Vowels</title>
+      <link>https://server-x-101.github.io/contests/practice-pythoon-week-2/count_of_vowels/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://server-x-101.github.io/contests/practice-pythoon-week-2/count_of_vowels/</guid>
+      <description>Problem Statement You will be given a string. Print the count of vowels present in the given string.&#xA;Input Format:&#xA;Input contains a string S.&#xA;Output Format:&#xA;Print the count of vowels in the given string&#xA;Constraints:&#xA;1 &amp;lt;= |S| &amp;lt;= 1000&#xA;Sample Input&#xD;vowels&#xD;Sample Output&#xD;2&#xD;Solution file_type_python&#xD;count_of_family_members.py s = int(input()) print(sum(1 for c in s if c.lower() in &amp;#39;aeiouAEIOU&amp;#39;)) </description>
+    </item>
+    <item>
+      <title>Decode It</title>
+      <link>https://server-x-101.github.io/contests/practice-pythoon-week-2/decode_it/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://server-x-101.github.io/contests/practice-pythoon-week-2/decode_it/</guid>
+      <description>Problem Statement Today, it&amp;rsquo;s all the world of Cryptography. In every prestigious coding competition, there will be at least one question on Cryptography. So do we!&#xA;Cryptography is a combination of Cryptology and Cryptanalysis. Cryptology deals with encryption and decryption of messages. Cryptanalysis deals with analyzing how a message is encrypted and cracking the logic of encryption to decrypt it. At this instant, you should play the role of cryptanalyst. Your task is to analyze the given messages and crack the logic or pattern behind it, then write a code to decrypt it.</description>
+    </item>
+    <item>
+      <title>Fat to Fit</title>
+      <link>https://server-x-101.github.io/contests/practice-pythoon-week-2/fat_to_fit/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://server-x-101.github.io/contests/practice-pythoon-week-2/fat_to_fit/</guid>
+      <description>Problem Statement Moses lives on Earth 101 where each month has exactly 30 days and each week has exactly 7 days. As Moses was fat, everyone used to tease him. One day, Moses decided to get fit. He laid out a plan and started working out every day. After a few months, he became the fittest guy on the whole planet.&#xA;Sumanth, who is also fat, heard the story of Moses and decided to get fit as well.</description>
+    </item>
+    <item>
+      <title>Find the Odd one</title>
+      <link>https://server-x-101.github.io/contests/practice-pythoon-week-2/find_the_odd_one/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://server-x-101.github.io/contests/practice-pythoon-week-2/find_the_odd_one/</guid>
+      <description>Problem Statement Surya is fond of shoes and has lots of pairs of shoes. He came to know that his dog spoiled one of his shoes, and he wants you to find the shoe that is missing. Each shoe has a specific number (1-9) indicating the type of shoe.&#xA;Given a string containing a list of shoes Surya has (he may have multiple pairs of the same type), find the shoe which has no pair.</description>
+    </item>
+    <item>
+      <title>Kth String</title>
+      <link>https://server-x-101.github.io/contests/practice-pythoon-week-2/kth_string/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://server-x-101.github.io/contests/practice-pythoon-week-2/kth_string/</guid>
+      <description>Problem Statement Your task is simple. You are given T test cases and each test cases has a string and a integer k. You need to reverse the string and print the kth character in the string. See Sample Input and Output for better understanding.&#xA;Input Format:&#xA;The input consists of:&#xA;T test cases, where T is an integer. Each test case consists of a string and an integer l. Output Format:</description>
+    </item>
+    <item>
+      <title>Need to Eliminate</title>
+      <link>https://server-x-101.github.io/contests/practice-pythoon-week-2/need_to_eliminate/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://server-x-101.github.io/contests/practice-pythoon-week-2/need_to_eliminate/</guid>
+      <description>Problem Statement Find out max no. of adjacent set bits.&#xA;Input Format:&#xA;The first line contains an integer T, the number of test cases.&#xA;Each of the next T lines contains a binary string.&#xA;Constraints:&#xA;1 &amp;lt;= T &amp;lt;= 10 The length of each binary string is between 5 and 10. Sample Input&#xD;3111011110110110110111101110111&#xD;Sample Output&#xD;423&#xD;Solution file_type_python&#xD;count_of_family_members.py for _ in range(int(input())): bin_str = input() print(max(map(len, bin_str.split(&amp;#39;0&amp;#39;)))) </description>
+    </item>
+    <item>
+      <title>Prime Number</title>
+      <link>https://server-x-101.github.io/contests/practice-pythoon-week-2/prime_number/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://server-x-101.github.io/contests/practice-pythoon-week-2/prime_number/</guid>
+      <description>Problem Statement Given an integer n, print all prime numbers before n.&#xA;Input Format:&#xA;The input consists of only a single integer n.&#xA;Output Format:&#xA;Print the first n prime numbers separated by a space.&#xA;Constraints:&#xA;1 &amp;lt;= n &amp;lt;= 1000&#xA;Sample Input&#xD;10&#xD;Sample Output&#xD;2 3 5 7&#xD;Solution file_type_python&#xD;count_of_family_members.py n = int(input()) sieve = [True] * (n + 1) sieve[0] = sieve[1] = False for p in range(2, int(n**0.</description>
+    </item>
+    <item>
+      <title>Printing Pattern</title>
+      <link>https://server-x-101.github.io/contests/practice-pythoon-week-2/printing_pattern/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://server-x-101.github.io/contests/practice-pythoon-week-2/printing_pattern/</guid>
+      <description>Problem Statement You will be given a number N denoting the number of rows. Print the following type Pattern.&#xA;N = 5 * * * * * * * * * * * * * * * Input Format:&#xA;An integer N denoting the number of rows.&#xA;Output Format:&#xA;Print the following type of pattern:&#xA;Constraints:&#xA;N is an integer greater than or equal to 1. Sample Input&#xD;3&#xD;Sample Output&#xD;* * ** **&#xD;Solution file_type_python&#xD;count_of_family_members.</description>
+    </item>
+    <item>
+      <title>Read the String</title>
+      <link>https://server-x-101.github.io/contests/practice-pythoon-week-2/read_the_string/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://server-x-101.github.io/contests/practice-pythoon-week-2/read_the_string/</guid>
+      <description>Problem Statement You are given a string. Read the string and print it again. The string may contain up to 100 characters.&#xA;Input Format:&#xA;A single string containing up to 100 characters.&#xA;Output Format:&#xA;Print the same string that was given as input.&#xA;Constraints:&#xA;Time Limit: 50 seconds for each input test case. Memory Limit: 256 MB. Source Limit: 1024 KB. Sample Input&#xD;Hello, world!&#xD;Sample Output&#xD;Hello, world!&#xD;Sample Input:</description>
+    </item>
+    <item>
+      <title>Remove Duplicates</title>
+      <link>https://server-x-101.github.io/contests/practice-pythoon-week-2/remove_duplicates/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://server-x-101.github.io/contests/practice-pythoon-week-2/remove_duplicates/</guid>
+      <description>Problem Statement Given a s S, your task is to remove all duplicate characters from the s S.&#xA;NOTE:&#xA;The order of characters in the output s should be the same as given in the input s. String S contains only lowercase characters [&amp;lsquo;a&amp;rsquo;-&amp;lsquo;z&amp;rsquo;]. Input Format:&#xA;The input contains a single s S. Output Format:&#xA;Print the s S with no duplicate characters. Constraints:&#xA;Test Files 1 to 5: 10 &amp;lt;= length of S &amp;lt;= 15 Test Files 6 to 10: 1 &amp;lt;= length of S &amp;lt;= 100000 Sample Input&#xD;hackerhackerearthprogramming&#xD;Sample Output&#xD;hackethackertprogamin&#xD;Solution file_type_python&#xD;count_of_family_members.</description>
+    </item>
+  </channel>
+</rss>

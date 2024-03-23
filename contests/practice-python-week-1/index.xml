@@ -20,14 +20,14 @@
       <link>https://server-x-101.github.io/contests/practice-python-week-1/add/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://server-x-101.github.io/contests/practice-python-week-1/add/</guid>
-      <description>Problem Statement Given 2 numbers A, B. Print A+B&#xA;Input:&#xA;1st line contains A 2nd line contains B Output:&#xA;Print A+B&#xA;Sample Input:&#xA;Sample Input 1 2 Sample Output:&#xA;Sample Ouput 3 Solution file_type_python&#xD;count_of_family_members.py a, b = map(int, input().split()) print(a + b) </description>
+      <description>Problem Statement Given 2 numbers A, B. Print A+B&#xA;Input:&#xA;1st line contains A 2nd line contains B Output:&#xA;Print A+B&#xA;Sample Input&#xD;1 2&#xD;Sample Output&#xD;3&#xD;Solution file_type_python&#xD;count_of_family_members.py a, b = map(int, input().split()) print(a + b) </description>
     </item>
     <item>
       <title>Angles of Triangle</title>
       <link>https://server-x-101.github.io/contests/practice-python-week-1/angles_of_triangle/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://server-x-101.github.io/contests/practice-python-week-1/angles_of_triangle/</guid>
-      <description>Problem Statement** You are given 3 angles in degrees namely A, B and C. You need to find if these angles can form an equilateral triangle.&#xA;Input Format:&#xA;First line contains T, no of testcases Each testcase contains A, B and C Output Format:&#xA;Print YES if an equilateral triangle can be formed else NO Constraints:&#xA;1 &amp;lt;= T &amp;lt;= 10000 10 &amp;lt;= A, B, C &amp;lt;= 360 Sample Input:</description>
+      <description>Problem Statement** You are given 3 angles in degrees namely A, B and C. You need to find if these angles can form an equilateral triangle.&#xA;Input Format:&#xA;First line contains T, no of testcases Each testcase contains A, B and C Output Format:&#xA;Print YES if an equilateral triangle can be formed else NO Constraints:&#xA;1 &amp;lt;= T &amp;lt;= 10000 10 &amp;lt;= A, B, C &amp;lt;= 360 Sample Input&#xD;2100 215 221&#xD;Sample Output&#xD;NO&#xD;Solution file_type_python&#xD;angles_of_triangle.</description>
     </item>
     <item>
       <title>Array Mirror</title>
@@ -83,28 +83,28 @@
       <link>https://server-x-101.github.io/contests/practice-python-week-1/list_of_lists/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://server-x-101.github.io/contests/practice-python-week-1/list_of_lists/</guid>
-      <description>Problem Statement You are given a list of lists. Find the list whose sum of elements is the highest.&#xA;Sample Input:&#xA;Sample Input 3 1 2 3 4 5 6 7 8 9 123 Sample Output:&#xA;Sample Ouput 7 8 9 Solution file_type_python&#xD;list_of_lists.py n = int(input()) l = [list(map(int, input().split())) for _ in range(n)] print(*max(l, key=sum)) </description>
+      <description>Problem Statement You are given a list of lists. Find the list whose sum of elements is the highest.&#xA;Sample Input&#xD;31 2 34 5 67 8 9&#xD;Sample Output&#xD;7 8 9&#xD;Solution file_type_python&#xD;list_of_lists.py n = int(input()) l = [list(map(int, input().split())) for _ in range(n)] print(*max(l, key=sum)) </description>
     </item>
     <item>
       <title>N &#43; NN &#43; NNN</title>
       <link>https://server-x-101.github.io/contests/practice-python-week-1/n_nn_nnn/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://server-x-101.github.io/contests/practice-python-week-1/n_nn_nnn/</guid>
-      <description>Problem Statement You will be given a number N, print N + NN + NNN value.&#xA;Input Format:&#xA;The first line contains an integer T, the number of test cases (1 ≤ T ≤ 10). Output Format:&#xA;For each test case, print the number N N times in a separate line. Constraints:&#xA;1 ≤ N ≤ 100 Sample Input:&#xA;Sample Input 2 3 5 Sample Output:&#xA;Sample Ouput 3 3 3 5 5 5 Explanation:</description>
+      <description>Problem Statement You will be given a number N, print N + NN + NNN value.&#xA;Input Format:&#xA;The first line contains an integer T, the number of test cases (1 ≤ T ≤ 10). Output Format:&#xA;For each test case, print the number N N times in a separate line. Constraints:&#xA;1 ≤ N ≤ 100 Sample Input&#xD;235&#xD;Sample Output&#xD;333555&#xD;Explanation:&#xA;In the first test case, N = 3, so the output is 3 printed three times.</description>
     </item>
     <item>
       <title>No Multiple</title>
       <link>https://server-x-101.github.io/contests/practice-python-week-1/no_multiple/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://server-x-101.github.io/contests/practice-python-week-1/no_multiple/</guid>
-      <description>Problem Statement You will be given a list of integers. Print the integers in the list that are not multiples of 5.&#xA;Input Format:&#xA;A list containing integers.&#xA;Output Format:&#xA;Print the integers in the list that are not multiples of 5.&#xA;Constraints:&#xA;The length of the list is not specified. Sample Input:&#xA;Sample Input 1 2 3 4 5 6 5 Sample Output:&#xA;Sample Ouput 1 2 3 4 6 Solution file_type_python&#xD;no_multiple.</description>
+      <description>Problem Statement You will be given a list of integers. Print the integers in the list that are not multiples of 5.&#xA;Input Format:&#xA;A list containing integers.&#xA;Output Format:&#xA;Print the integers in the list that are not multiples of 5.&#xA;Constraints:&#xA;The length of the list is not specified. Sample Input&#xD;1 2 3 4 5 6 5&#xD;Sample Output&#xD;1 2 3 4 6&#xD;Solution file_type_python&#xD;no_multiple.py l = list(map(int, input().</description>
     </item>
     <item>
       <title>Number System</title>
       <link>https://server-x-101.github.io/contests/practice-python-week-1/number_system/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://server-x-101.github.io/contests/practice-python-week-1/number_system/</guid>
-      <description>Problem Statement Arjun is currently learning various number notations like Binary, Hexadecimal, etc. He came across the following problem: You are given T test cases and for every test case, he is given a random string. He is quite confused about it. Help Arjun find the correct numeric representation for the given input. If there are multiple possible answers, print the minimum one.&#xA;Constraints:&#xA;1 ≤ T ≤ 10000 1 ≤ length of s ≤ 100 Sample Input:</description>
+      <description>Problem Statement Arjun is currently learning various number notations like Binary, Hexadecimal, etc. He came across the following problem: You are given T test cases and for every test case, he is given a random string. He is quite confused about it. Help Arjun find the correct numeric representation for the given input. If there are multiple possible answers, print the minimum one.&#xA;Constraints:&#xA;1 ≤ T ≤ 10000 1 ≤ length of s ≤ 100 Sample Input&#xD;19f&#xD;Sample Output&#xD;159&#xD;Solution file_type_python&#xD;number_system.</description>
     </item>
     <item>
       <title>Palindromic Arrays</title>
@@ -125,21 +125,21 @@
       <link>https://server-x-101.github.io/contests/practice-python-week-1/primes_upto_n/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://server-x-101.github.io/contests/practice-python-week-1/primes_upto_n/</guid>
-      <description>Problem Statement You will be given a number N, print the prime numbers up to N.&#xA;Input Format:&#xA;An integer N&#xA;Output Format:&#xA;Print prime numbers up to N with space separation between them.&#xA;Constraints:&#xA;1 &amp;lt;= N &amp;lt;= 100&#xA;Sample Input:&#xA;Sample Input 29 Sample Output:&#xA;Sample Ouput 2 3 5 7 11 13 17 19 23 29 Solution file_type_python&#xD;primes_upto_n.py n = int(input()) primes = [True]*(n + 1) primes[0] = primes[1] = False for i in range(2, int(n**0.</description>
+      <description>Problem Statement You will be given a number N, print the prime numbers up to N.&#xA;Input Format:&#xA;An integer N&#xA;Output Format:&#xA;Print prime numbers up to N with space separation between them.&#xA;Constraints:&#xA;1 &amp;lt;= N &amp;lt;= 100&#xA;Sample Input&#xD;29&#xD;Sample Output&#xD;2 3 5 7 11 13 17 19 23 29&#xD;Solution file_type_python&#xD;primes_upto_n.py n = int(input()) primes = [True]*(n + 1) primes[0] = primes[1] = False for i in range(2, int(n**0.</description>
     </item>
     <item>
       <title>Pythagoras Triplets</title>
       <link>https://server-x-101.github.io/contests/practice-python-week-1/pythagoras_triplets/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://server-x-101.github.io/contests/practice-python-week-1/pythagoras_triplets/</guid>
-      <description>Problem Statement Given an array of integers, write a function that prints YES if there is a triplet (a, b, c) that satisfies a² + b² = c² or else print NO.&#xA;Input:&#xA;The 1st line contains the number of test cases T. The next T lines contain Ti integers. Output:&#xA;Print YES if there is any pair which satisfies the condition or Print NO. Sample Input:&#xA;Sample Input 5 3 1 4 6 5 Sample Output:</description>
+      <description>Problem Statement Given an array of integers, write a function that prints YES if there is a triplet (a, b, c) that satisfies a² + b² = c² or else print NO.&#xA;Input:&#xA;The 1st line contains the number of test cases T. The next T lines contain Ti integers. Output:&#xA;Print YES if there is any pair which satisfies the condition or Print NO. Sample Input&#xD;53 1 4 6 5&#xD;Sample Output&#xD;YES&#xD;Solution file_type_python&#xD;pythagoras_triplets.</description>
     </item>
     <item>
       <title>Quadratic Equation</title>
       <link>https://server-x-101.github.io/contests/practice-python-week-1/quadratic_equation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://server-x-101.github.io/contests/practice-python-week-1/quadratic_equation/</guid>
-      <description>Problem Statement Given coefficients A, B, and C of a quadratic equation, check if the roots are real and distinct. Print &amp;ldquo;YES&amp;rdquo; if they are real and distinct, otherwise print &amp;ldquo;NO&amp;rdquo;.&#xA;Input Format:&#xA;A single line containing three space-separated integers, representing the coefficients A, B, and C of the quadratic equation.&#xA;Output Format:&#xA;Print &amp;ldquo;YES&amp;rdquo; if the roots are real and distinct, otherwise print &amp;ldquo;NO&amp;rdquo;.&#xA;Constraints:&#xA;1 ≤ |A|, |B|, |C| ≤ 100 Sample Input:</description>
+      <description>Problem Statement Given coefficients A, B, and C of a quadratic equation, check if the roots are real and distinct. Print &amp;ldquo;YES&amp;rdquo; if they are real and distinct, otherwise print &amp;ldquo;NO&amp;rdquo;.&#xA;Input Format:&#xA;A single line containing three space-separated integers, representing the coefficients A, B, and C of the quadratic equation.&#xA;Output Format:&#xA;Print &amp;ldquo;YES&amp;rdquo; if the roots are real and distinct, otherwise print &amp;ldquo;NO&amp;rdquo;.&#xA;Constraints:&#xA;1 ≤ |A|, |B|, |C| ≤ 100 Sample Input&#xD;10 7 12&#xD;Sample Output&#xD;NO&#xD;Solution file_type_python&#xD;quadratic_equation.</description>
     </item>
     <item>
       <title>Ronaldo</title>
@@ -153,14 +153,14 @@
       <link>https://server-x-101.github.io/contests/practice-python-week-1/set_clear/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://server-x-101.github.io/contests/practice-python-week-1/set_clear/</guid>
-      <description>Problem Statement You will be given a number N. Clear the rightmost set bit of the number and print the result.&#xA;Input Format:&#xA;An integer N&#xA;Output Format:&#xA;Print the output&#xA;Constraints:&#xA;Time Limit: 50 seconds Memory Limit: 256 MB Sample Input:&#xA;Sample Input 5 Sample Output:&#xA;Sample Ouput 4 Solution file_type_python&#xD;set_clear.py n = int(input()) print(n &amp;amp; (n - 1)) </description>
+      <description>Problem Statement You will be given a number N. Clear the rightmost set bit of the number and print the result.&#xA;Input Format:&#xA;An integer N&#xA;Output Format:&#xA;Print the output&#xA;Constraints:&#xA;Time Limit: 50 seconds Memory Limit: 256 MB Sample Input&#xD;5&#xD;Sample Output&#xD;4&#xD;Solution file_type_python&#xD;set_clear.py n = int(input()) print(n &amp;amp; (n - 1)) </description>
     </item>
     <item>
       <title>Unique Year</title>
       <link>https://server-x-101.github.io/contests/practice-python-week-1/unique_year/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://server-x-101.github.io/contests/practice-python-week-1/unique_year/</guid>
-      <description>Problem Statement Kiran finds a problem that he is currently facing difficulty. You are given T test cases and for every test case You are given a Year Y. Find the minimum year number which is strictly larger than the given one and has only distinct digits.&#xA;Constraints:&#xA;1 ≤ T ≤ 100 1000 ≤ Y ≤ 5000 Sample Input:&#xA;Sample Input 1 1987 Sample Output:&#xA;Sample Ouput 2013 Solution file_type_python&#xD;unique_year.</description>
+      <description>Problem Statement Kiran finds a problem that he is currently facing difficulty. You are given T test cases and for every test case You are given a Year Y. Find the minimum year number which is strictly larger than the given one and has only distinct digits.&#xA;Constraints:&#xA;1 ≤ T ≤ 100 1000 ≤ Y ≤ 5000 Sample Input&#xD;11987&#xD;Sample Output&#xD;2013&#xD;Solution file_type_python&#xD;unique_year.py for _ in range(int(input())): y = int(input()) while(True): y += 1 if len(set(str(y))) == len(str(y)): print(y) break </description>
     </item>
     <item>
       <title>XOR Lost Number</title>

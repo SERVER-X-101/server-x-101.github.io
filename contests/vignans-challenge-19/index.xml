@@ -20,7 +20,7 @@
       <link>https://server-x-101.github.io/contests/vignans-challenge-19/count_vowels/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://server-x-101.github.io/contests/vignans-challenge-19/count_vowels/</guid>
-      <description>Problem Statement Given a string, you have to print the number of vowels present in the string.&#xA;Input Format:&#xA;The first line contains an integer T, the number of test cases. The first line of each test case contains a string S. Output Format:&#xA;For each test case, print the count of vowels in the string separated by a space. Constraints:&#xA;1 ≤ T ≤ 10 1 ≤ len(S) ≤ 1000 Sample Input:</description>
+      <description>Problem Statement Given a string, you have to print the number of vowels present in the string.&#xA;Input Format:&#xA;The first line contains an integer T, the number of test cases. The first line of each test case contains a string S. Output Format:&#xA;For each test case, print the count of vowels in the string separated by a space. Constraints:&#xA;1 ≤ T ≤ 10 1 ≤ len(S) ≤ 1000 Sample Input&#xD;2aeioubcdfg&#xD;Sample Output&#xD;50&#xD;Explanation:</description>
     </item>
     <item>
       <title>Decimal to Binary</title>
@@ -48,7 +48,7 @@
       <link>https://server-x-101.github.io/contests/vignans-challenge-19/nth_fibonacci/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://server-x-101.github.io/contests/vignans-challenge-19/nth_fibonacci/</guid>
-      <description>Problem Statement Given a number n, calculate the nth Fibonacci number.&#xA;Input Format:&#xA;The first line contains an integer T, the number of test cases. Output Format:&#xA;For each test case, print the nth Fibonacci number. Constraints:&#xA;1 ≤ T ≤ 10 Sample Input:&#xA;Sample Input 2 5 7 Sample Output:&#xA;Sample Output 5 13 Explanation:&#xA;The Fibonacci sequence is defined as a sequence where each number is the sum of the two preceding numbers.</description>
+      <description>Problem Statement Given a number n, calculate the nth Fibonacci number.&#xA;Input Format:&#xA;The first line contains an integer T, the number of test cases. Output Format:&#xA;For each test case, print the nth Fibonacci number. Constraints:&#xA;1 ≤ T ≤ 10 Sample Input&#xD;257&#xD;Sample Output&#xD;513&#xD;Explanation:&#xA;The Fibonacci sequence is defined as a sequence where each number is the sum of the two preceding numbers. The first two numbers in the Fibonacci sequence are 0 and 1.</description>
     </item>
     <item>
       <title>Pair of Dragons</title>

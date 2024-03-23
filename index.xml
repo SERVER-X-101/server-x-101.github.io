@@ -188,14 +188,14 @@
       <link>https://server-x-101.github.io/contests/practice-python-week-1/add/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://server-x-101.github.io/contests/practice-python-week-1/add/</guid>
-      <description>Problem Statement Given 2 numbers A, B. Print A+B&#xA;Input:&#xA;1st line contains A 2nd line contains B Output:&#xA;Print A+B&#xA;Sample Input:&#xA;Sample Input 1 2 Sample Output:&#xA;Sample Ouput 3 Solution file_type_python&#xD;count_of_family_members.py a, b = map(int, input().split()) print(a + b) </description>
+      <description>Problem Statement Given 2 numbers A, B. Print A+B&#xA;Input:&#xA;1st line contains A 2nd line contains B Output:&#xA;Print A+B&#xA;Sample Input&#xD;1 2&#xD;Sample Output&#xD;3&#xD;Solution file_type_python&#xD;count_of_family_members.py a, b = map(int, input().split()) print(a + b) </description>
     </item>
     <item>
       <title>Angles of Triangle</title>
       <link>https://server-x-101.github.io/contests/practice-python-week-1/angles_of_triangle/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://server-x-101.github.io/contests/practice-python-week-1/angles_of_triangle/</guid>
-      <description>Problem Statement** You are given 3 angles in degrees namely A, B and C. You need to find if these angles can form an equilateral triangle.&#xA;Input Format:&#xA;First line contains T, no of testcases Each testcase contains A, B and C Output Format:&#xA;Print YES if an equilateral triangle can be formed else NO Constraints:&#xA;1 &amp;lt;= T &amp;lt;= 10000 10 &amp;lt;= A, B, C &amp;lt;= 360 Sample Input:</description>
+      <description>Problem Statement** You are given 3 angles in degrees namely A, B and C. You need to find if these angles can form an equilateral triangle.&#xA;Input Format:&#xA;First line contains T, no of testcases Each testcase contains A, B and C Output Format:&#xA;Print YES if an equilateral triangle can be formed else NO Constraints:&#xA;1 &amp;lt;= T &amp;lt;= 10000 10 &amp;lt;= A, B, C &amp;lt;= 360 Sample Input&#xD;2100 215 221&#xD;Sample Output&#xD;NO&#xD;Solution file_type_python&#xD;angles_of_triangle.</description>
     </item>
     <item>
       <title>Array Mirror</title>
@@ -227,17 +227,17 @@
     </item>
     <item>
       <title>Count of Vowels</title>
-      <link>https://server-x-101.github.io/contests/practice-python-week-2/count_of_vowels/</link>
+      <link>https://server-x-101.github.io/contests/practice-pythoon-week-2/count_of_vowels/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://server-x-101.github.io/contests/practice-python-week-2/count_of_vowels/</guid>
-      <description>Problem Statement You will be given a string. Print the count of vowels present in the given string.&#xA;Input Format:&#xA;Input contains a string S.&#xA;Output Format:&#xA;Print the count of vowels in the given string&#xA;Constraints:&#xA;1 &amp;lt;= |S| &amp;lt;= 1000&#xA;Sample Input:&#xA;vowels Sample Output:&#xA;2 Solution file_type_python&#xD;count_of_family_members.py s = int(input()) print(sum(1 for c in s if c.lower() in &amp;#39;aeiouAEIOU&amp;#39;)) </description>
+      <guid>https://server-x-101.github.io/contests/practice-pythoon-week-2/count_of_vowels/</guid>
+      <description>Problem Statement You will be given a string. Print the count of vowels present in the given string.&#xA;Input Format:&#xA;Input contains a string S.&#xA;Output Format:&#xA;Print the count of vowels in the given string&#xA;Constraints:&#xA;1 &amp;lt;= |S| &amp;lt;= 1000&#xA;Sample Input&#xD;vowels&#xD;Sample Output&#xD;2&#xD;Solution file_type_python&#xD;count_of_family_members.py s = int(input()) print(sum(1 for c in s if c.lower() in &amp;#39;aeiouAEIOU&amp;#39;)) </description>
     </item>
     <item>
       <title>Count Vowels</title>
       <link>https://server-x-101.github.io/contests/vignans-challenge-19/count_vowels/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://server-x-101.github.io/contests/vignans-challenge-19/count_vowels/</guid>
-      <description>Problem Statement Given a string, you have to print the number of vowels present in the string.&#xA;Input Format:&#xA;The first line contains an integer T, the number of test cases. The first line of each test case contains a string S. Output Format:&#xA;For each test case, print the count of vowels in the string separated by a space. Constraints:&#xA;1 ≤ T ≤ 10 1 ≤ len(S) ≤ 1000 Sample Input:</description>
+      <description>Problem Statement Given a string, you have to print the number of vowels present in the string.&#xA;Input Format:&#xA;The first line contains an integer T, the number of test cases. The first line of each test case contains a string S. Output Format:&#xA;For each test case, print the count of vowels in the string separated by a space. Constraints:&#xA;1 ≤ T ≤ 10 1 ≤ len(S) ≤ 1000 Sample Input&#xD;2aeioubcdfg&#xD;Sample Output&#xD;50&#xD;Explanation:</description>
     </item>
     <item>
       <title>CR7 and LEO</title>
@@ -262,9 +262,9 @@
     </item>
     <item>
       <title>Decode It</title>
-      <link>https://server-x-101.github.io/contests/practice-python-week-2/decode_it/</link>
+      <link>https://server-x-101.github.io/contests/practice-pythoon-week-2/decode_it/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://server-x-101.github.io/contests/practice-python-week-2/decode_it/</guid>
+      <guid>https://server-x-101.github.io/contests/practice-pythoon-week-2/decode_it/</guid>
       <description>Problem Statement Today, it&amp;rsquo;s all the world of Cryptography. In every prestigious coding competition, there will be at least one question on Cryptography. So do we!&#xA;Cryptography is a combination of Cryptology and Cryptanalysis. Cryptology deals with encryption and decryption of messages. Cryptanalysis deals with analyzing how a message is encrypted and cracking the logic of encryption to decrypt it. At this instant, you should play the role of cryptanalyst. Your task is to analyze the given messages and crack the logic or pattern behind it, then write a code to decrypt it.</description>
     </item>
     <item>
@@ -276,9 +276,9 @@
     </item>
     <item>
       <title>Fat to Fit</title>
-      <link>https://server-x-101.github.io/contests/practice-python-week-2/fat_to_fit/</link>
+      <link>https://server-x-101.github.io/contests/practice-pythoon-week-2/fat_to_fit/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://server-x-101.github.io/contests/practice-python-week-2/fat_to_fit/</guid>
+      <guid>https://server-x-101.github.io/contests/practice-pythoon-week-2/fat_to_fit/</guid>
       <description>Problem Statement Moses lives on Earth 101 where each month has exactly 30 days and each week has exactly 7 days. As Moses was fat, everyone used to tease him. One day, Moses decided to get fit. He laid out a plan and started working out every day. After a few months, he became the fittest guy on the whole planet.&#xA;Sumanth, who is also fat, heard the story of Moses and decided to get fit as well.</description>
     </item>
     <item>
@@ -290,9 +290,9 @@
     </item>
     <item>
       <title>Find the Odd one</title>
-      <link>https://server-x-101.github.io/contests/practice-python-week-2/find_the_odd_one/</link>
+      <link>https://server-x-101.github.io/contests/practice-pythoon-week-2/find_the_odd_one/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://server-x-101.github.io/contests/practice-python-week-2/find_the_odd_one/</guid>
+      <guid>https://server-x-101.github.io/contests/practice-pythoon-week-2/find_the_odd_one/</guid>
       <description>Problem Statement Surya is fond of shoes and has lots of pairs of shoes. He came to know that his dog spoiled one of his shoes, and he wants you to find the shoe that is missing. Each shoe has a specific number (1-9) indicating the type of shoe.&#xA;Given a string containing a list of shoes Surya has (he may have multiple pairs of the same type), find the shoe which has no pair.</description>
     </item>
     <item>
@@ -304,9 +304,9 @@
     </item>
     <item>
       <title>Kth String</title>
-      <link>https://server-x-101.github.io/contests/practice-python-week-2/kth_string/</link>
+      <link>https://server-x-101.github.io/contests/practice-pythoon-week-2/kth_string/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://server-x-101.github.io/contests/practice-python-week-2/kth_string/</guid>
+      <guid>https://server-x-101.github.io/contests/practice-pythoon-week-2/kth_string/</guid>
       <description>Problem Statement Your task is simple. You are given T test cases and each test cases has a string and a integer k. You need to reverse the string and print the kth character in the string. See Sample Input and Output for better understanding.&#xA;Input Format:&#xA;The input consists of:&#xA;T test cases, where T is an integer. Each test case consists of a string and an integer l. Output Format:</description>
     </item>
     <item>
@@ -314,7 +314,7 @@
       <link>https://server-x-101.github.io/contests/practice-python-week-1/list_of_lists/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://server-x-101.github.io/contests/practice-python-week-1/list_of_lists/</guid>
-      <description>Problem Statement You are given a list of lists. Find the list whose sum of elements is the highest.&#xA;Sample Input:&#xA;Sample Input 3 1 2 3 4 5 6 7 8 9 123 Sample Output:&#xA;Sample Ouput 7 8 9 Solution file_type_python&#xD;list_of_lists.py n = int(input()) l = [list(map(int, input().split())) for _ in range(n)] print(*max(l, key=sum)) </description>
+      <description>Problem Statement You are given a list of lists. Find the list whose sum of elements is the highest.&#xA;Sample Input&#xD;31 2 34 5 67 8 9&#xD;Sample Output&#xD;7 8 9&#xD;Solution file_type_python&#xD;list_of_lists.py n = int(input()) l = [list(map(int, input().split())) for _ in range(n)] print(*max(l, key=sum)) </description>
     </item>
     <item>
       <title>Max Score in Roe</title>
@@ -328,35 +328,35 @@
       <link>https://server-x-101.github.io/contests/practice-python-week-1/n_nn_nnn/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://server-x-101.github.io/contests/practice-python-week-1/n_nn_nnn/</guid>
-      <description>Problem Statement You will be given a number N, print N + NN + NNN value.&#xA;Input Format:&#xA;The first line contains an integer T, the number of test cases (1 ≤ T ≤ 10). Output Format:&#xA;For each test case, print the number N N times in a separate line. Constraints:&#xA;1 ≤ N ≤ 100 Sample Input:&#xA;Sample Input 2 3 5 Sample Output:&#xA;Sample Ouput 3 3 3 5 5 5 Explanation:</description>
+      <description>Problem Statement You will be given a number N, print N + NN + NNN value.&#xA;Input Format:&#xA;The first line contains an integer T, the number of test cases (1 ≤ T ≤ 10). Output Format:&#xA;For each test case, print the number N N times in a separate line. Constraints:&#xA;1 ≤ N ≤ 100 Sample Input&#xD;235&#xD;Sample Output&#xD;333555&#xD;Explanation:&#xA;In the first test case, N = 3, so the output is 3 printed three times.</description>
     </item>
     <item>
       <title>Need to Eliminate</title>
-      <link>https://server-x-101.github.io/contests/practice-python-week-2/need_to_eliminate/</link>
+      <link>https://server-x-101.github.io/contests/practice-pythoon-week-2/need_to_eliminate/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://server-x-101.github.io/contests/practice-python-week-2/need_to_eliminate/</guid>
-      <description>Problem Statement Find out max no. of adjacent set bits.&#xA;Input Format:&#xA;The first line contains an integer T, the number of test cases.&#xA;Each of the next T lines contains a binary string.&#xA;Constraints:&#xA;1 &amp;lt;= T &amp;lt;= 10 The length of each binary string is between 5 and 10. Sample Input:&#xA;3 111011110 1101101101 11101110111 Sample Output:&#xA;4 2 3 Solution file_type_python&#xD;count_of_family_members.py for _ in range(int(input())): bin_str = input() print(max(map(len, bin_str.</description>
+      <guid>https://server-x-101.github.io/contests/practice-pythoon-week-2/need_to_eliminate/</guid>
+      <description>Problem Statement Find out max no. of adjacent set bits.&#xA;Input Format:&#xA;The first line contains an integer T, the number of test cases.&#xA;Each of the next T lines contains a binary string.&#xA;Constraints:&#xA;1 &amp;lt;= T &amp;lt;= 10 The length of each binary string is between 5 and 10. Sample Input&#xD;3111011110110110110111101110111&#xD;Sample Output&#xD;423&#xD;Solution file_type_python&#xD;count_of_family_members.py for _ in range(int(input())): bin_str = input() print(max(map(len, bin_str.split(&amp;#39;0&amp;#39;)))) </description>
     </item>
     <item>
       <title>No Multiple</title>
       <link>https://server-x-101.github.io/contests/practice-python-week-1/no_multiple/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://server-x-101.github.io/contests/practice-python-week-1/no_multiple/</guid>
-      <description>Problem Statement You will be given a list of integers. Print the integers in the list that are not multiples of 5.&#xA;Input Format:&#xA;A list containing integers.&#xA;Output Format:&#xA;Print the integers in the list that are not multiples of 5.&#xA;Constraints:&#xA;The length of the list is not specified. Sample Input:&#xA;Sample Input 1 2 3 4 5 6 5 Sample Output:&#xA;Sample Ouput 1 2 3 4 6 Solution file_type_python&#xD;no_multiple.</description>
+      <description>Problem Statement You will be given a list of integers. Print the integers in the list that are not multiples of 5.&#xA;Input Format:&#xA;A list containing integers.&#xA;Output Format:&#xA;Print the integers in the list that are not multiples of 5.&#xA;Constraints:&#xA;The length of the list is not specified. Sample Input&#xD;1 2 3 4 5 6 5&#xD;Sample Output&#xD;1 2 3 4 6&#xD;Solution file_type_python&#xD;no_multiple.py l = list(map(int, input().</description>
     </item>
     <item>
       <title>Nth Fibonacci Number</title>
       <link>https://server-x-101.github.io/contests/vignans-challenge-19/nth_fibonacci/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://server-x-101.github.io/contests/vignans-challenge-19/nth_fibonacci/</guid>
-      <description>Problem Statement Given a number n, calculate the nth Fibonacci number.&#xA;Input Format:&#xA;The first line contains an integer T, the number of test cases. Output Format:&#xA;For each test case, print the nth Fibonacci number. Constraints:&#xA;1 ≤ T ≤ 10 Sample Input:&#xA;Sample Input 2 5 7 Sample Output:&#xA;Sample Output 5 13 Explanation:&#xA;The Fibonacci sequence is defined as a sequence where each number is the sum of the two preceding numbers.</description>
+      <description>Problem Statement Given a number n, calculate the nth Fibonacci number.&#xA;Input Format:&#xA;The first line contains an integer T, the number of test cases. Output Format:&#xA;For each test case, print the nth Fibonacci number. Constraints:&#xA;1 ≤ T ≤ 10 Sample Input&#xD;257&#xD;Sample Output&#xD;513&#xD;Explanation:&#xA;The Fibonacci sequence is defined as a sequence where each number is the sum of the two preceding numbers. The first two numbers in the Fibonacci sequence are 0 and 1.</description>
     </item>
     <item>
       <title>Number System</title>
       <link>https://server-x-101.github.io/contests/practice-python-week-1/number_system/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://server-x-101.github.io/contests/practice-python-week-1/number_system/</guid>
-      <description>Problem Statement Arjun is currently learning various number notations like Binary, Hexadecimal, etc. He came across the following problem: You are given T test cases and for every test case, he is given a random string. He is quite confused about it. Help Arjun find the correct numeric representation for the given input. If there are multiple possible answers, print the minimum one.&#xA;Constraints:&#xA;1 ≤ T ≤ 10000 1 ≤ length of s ≤ 100 Sample Input:</description>
+      <description>Problem Statement Arjun is currently learning various number notations like Binary, Hexadecimal, etc. He came across the following problem: You are given T test cases and for every test case, he is given a random string. He is quite confused about it. Help Arjun find the correct numeric representation for the given input. If there are multiple possible answers, print the minimum one.&#xA;Constraints:&#xA;1 ≤ T ≤ 10000 1 ≤ length of s ≤ 100 Sample Input&#xD;19f&#xD;Sample Output&#xD;159&#xD;Solution file_type_python&#xD;number_system.</description>
     </item>
     <item>
       <title>Pair of Dragons</title>
@@ -381,10 +381,10 @@
     </item>
     <item>
       <title>Prime Number</title>
-      <link>https://server-x-101.github.io/contests/practice-python-week-2/prime_number/</link>
+      <link>https://server-x-101.github.io/contests/practice-pythoon-week-2/prime_number/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://server-x-101.github.io/contests/practice-python-week-2/prime_number/</guid>
-      <description>Problem Statement Given an integer n, print all prime numbers before n.&#xA;Input Format:&#xA;The input consists of only a single integer n.&#xA;Output Format:&#xA;Print the first n prime numbers separated by a space.&#xA;Constraints:&#xA;1 &amp;lt;= n &amp;lt;= 1000&#xA;Sample Input:&#xA;10 Sample Output:&#xA;2 3 5 7 Solution file_type_python&#xD;count_of_family_members.py n = int(input()) sieve = [True] * (n + 1) sieve[0] = sieve[1] = False for p in range(2, int(n**0.</description>
+      <guid>https://server-x-101.github.io/contests/practice-pythoon-week-2/prime_number/</guid>
+      <description>Problem Statement Given an integer n, print all prime numbers before n.&#xA;Input Format:&#xA;The input consists of only a single integer n.&#xA;Output Format:&#xA;Print the first n prime numbers separated by a space.&#xA;Constraints:&#xA;1 &amp;lt;= n &amp;lt;= 1000&#xA;Sample Input&#xD;10&#xD;Sample Output&#xD;2 3 5 7&#xD;Solution file_type_python&#xD;count_of_family_members.py n = int(input()) sieve = [True] * (n + 1) sieve[0] = sieve[1] = False for p in range(2, int(n**0.</description>
     </item>
     <item>
       <title>Prime Setbits</title>
@@ -398,42 +398,42 @@
       <link>https://server-x-101.github.io/contests/practice-python-week-1/primes_upto_n/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://server-x-101.github.io/contests/practice-python-week-1/primes_upto_n/</guid>
-      <description>Problem Statement You will be given a number N, print the prime numbers up to N.&#xA;Input Format:&#xA;An integer N&#xA;Output Format:&#xA;Print prime numbers up to N with space separation between them.&#xA;Constraints:&#xA;1 &amp;lt;= N &amp;lt;= 100&#xA;Sample Input:&#xA;Sample Input 29 Sample Output:&#xA;Sample Ouput 2 3 5 7 11 13 17 19 23 29 Solution file_type_python&#xD;primes_upto_n.py n = int(input()) primes = [True]*(n + 1) primes[0] = primes[1] = False for i in range(2, int(n**0.</description>
+      <description>Problem Statement You will be given a number N, print the prime numbers up to N.&#xA;Input Format:&#xA;An integer N&#xA;Output Format:&#xA;Print prime numbers up to N with space separation between them.&#xA;Constraints:&#xA;1 &amp;lt;= N &amp;lt;= 100&#xA;Sample Input&#xD;29&#xD;Sample Output&#xD;2 3 5 7 11 13 17 19 23 29&#xD;Solution file_type_python&#xD;primes_upto_n.py n = int(input()) primes = [True]*(n + 1) primes[0] = primes[1] = False for i in range(2, int(n**0.</description>
     </item>
     <item>
       <title>Printing Pattern</title>
-      <link>https://server-x-101.github.io/contests/practice-python-week-2/printing_pattern/</link>
+      <link>https://server-x-101.github.io/contests/practice-pythoon-week-2/printing_pattern/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://server-x-101.github.io/contests/practice-python-week-2/printing_pattern/</guid>
-      <description>Problem Statement You will be given a number N denoting the number of rows. Print the following type Pattern.&#xA;N = 5 * * * * * * * * * * * * * * * Input Format:&#xA;An integer N denoting the number of rows.&#xA;Output Format:&#xA;Print the following type of pattern:&#xA;Constraints:&#xA;N is an integer greater than or equal to 1. Sample Input:&#xA;5 Sample Output:</description>
+      <guid>https://server-x-101.github.io/contests/practice-pythoon-week-2/printing_pattern/</guid>
+      <description>Problem Statement You will be given a number N denoting the number of rows. Print the following type Pattern.&#xA;N = 5 * * * * * * * * * * * * * * * Input Format:&#xA;An integer N denoting the number of rows.&#xA;Output Format:&#xA;Print the following type of pattern:&#xA;Constraints:&#xA;N is an integer greater than or equal to 1. Sample Input&#xD;3&#xD;Sample Output&#xD;* * ** **&#xD;Solution file_type_python&#xD;count_of_family_members.</description>
     </item>
     <item>
       <title>Pythagoras Triplets</title>
       <link>https://server-x-101.github.io/contests/practice-python-week-1/pythagoras_triplets/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://server-x-101.github.io/contests/practice-python-week-1/pythagoras_triplets/</guid>
-      <description>Problem Statement Given an array of integers, write a function that prints YES if there is a triplet (a, b, c) that satisfies a² + b² = c² or else print NO.&#xA;Input:&#xA;The 1st line contains the number of test cases T. The next T lines contain Ti integers. Output:&#xA;Print YES if there is any pair which satisfies the condition or Print NO. Sample Input:&#xA;Sample Input 5 3 1 4 6 5 Sample Output:</description>
+      <description>Problem Statement Given an array of integers, write a function that prints YES if there is a triplet (a, b, c) that satisfies a² + b² = c² or else print NO.&#xA;Input:&#xA;The 1st line contains the number of test cases T. The next T lines contain Ti integers. Output:&#xA;Print YES if there is any pair which satisfies the condition or Print NO. Sample Input&#xD;53 1 4 6 5&#xD;Sample Output&#xD;YES&#xD;Solution file_type_python&#xD;pythagoras_triplets.</description>
     </item>
     <item>
       <title>Quadratic Equation</title>
       <link>https://server-x-101.github.io/contests/practice-python-week-1/quadratic_equation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://server-x-101.github.io/contests/practice-python-week-1/quadratic_equation/</guid>
-      <description>Problem Statement Given coefficients A, B, and C of a quadratic equation, check if the roots are real and distinct. Print &amp;ldquo;YES&amp;rdquo; if they are real and distinct, otherwise print &amp;ldquo;NO&amp;rdquo;.&#xA;Input Format:&#xA;A single line containing three space-separated integers, representing the coefficients A, B, and C of the quadratic equation.&#xA;Output Format:&#xA;Print &amp;ldquo;YES&amp;rdquo; if the roots are real and distinct, otherwise print &amp;ldquo;NO&amp;rdquo;.&#xA;Constraints:&#xA;1 ≤ |A|, |B|, |C| ≤ 100 Sample Input:</description>
+      <description>Problem Statement Given coefficients A, B, and C of a quadratic equation, check if the roots are real and distinct. Print &amp;ldquo;YES&amp;rdquo; if they are real and distinct, otherwise print &amp;ldquo;NO&amp;rdquo;.&#xA;Input Format:&#xA;A single line containing three space-separated integers, representing the coefficients A, B, and C of the quadratic equation.&#xA;Output Format:&#xA;Print &amp;ldquo;YES&amp;rdquo; if the roots are real and distinct, otherwise print &amp;ldquo;NO&amp;rdquo;.&#xA;Constraints:&#xA;1 ≤ |A|, |B|, |C| ≤ 100 Sample Input&#xD;10 7 12&#xD;Sample Output&#xD;NO&#xD;Solution file_type_python&#xD;quadratic_equation.</description>
     </item>
     <item>
       <title>Read the String</title>
-      <link>https://server-x-101.github.io/contests/practice-python-week-2/read_the_string/</link>
+      <link>https://server-x-101.github.io/contests/practice-pythoon-week-2/read_the_string/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://server-x-101.github.io/contests/practice-python-week-2/read_the_string/</guid>
-      <description>Problem Statement You are given a string. Read the string and print it again. The string may contain up to 100 characters.&#xA;Input Format:&#xA;A single string containing up to 100 characters.&#xA;Output Format:&#xA;Print the same string that was given as input.&#xA;Constraints:&#xA;Time Limit: 50 seconds for each input test case. Memory Limit: 256 MB. Source Limit: 1024 KB. Sample Input:&#xA;Hello, world! Sample Output:&#xA;Hello, world! Solution file_type_python&#xD;count_of_family_members.</description>
+      <guid>https://server-x-101.github.io/contests/practice-pythoon-week-2/read_the_string/</guid>
+      <description>Problem Statement You are given a string. Read the string and print it again. The string may contain up to 100 characters.&#xA;Input Format:&#xA;A single string containing up to 100 characters.&#xA;Output Format:&#xA;Print the same string that was given as input.&#xA;Constraints:&#xA;Time Limit: 50 seconds for each input test case. Memory Limit: 256 MB. Source Limit: 1024 KB. Sample Input&#xD;Hello, world!&#xD;Sample Output&#xD;Hello, world!&#xD;Sample Input:</description>
     </item>
     <item>
       <title>Remove Duplicates</title>
-      <link>https://server-x-101.github.io/contests/practice-python-week-2/remove_duplicates/</link>
+      <link>https://server-x-101.github.io/contests/practice-pythoon-week-2/remove_duplicates/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://server-x-101.github.io/contests/practice-python-week-2/remove_duplicates/</guid>
-      <description>Problem Statement Given a s S, your task is to remove all duplicate characters from the s S.&#xA;NOTE:&#xA;The order of characters in the output s should be the same as given in the input s. String S contains only lowercase characters [&amp;lsquo;a&amp;rsquo;-&amp;lsquo;z&amp;rsquo;]. Input Format:&#xA;The input contains a single s S. Output Format:&#xA;Print the s S with no duplicate characters. Constraints:&#xA;Test Files 1 to 5: 10 &amp;lt;= length of S &amp;lt;= 15 Test Files 6 to 10: 1 &amp;lt;= length of S &amp;lt;= 100000 Sample Input 1:</description>
+      <guid>https://server-x-101.github.io/contests/practice-pythoon-week-2/remove_duplicates/</guid>
+      <description>Problem Statement Given a s S, your task is to remove all duplicate characters from the s S.&#xA;NOTE:&#xA;The order of characters in the output s should be the same as given in the input s. String S contains only lowercase characters [&amp;lsquo;a&amp;rsquo;-&amp;lsquo;z&amp;rsquo;]. Input Format:&#xA;The input contains a single s S. Output Format:&#xA;Print the s S with no duplicate characters. Constraints:&#xA;Test Files 1 to 5: 10 &amp;lt;= length of S &amp;lt;= 15 Test Files 6 to 10: 1 &amp;lt;= length of S &amp;lt;= 100000 Sample Input&#xD;hackerhackerearthprogramming&#xD;Sample Output&#xD;hackethackertprogamin&#xD;Solution file_type_python&#xD;count_of_family_members.</description>
     </item>
     <item>
       <title>Ronaldo</title>
@@ -447,7 +447,7 @@
       <link>https://server-x-101.github.io/contests/practice-python-week-1/set_clear/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://server-x-101.github.io/contests/practice-python-week-1/set_clear/</guid>
-      <description>Problem Statement You will be given a number N. Clear the rightmost set bit of the number and print the result.&#xA;Input Format:&#xA;An integer N&#xA;Output Format:&#xA;Print the output&#xA;Constraints:&#xA;Time Limit: 50 seconds Memory Limit: 256 MB Sample Input:&#xA;Sample Input 5 Sample Output:&#xA;Sample Ouput 4 Solution file_type_python&#xD;set_clear.py n = int(input()) print(n &amp;amp; (n - 1)) </description>
+      <description>Problem Statement You will be given a number N. Clear the rightmost set bit of the number and print the result.&#xA;Input Format:&#xA;An integer N&#xA;Output Format:&#xA;Print the output&#xA;Constraints:&#xA;Time Limit: 50 seconds Memory Limit: 256 MB Sample Input&#xD;5&#xD;Sample Output&#xD;4&#xD;Solution file_type_python&#xD;set_clear.py n = int(input()) print(n &amp;amp; (n - 1)) </description>
     </item>
     <item>
       <title>Sum of Primes</title>
@@ -461,7 +461,7 @@
       <link>https://server-x-101.github.io/contests/practice-python-week-1/unique_year/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://server-x-101.github.io/contests/practice-python-week-1/unique_year/</guid>
-      <description>Problem Statement Kiran finds a problem that he is currently facing difficulty. You are given T test cases and for every test case You are given a Year Y. Find the minimum year number which is strictly larger than the given one and has only distinct digits.&#xA;Constraints:&#xA;1 ≤ T ≤ 100 1000 ≤ Y ≤ 5000 Sample Input:&#xA;Sample Input 1 1987 Sample Output:&#xA;Sample Ouput 2013 Solution file_type_python&#xD;unique_year.</description>
+      <description>Problem Statement Kiran finds a problem that he is currently facing difficulty. You are given T test cases and for every test case You are given a Year Y. Find the minimum year number which is strictly larger than the given one and has only distinct digits.&#xA;Constraints:&#xA;1 ≤ T ≤ 100 1000 ≤ Y ≤ 5000 Sample Input&#xD;11987&#xD;Sample Output&#xD;2013&#xD;Solution file_type_python&#xD;unique_year.py for _ in range(int(input())): y = int(input()) while(True): y += 1 if len(set(str(y))) == len(str(y)): print(y) break </description>
     </item>
     <item>
       <title>XOR Lost Number</title>

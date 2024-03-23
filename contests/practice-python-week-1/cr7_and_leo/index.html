@@ -12,7 +12,7 @@
   <link rel="dns-prefetch" href="{my-hugo-site-page-path}" />
   
   <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="/svelte/index.3238d2b0.css" />
+  <link rel="stylesheet" href="/svelte/index.93a2a5f1.css" />
   <script type="module" defer src="/svelte/index.3d65baf9.js" />
   </script>
 
@@ -769,23 +769,35 @@
 <li>1 &lt;= N &lt;= 10<sup>5</sup></li>
 </ul>
 <p>All characters are lowercase Latin alphabets.</p>
-<p><strong>Sample Input:</strong></p>
 
 
-<div class="file-name">
-  <span class="file-icon"><svg aria-hidden="true" data-prefix="fas" data-icon="terminal" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" class="svgterminal  "><path fill="currentColor" d="M257.981 272.971L63.638 467.314c-9.373 9.373-24.569 9.373-33.941 0L7.029 444.647c-9.357-9.357-9.375-24.522-.04-33.901L161.011 256 6.99 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L257.981 239.03c9.373 9.372 9.373 24.568 0 33.941zM640 456v-32c0-13.255-10.745-24-24-24H312c-13.255 0-24 10.745-24 24v32c0 13.255 10.745 24 24 24h304c13.255 0 24-10.745 24-24z" ></path></svg></span> <b>Sample Input </b>
+
+<div class="grid w-full rounded-md border-2 border-gray5 divide-y divide-gray5 dark:border-gray-800">
+    <div class="grid sm:grid-cols-2 p-4 gap-4">
+        <div class="grid gap-2.5 min-h-[100px] max-h-[110px]">
+            <h5 class="text-sm font-medium tracking-tight text-center uppercase">
+                Sample Input
+            </h5>
+            <div class="flex items-center justify-center min-h-[100px] max-h-[180px] border border-solid border-gray5 rounded-sm sticky top-0 overflow-auto scrollbar" id="sidebar">
+                <span class="flex w-full bg-background px-3 py-2 text-sm text-left text-gray-500 dark:text-gray-400 min-h-[100px] max-h-[110px]">
+                    1</br>5</br>axyze
+                </span>
+            </div>
+        </div>
+        <div class="grid gap-2.5">
+            <h5 class="text-sm font-medium tracking-tight text-center">
+                Sample Output
+            </h5>
+            <div class="flex items-center justify-center min-h-[100px] max-h-[180px] border border-solid border-gray5 rounded-sm sticky top-0 overflow-auto scrollbar" id="sidebar">
+                <span class="flex w-full bg-background px-3 py-2 text-sm text-left text-gray-500 dark:text-gray-400 min-h-[100px] max-h-[110px]">
+                    exyza
+                </span>
+            </div>
+        </div>
+    </div>
 </div>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-md" data-lang="md"><span class="line"><span class="cl">1
-</span></span><span class="line"><span class="cl">5
-</span></span><span class="line"><span class="cl">axyze
-</span></span></code></pre></div><p><strong>Sample Output:</strong></p>
 
-
-<div class="file-name">
-  <span class="file-icon"><svg aria-hidden="true" data-prefix="fas" data-icon="terminal" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" class="svgterminal  "><path fill="currentColor" d="M257.981 272.971L63.638 467.314c-9.373 9.373-24.569 9.373-33.941 0L7.029 444.647c-9.357-9.357-9.375-24.522-.04-33.901L161.011 256 6.99 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L257.981 239.03c9.373 9.372 9.373 24.568 0 33.941zM640 456v-32c0-13.255-10.745-24-24-24H312c-13.255 0-24 10.745-24 24v32c0 13.255 10.745 24 24 24h304c13.255 0 24-10.745 24-24z" ></path></svg></span> <b>Sample Ouput </b>
-</div>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-md" data-lang="md"><span class="line"><span class="cl">exyza
-</span></span></code></pre></div><h2 id="solution">Solution</h2>
+<h2 id="solution">Solution</h2>
 <!-- **Approach:** -->
 
 
